@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>MenuReturn</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">MenuReturn</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="Item_SubCall.htm">다음</a>&nbsp;
+      <a href="Item_MenuCall.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>DefineMenu 에 정의된 메뉴를  MenuCall Item 호출에 의해서 이동한 MSFX(Menu Scenario File) 에서 호출 이전의 위치로 복귀 할 때 사용한다.</p>
+    <p>MSFX 에서만 가능하고, SSFX(Service Scenario File)에서 사용 되면, 에러 처리 되고, 수행하지 않는다.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">ICON</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/Item_MenuReturn_35.PNG" width="45" height="35"></p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">PROPERTIES</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Return Info</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_MenuReturn.PNG" width="422" height="406"></p>
+  <p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Return Type : <span style="font-weight: normal;">메뉴 트리내에서 이동 Type을 지정 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&lt;Return Type 설명&gt;</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">0 : 현재 메뉴 항목 계속 진행</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">1 : 상위 메뉴로의 이동</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">2 : 최상위 메뉴로 이동</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">3 : 메뉴 호출 종료(메뉴 호출을 종료하고, 호출 아이템 (MenuCall) 다음으로 복귀한다.</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">4 : 설정한 특정 메뉴로 이동(Goto Special Menu 선택 시)</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Goto Special Menu : <span style="font-weight: normal;">콤보 박스에 지정한 특정 메뉴로 이동 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Using Expression Check Box</em> : <span style="font-weight: normal;">지정할 특정 메뉴를 Expression(변수, 연산식) 으로 처리 합니다. Check하지 않으면 Value로 처리 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">콤보박스 : <span style="font-weight: normal;">리스트에서 메뉴 ID 를 선택 할 수도 있고, 직접 변수나 표현식을 입력 할 수도 있습니다. Expression(표현식) 을 입력하고 사용할  경우는 Using Expression 을 체크해야 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Description : <span style="font-weight: normal;">콤보 박스에 메뉴 ID 를 지정하면 메뉴의 이름을 표시 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Move Define Menu Button</em> : <span style="font-weight: normal;">콤보박스에 메뉴 ID 가 지정 되어 있고 Using Expression 가 False 면 버튼이 Enable 되며, 버튼을 누르면 Global.ssfx 파일이 오픈되고 DefineMenu Item 속성 창이 팝업 되고 해당 메뉴로 이동 합니다.</span>		</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Open Scenario Button</em> : <span style="font-weight: normal;">콤보박스에 메뉴 ID 가 지정 되어 있고, Using Expression 가 False 면 버튼이 Enable 되며, 버튼을 누르면 해당하는 메뉴 시나리오 파일이 오픈 됩니다.</span></p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">RESULT</p>
+<p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">None.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="margin: 0px 0px 0px 00px; font-weight: bold;">RELATED</span></p>
+<p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_DefineMenu_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_DefineMenu.htm">DefineMenu</a></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_MenuCall_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_MenuCall.htm">MenuCall</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+    
+</td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="Item_SubCall.htm">다음</a>&nbsp;
+     <a href="Item_MenuCall.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

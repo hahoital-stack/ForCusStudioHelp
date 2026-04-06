@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>RESULT token_iter( STRING, DELMITER, POS_VAR, RESULT_TOKEN )</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+.text-align {
+	text-align: left;
+}
+.color {
+	color: #F00;
+}
+.color {
+	color: #F00;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="84%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">RESULT token_iter( STRING, DELMITER, POS_VAR, RESULT_TOKEN )</td>
+    <td width="16%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="InnerFunction_insert.htm">다음</a>&nbsp;
+      <a href="InnerFunction_token.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top ">
+<td style="text-align:left; color: #000; font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-weight: normal;">
+<h2 style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="token_iter"></a>token_iter</h2>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">문자열에서 토큰을 차례대로 얻는다. </p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">token_iter()함수 순차 호출에 토큰이 순서대로 리턴 된다.</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><em>Parameter:</em></p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">STRING</span></td>
+            <td width="552"><span class="f_Body" style="font-weight: normal;">[in] 입력 문자열</span></td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">DELIMITER</span></td>
+            <td width="552"><p><span class="f_Body" style="font-weight: normal;">[in] 구분자 리스트</span></p>
+                <p><span class="f_Body" style="font-weight: normal;">여러 개의 구분자를 입력할 수 있다.(<span class="f_Body" style="font-weight: normal;">공백도 구분자</span>)</span></p>
+                <p><span class="f_Body" style="font-weight: normal;">ex) ', ; * #'</span></p></td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">POS_VAR</span></td>
+            <td width="552"><p><span class="f_Body" style="font-weight: normal;">[in/out] 검색  시작 위치(1-base)</span></p>
+                <p><span class="f_Body" style="font-weight: normal;">첫  번째 토큰을  구하기 위해서는  POS_VAR 변수 값에  ‘1’ 를  대입하지만, 이후 토큰부터는  검색 위치정보를  새롭게 입력할  필요는 없다.  token_iter() 함수 내에서  자동으로 검색위치가 이동한다. 단, 자동으로 검색위치가 이동하려면 POS_VAR 에 변수가 입력 되어야 한다.( 예:'1' 을 변수에 넣고 변수를 대입)</span></p></td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">RESULT_TOKEN</span></td>
+            <td width="552"><span class="f_Body" style="font-weight: normal;">[out] 결과  토큰</span></td>
+        </tr>
+    </table>
+</div>
+   
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><em>Return:</em></p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+            <tr style="vertical-align:baseline" valign="baseline">
+                <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">RESULT</span></td>
+                <td width="552"><p><span class="f_Body" style="font-weight: normal;">성공 실패 여부.</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">성공이면  1, 실패이면 0을 리턴 한다.</span></p></td>
+            </tr>
+        </table>
+    </div>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><em>Remark:</em></p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">본 함수를 이용하여, 결과가 실패(=0)일 때까지 token_iter() 함수를 반복 호출하면 토큰을 처음부터 차례대로 얻을 수 있다. 첫 번째 호출 시에는 POS_VAR의 입력 변수에 ‘1’를 대입하여, 변수 자체를 입력하고, 이후 호출부터는 POS_VAR 변수만 내부 값의 변경 없이 재 입력한다. token_iter() 함수가 자동으로 POS_VAR 변수에 다음 검색 시작위치를 입력한다.</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">토큰과 구분자</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">문자열 '123;456;789;abc' 에서 구분자는 ';' 이며, 토큰은 '123', '456', '789', 'abc' 이다.</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+            <tr style="vertical-align:baseline" valign="baseline">
+                <td width="25"><span style="font-weight: normal; font-size: 10pt; color: #000">ex)</span></td>
+                <td width="590"><p style="font-weight: normal; font-size: 10pt; color: #000">var sToken</p>
+                  <p style="font-weight: normal; font-size: 10pt; color: #000">var nPos = 2</p>
+                    <p style="font-weight: normal; font-size: 10pt; color: #000">token_iter('123;456;789;abc', ';', nPos, sToken)</p>
+<p style="font-weight: normal; font-size: 10pt; color: #000">⇒ sToken = '23'</p>
+<p style="font-weight: normal; font-size: 10pt; color: #000">&nbsp;</p>
+<p style="font-weight: normal; font-size: 10pt; color: #000">token_iter('123;456;789;abc', ';', nPos, sToken)</p>
+<p style="font-weight: normal; font-size: 10pt; color: #000">⇒ sToken = '456'</p>
+<p style="font-weight: normal; font-size: 10pt; color: #000">&nbsp;</p>
+<p style="font-weight: normal; font-size: 10pt; color: #000">token_iter('123;456;789;abc', ';', nPos, sToken)</p>
+<p style="font-weight: normal; font-size: 10pt; color: #000">⇒ sToken = '789'</p>
+<p style="font-weight: normal; font-size: 10pt; color: #000"></p>
+<p style="font-weight: normal; font-size: 10pt; color: #000"></p>
+<p style="font-weight: normal; font-size: 10pt; color: #000"></p></td>
+                <td width="49">&nbsp;</td>
+            </tr>
+	</table>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="InnerFunction_insert.htm">다음</a>&nbsp;
+     <a href="InnerFunction_token.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

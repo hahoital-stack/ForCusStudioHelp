@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>OUTPUT_STR erase ( STRING, POS, LEN )</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+.text-align {
+	text-align: left;
+}
+.color {
+	color: #F00;
+}
+.color {
+	color: #F00;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="55%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">OUTPUT_STR erase ( STRING, POS, LEN )</td>
+    <td width="45%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="InnerFunction_erase_chars.htm">다음</a>&nbsp;
+      <a href="InnerFunction_rand.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top ">
+<td style="text-align:left; color: #000; font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-weight: normal;">
+<h2 style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="erase"></a>erase</h2>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">입력 문자열에서 일 부분을 제거한 문자열을 리턴 한다.</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><em>Parameter:</em></p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">STRING</span></td>
+            <td width="421"><span class="f_Body" style="font-weight: normal;">[in] 입력 문자열</span></td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">POS</span></td>
+            <td width="552"><span class="f_Body" style="font-weight: normal;">[in] 제거할 시작 위치 (1-base)</span></td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">LEN</span></td>
+            <td width="552"><span class="f_Body" style="font-weight: normal;">[in] 제거할 길이</span></td>
+        </tr>
+    </table>
+</div>
+   
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><em>Return:</em></p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+            <tr style="vertical-align:baseline" valign="baseline">
+                <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">OUTPUT_STR</span></td>
+                <td width="552"><p><span class="f_Body" style="font-weight: normal;">일 부분이 제거된 결과 문자열</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">제거 실패 시 에는, 입력 문자열 전체를 리턴 한다.</span></p></td>
+            </tr>
+        </table>
+    </div>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><em>Remark:</em></p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">POS, LEN 입력 값이 숫자가 아니면, 입력 문자열을 그대로 리턴 한다.</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">LEN &lt; 0 또는 POS &lt; 1 또는 POS 가 입력문자열 길이보다 크면, 입력문자열을 그대로 리턴 한다.</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">만약 LEN 입력 값이 0 이면, 입력문자열에서 POS 위치부터 끝까지 제거된 문자열을 리턴 한다.</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">만약, 입력문자열이 POS 위치부터 끝까지의 길이가 LEN 보다 작다면, POS 위치로부터 문자열 끝까지 제거된 문자열을 리턴 한다.</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+            <tr style="vertical-align:baseline" valign="baseline">
+                <td width="25"><span style="font-weight: normal; font-size: 10pt; color: #000">ex)</span></td>
+                <td width="590"><p style="font-weight: normal; font-size: 10pt; color: #000">erase( 'Refreshing Sunday morning', 12, 7)</p>
+<p style="font-weight: normal; font-size: 10pt; color: #000">⇒ 'Refreshing Morning'</p>
+<p style="font-weight: normal; font-size: 10pt; color: #000">&nbsp;</p>
+<p style="font-weight: normal; font-size: 10pt; color: #000">replace( 'Refreshing Sunday morning', 12, 0)</p>
+<p style="font-weight: normal; font-size: 10pt; color: #000">⇒ 'Refreshing ' : 제거할  길이가 0인 경우 Pos부터 끝까지 제거</p>
+<p style="font-weight: normal; font-size: 10pt; color: #000">&nbsp;</p>
+<p style="font-weight: normal; font-size: 10pt; color: #000">replace( 'Refreshing Sunday morning', 12, 20)</p>
+<p style="font-weight: normal; font-size: 10pt; color: #000">⇒ 'Refreshing ' : 제거할 길이가 Pos부터 문자열 끝까지 길이보다 클 경우</p>
+<p style="font-weight: normal; font-size: 10pt; color: #000"></p>
+<p style="font-weight: normal; font-size: 10pt; color: #000"></p></td>
+                <td width="49">&nbsp;</td>
+            </tr>
+	</table>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="InnerFunction_erase_chars.htm">다음</a>&nbsp;
+     <a href="InnerFunction_rand.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

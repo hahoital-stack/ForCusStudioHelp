@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>DBQuery</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">DBQuery</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="Log_Items.htm">다음</a>&nbsp;
+      <a href="DB_Items.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>외부 Database 와의 연동 시 Sql Query 문을 사용하여 데이터를 전송 받을 수 있으며, Query 문 외에 특정 Interface와 정의된 Parameter 체계로도 DB 처리를 가능 할 수 있도록 합니다.</p>
+    <p>&nbsp;</p>
+    <p>DB 통신은 CI(Communication Interface)를 통해서, TB(Transaction Bridge)와 연결되어 처리 됩니다. 실제 통신은 TB와 실제 호스트 사이에 로직을 처리하는 Interface Adapter 를 두고 처리하거나, TB에서 직접 실제 호스트에 연결하는 방식 중에 선택하여 처리할 수 있습니다.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">ICON</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/Item_DBQuery_35.PNG" width="45" height="35"></p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">PROPERTIES</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Query Info</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_DBQuery_SQL1.PNG" width="572" height="520"></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_DBQuery_SQL2.PNG" width="572" height="185"></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Name : <span style="font-weight: normal;">아이템 이름을 지정 합니다. 지정된 이름은 DBQuery 처리를 위한 변수에 접근 할 때 사용 됩니다.</span></p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Query Request Only Check Box</em> : <span style="font-weight: normal;">쿼리 요청만 하고 결과는 기다리지 않는다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Type Radio Button </em> : <span style="font-weight: normal;">Query Type을 지정 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: normal;">SQL1 : 일반적인 SQL 문법을 사용하여 Query 하는 Type</p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: normal;">SQL2 : Query 의 형태가 방대한 경우 Interface 를 외부에 두어 Parameter 만을 지원하는 Type</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Timeout : <span style="font-weight: normal;">DB 처리 대기 시간을 입력 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Transaction ID : <span style="font-weight: normal;">TB 에서 DB를 처리할  대상(adapter/host)을 찾기 위한 서버 키 입니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Query Text : <span style="font-weight: normal;">SQL Query 문을 지정 합니다.(Type : SQL1)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Format Ex Check Box</em> : <span style="font-weight: normal;">기존 ForCus 문자열 포멧 방식의 쿼리가 아닌 자바에서 사용하는 쿼리 방식으로 입력할 수 있습니다.</span></p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: normal;">[기존 쿼리 포멧]</p>
+		<p style="margin: 0px 0px 0px 120px; font-weight: normal;">'select  a, b, c, d from db_test wehre a = \'1\' and b = ' &amp; abc &amp; 'and c = \''  &amp; def &amp; '\' order by a;‘</p>
+	  <p style="margin: 0px 0px 0px 120px; font-weight: normal;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: normal;">[Format Ex]</p>
+		<p style="margin: 0px 0px 0px 120px; font-weight: normal;">select a, b, c, d from db_test where a = '1' and b = + abc + and c = ' + def + ' order by a;
+</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Result Column Button</em> : <span style="font-weight: normal;">DB Procedure를 쓰거나 쿼리를 변수에 넣거나, Insert, Update를 사용 하는 경우 쿼리 결과 필드를 알 수가 없는데 개발자가 이미 알고 있는 결과 필드를 입력하여 변수로 사용 할 수 있습니다.</span></p>
+<p style="margin: 0px 0px 0px 62px; font-weight: bold;"><img src="images/Properties_DBQuery_ResultColumn.PNG" width="379" height="424"></p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">여기에 쿼리 결과 필드를 입력하면 Query Text에 입력한 쿼리의 결과 처럼 결과 변수로 사용할 수 있습니다.(ex. queryTest1[1].Name )</p>
+    <p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Query ID : <span style="font-weight: normal;">작성된 DB Interface 의  Query ID.(Type : SQL2)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Parameter Info : <span style="font-weight: normal;">작성되 DB Interface 에 입력할 파라미터 값.(Type : SQL2)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Choice Call(for BGM) : <span style="font-weight: normal;">Multi Call 에서 콜을 선택 합니다.(2개 콜 까지 가능, GetChannel 로 생성)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">BGM : <span style="font-weight: normal;">DB 처리중 Delay 가 발생 할 수 있으므로 배경 음악을 지정 하여 DB 처리중 재생 합니다</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Play Button</em> : <span style="font-weight: normal;">BGM 으로 지정된 멘트를 재생합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Description : <span style="font-weight: normal;">BGM 으로 지정된 멘트의 설명이 있으면 표시 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Condition : <span style="font-weight: normal;">아이템 수행 조건을 지정 합니다.</span></p>
+<p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Tracking		</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_DBQuery_Tracking.PNG" width="572" height="520"></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><span style="font-weight: normal;">쿼리하는 내용에 대한 트래킹을 처리 합니다.</span></p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;"><a name="Properties"></a>Properties</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Check Tracking Check Box</em> : <span style="font-weight: normal;">Tracking을 사용 할 것인지를 체크합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Tracking Point Flag Check Box</em> : <span style="font-weight: normal;">특별한 Tracking Flag를 설정하여 SWAT에서 트래킹 시에 이 플래그가 설정된 항목만 트래킹 할 수 있습니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Encryption Value1 Check Box</em> : <span style="font-weight: normal;">Track Value1 속성 데이터에 대해서 암호화 처리를 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+    		<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Track ID : <span style="font-weight: normal;">정의한 Track ID를 선택합니다.</span></p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- DefineTrack Item에 정의된 Track ID가 콤보박스 리스트로 제공됩니다.(Type이 없거나, Query인 경우)</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Track Name<em></em> : <span style="font-weight: normal;">Track ID를 선택하면 같이 정의된 이름을 출력합니다.(SWAT에서 이 이름으로 트랙킹 시에 사용합니다.)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Track Value1<em></em> : <span style="font-weight: normal;">트래킹 시에 사용할 값을 입력 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+	        <p><span style="margin: 0px 0px 0px 90px; font-weight: bold;">Track Value2<em></em> :<span style="font-weight: normal;">트래킹 시에 사용할 값을 입력 합니다.(결과에 대한 Reason값)</span></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p span style="margin: 0px 0px 0px 00px; font-weight: bold;">RESULT</p>
+<p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 아이템  속성 변수(<span style="font-weight: normal;">@name 은 Name 항목에서 지정한 이름)</span></p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 40px; font-weight: bold;">@name.record_cnt : <span style="font-weight: normal;">수신한 데이터의 레코드 개수</span></p>
+    <p style="margin: 0px 0px 0px 40px; font-weight: bold;">@name.field_cnt : <span style="font-weight: normal;">수신한 데이터의 필드 개수</span></p>
+    <p style="margin: 0px 0px 0px 40px; font-weight: bold;">@name[XX].필드명 : <span style="font-weight: normal;">수신한 데이터 필드명 접근(XX : 레코드가 복수개 일때 인덱스 이며 1 base 이다)</span></p>
+    <p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 40px; font-weight: bold;">IR_NMS</p>
+    <p style="margin: 0px 0px 0px 40px; font-weight: bold;">@name[XX].dd : <span style="font-weight: normal;">수신한 데이터 인덱스 접근(XX : 레코드가 복수개 일때 인덱스 이며 1 base 이다, dd : 레코드 컬럼 번호이며, 1 base 이다)</span></p>
+    <p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 40px; font-weight: bold;">IR_SIP</p>
+    <p style="margin: 0px 0px 0px 40px; font-weight: bold;">@name[XX][dd] : <span style="font-weight: normal;">수신한 데이터 인덱스 접근(XX : 레코드가 복수개 일때 인덱스 이며 1 base 이다, dd : 레코드 컬럼 번호이며, 0 base 이다)</span></p>
+    <p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 40px; font-weight: bold;">@name.trkey : <span style="font-weight: normal;">Transaction Key 로 DBQuery 를 호출 할 때 마다 발생하는 키.</span></p>
+    <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p span style="margin: 0px 0px 0px 00px; font-weight: bold;">RELATED</p>
+<p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_DefineTrack_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_DefineTrack.htm">DefineTrack</a></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_ChoiceCall_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_ChoiceCall.htm">ChoiceCall</a></p>    
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="Log_Items.htm">다음</a>&nbsp;
+     <a href="DB_Items.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

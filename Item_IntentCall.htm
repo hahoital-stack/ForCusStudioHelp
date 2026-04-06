@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>RequestPage</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">IntentCall</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="Item_EntityCall.htm">다음</a>&nbsp;
+     <a href="Item_NLURequest.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>NLURequest 아이템에서 분석된 Intent 를 비교하여 해당 DefineIntent 에 지정된 Action SubCall 을 호출 한다.</p>
+<p>DefineIntent 로 정의된 Intent ID 를 리스트에 지정하여 분기할 Intent Action 을 한정할 수 있다.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">ICON</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/Item_IntentCall_35.PNG" width="45" height="35"></p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">PROPERTIES</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Intent List</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_IntentCall_IntentList.PNG" width="572" height="520"></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Conditional Expression : <span style="font-weight: normal;">NLUReqeust 에서 분석된 Intent 를 입력 합니다.(@name.intent)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">Intent List</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+	  		<p style="margin: 0px 0px 0px 90px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>DefineIntent 에 정의된 Intent ID 를 지정 하여 NLURequest 에서 분석된 Intent 와 Intent Name을 비교하여 IntentCall 아이템이 있는 시나리오에 따라 지정된 메뉴 또는 시나리오를 호출 합니다.</p>
+			<p style="margin: 0px 0px 0px 70px; font-weight: normal;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Intent  ID : <span style="font-weight: normal;">DefineIntent 에 정의된 Intent ID 입니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Open Button</em> : <span style="font-weight: normal;">DefineIntent 아이템으로 이동 합니다.</span></p>
+	  		<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Intent Name : <span style="font-weight: normal;">NLU 에서 분석된 Intent 와 비교시 사용 됩니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Action MenuCall : <span style="font-weight: normal;"><a href="Item_DefineIntent.htm#ActionMenuCall">DefineIntent</a> 아이템의 Action MenuCall 에 지정된 메뉴로 MenuCall 로 호출됩니다.</span></p>
+	  		<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Action Subcall : <span style="font-weight: normal;"><a href="Item_DefineIntent.htm#ActionSubCall">DefineIntent</a> 아이템의 Action SubCall 에 지정된 시나리오로 SubCall 로 호출됩니다.</span></p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- 빌드 시 SubCall  호출 태그 생성 시에  In Param 으로  NLURequest 아이템의 Intent 변수(@name.intent) 를 자동 생성 합니다.</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- 호출 되는 시나리오의 Start 아이템 태그의 In Param 으로는 <strong>P_IN_INTENT</strong> 라는 변수로 자동 생성 하여 시나리오에서 참조 할 수 있도록 합니다.</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Open Button</em> : <span style="font-weight: normal;">DefineIntent 아이템의 Action SubCall 에 지정된 시나리오를 오픈합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: normal;">※ Action MenuCall, Action SubCall 로 분기하는 기준은 IntentCall 아이템이 있는 현재 시나리오의 타입에 따라서 분기가 됩니다.(.ssfx 는 SubCall, .msfx 는 MenuCall)</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: normal;">※ Intent List에 있는 Intent ID로 직접적인 링크가 된 경우는 Action SubCall에 지정된 시나리오로 SubCall 호출이 아니라 링크된 아이템으로 분기 합니다.</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Ignore Global Intent</em> : <span style="font-weight: normal;">체크 되면 Global Intent 가 지정되어 있어도 체크 및 분기 하지 않습니다.</span></p>
+		<p style="margin: 0px 0px 0px 198px; font-weight: normal;">체크 안되면 NLU 분석 결과가 Intent인 경우 Global Intent로 설정된 Intent Name 을 비교하여 해당 메뉴 또는 시나리오로를 호출 하고 이 후 리턴 된 후 IntentCall 아이템은 종료됩니다.</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Tracking</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_IntentCall_Tracking.PNG" width="572" height="520"></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><span style="font-weight: normal;">IntentCall 에 대한 사용자 트래킹을 처리합니다.(단, IntentCall 은 특정 태그가 있는 것이 아니라 SubCall로 지정된 시나리오를 호출 하거나 링크된 아이템으로 분기 하기 때문에 IntentCall 아이템이 호출 되었다를 표시 하는 트래킹 입니다.)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;"><a name="Properties"></a>Properties</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Check Tracking Check Box</em> : <span style="font-weight: normal;">Tracking을 사용 할 것인지를 체크합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Tracking Point Flag Check Box</em> : <span style="font-weight: normal;">특별한 Tracking Flag를 설정하여 SWAT에서 트래킹 시에 이 플래그가 설정된 항목만 트래킹 할 수 있습니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Encryption Value1 Check Box</em> : <span style="font-weight: normal;">Track Value1 속성 데이터에 대해서 암호화 처리를 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+   			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Track ID : <span style="font-weight: normal;">정의한 Track ID를 선택하거나 입력 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- DefineTrack Item에 정의된 Track ID가 콤보박스 리스트로 제공됩니다.(Type이 없거나, IntentCall인 경우)</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Track Name<em></em> : <span style="font-weight: normal;">Track ID를 선택하면 같이 정의된 이름을 출력합니다.(SWAT에서 이 이름으로 트랙킹 시에 사용합니다.)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Track Value1<em></em> : <span style="font-weight: normal;">트래킹 시에 사용할 값을 입력 합니다.(값이 없으면 요청하는 Page 이름이 기본 값이 됩니다.)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+	        <p><span style="margin: 0px 0px 0px 90px; font-weight: bold;">Track Value2<em></em> :<span style="font-weight: normal;">트래킹 시에 사용할 값을 입력 합니다.(결과에 대한 Reason값)</span></span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">RESULT</p>
+<p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 처리 결과 <a href="SessionVariable.htm">세션 변수</a></p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.command.result : <span style="font-weight: normal;">처리 성공(_SLEE_SUCCESS_), 실패(_SLEE_FAILED_)</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.command.reason : <span style="font-weight: normal;">실패면 실패 오류코드(<a href="SystemConstant.htm">시스템 상수</a> 참조)</span>	</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>        
+<p><span style="margin: 0px 0px 0px 00px; font-weight: bold;">RELATED</span></p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_DefineIntent_35.png" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_DefineIntent.htm">DefineIntent</a></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_NLURequest_35.png" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_NLURequest.htm">NLURequest</a></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_IntentCall_35.png" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_IntentCall.htm">IntentCall</a></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_EntityCall_35.png" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_EntityCall.htm">EntityCall</a></p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p></td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="Item_EntityCall.htm">다음</a>&nbsp;
+     <a href="Item_NLURequest.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>STR str_format( FORMAT, X1, X2, ,,, )</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+.text-align {
+	text-align: left;
+}
+.color {
+	color: #F00;
+}
+.color {
+	color: #F00;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">STR str_format( FORMAT, X1, X2, ,,, )</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="InnerFunction_str_keyval.htm">다음</a>&nbsp;
+      <a href="InnerFunction_replace_str.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top ">
+<td style="text-align:left; color: #000; font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-weight: normal;">
+<h2 style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="str_format"></a>str_format</h2>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">다양한 형태의 문자열을 생성한다.</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">* str_format 함수는 v5.0, v5.1 SIP 버전 전용(v5.1 NMS 버전은 지원 않함)</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><em>Parameter:</em></p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">FORMAT</span></td>
+            <td width="552"><p><span class="f_Body" style="font-weight: normal;">[in] 결과 문자열의 형태를 정의하는 문자열. 일반적인 문자열과 예약어로 구성
+                되며, 일반적인 문자열은 그대로 결과 문자열을 이루고, 예약어는 다음의 규칙
+                대로 FORMAT 파라미터 이후에 열거된 파라미터 값으로 차례대로 대치되어
+                결과 문자열을 생성한다.(<em>Remark</em> 참조)</span></p></td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200">&nbsp;</td>
+            <td width="70"><span class="f_Body" style="font-weight: normal;">%?% </span></td>
+            <td width="468"><p><span class="f_Body" style="font-weight: normal;">? 자리 문자열 (? 는 숫자임)</span></p>
+                <p><span class="f_Body" style="font-weight: normal;">오른쪽부터  문자열을  채우고,  나머지는  공백으로  문자열을  채운다. 만약, 파라미터 값이 n 자리보다 크면 n 자리를 넘어서는 문자들은 생략된다.</span></p>
+			</td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200">&nbsp;</td>
+            <td width="70"><span class="f_Body" style="font-weight: normal;">%?_*% </span></td>
+            <td width="468"><p><span class="f_Body" style="font-weight: normal;">? 자리 문자열 (? 는 숫자임, * 는 문자임)</span></p>
+                <p><span class="f_Body" style="font-weight: normal;">오른쪽부터 문자열을 채우고, 나머지는 *부분에 지정한 문자로 문자열을 채운다. <span class="f_Body" style="font-weight: normal;">만약, 파라미터 값이 n 자리보다 크면 n 자리를 넘어서는 문자들은 생략된다.</span></span></p>
+			</td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200">&nbsp;</td>
+            <td width="70"><span class="f_Body" style="font-weight: normal;">%-?% </span></td>
+            <td width="468"><p><span class="f_Body" style="font-weight: normal;">? 자리 문자열 (? 는 숫자임, * 는 문자임)</span></p>
+                <p><span class="f_Body" style="font-weight: normal;">왼쪽부터 문자열을 채우고, 나머지는 공백으로 문자열을 채운다. 만약, 파라미터 값이 n 자리보다 크면 n 자리를 넘어서는 문자들은 생략된다.</span></p></td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200">&nbsp;</td>
+            <td width="70"><span class="f_Body" style="font-weight: normal;">%-?_*% </span></td>
+            <td width="468"><p><span class="f_Body" style="font-weight: normal;">? 자리 문자열 (? 는 숫자임, * 는 문자임)</span></p>
+                <p><span class="f_Body" style="font-weight: normal;">왼쪽부터 문자열을 채우고, 나머지는 * 부분에 지정한 문자로 문자열을 채운다.  만약, 파라미터 값이 n 자리보다 크면 n 자리를 넘어서는 문자 들은 생략된다.</span></p></td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">X1, X2</span></td>
+            <td width="552"><span class="f_Body" style="font-weight: normal;">[in] FORMAT 문자열에  %?% (또는  %-?%) 부분에  차례대로  대치될  값</span></td>
+        </tr>
+    </table>
+</div>
+   
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><em>Return:</em></p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+            <tr style="vertical-align:baseline" valign="baseline">
+                <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">STR</span></td>
+                <td width="552"><p><span class="f_Body" style="font-weight: normal;">결과 문자열</span></p></td>
+            </tr>
+	</table>
+</div>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><em>Remark:</em></p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+            <tr style="vertical-align:baseline" valign="baseline">
+                <td width="25"><span style="font-weight: normal; font-size: 10pt; color: #000">ex)</span></td>
+                <td width="609"><p style="font-weight: normal; font-size: 10pt; color: #000">str_format (‘이름=%10%, 나이=%-3%세, 출근일수=%-5_0%일’, NAME_VAR, AGE_VAR, DAYS_VAR) </p>
+                    <p style="font-weight: normal; font-size: 10pt; color: #000">⇒ ‘이름=홍길동, 나이=  25세,  출근일수=78500일’</p></td>
+                <td width="30">&nbsp;</td>
+            </tr>
+	</table>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="InnerFunction_str_keyval.htm">다음</a>&nbsp;
+     <a href="InnerFunction_replace_str.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

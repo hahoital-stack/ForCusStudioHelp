@@ -1,0 +1,251 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>MenuChange</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">MenuChange</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="Item_CDR.htm">다음</a>&nbsp;
+     <a href="Item_ChangeService.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>호출된 메뉴 시나리오에서 <a href="Item_DefineMenu.htm">DefineMenu</a> 에서 설정된 하위 메뉴를 실시간으로 바꾸어 설정 합니다. DefineMenu에서 설정된 항목의 실행 순서는 CaptionMent가 Play후 Menu. Scenario의 설정된 메뉴 시나리오가 호출되고 그 후에 Choice Ment가 Play됩니다. 이때, 호출된 메뉴 시나리오에서 MenuChange를 사용하여 하위 메뉴의 메뉴 항목과 멘트를 바꾸어 제공하여 사용자로 하여금 바꿔진 메뉴에서 메뉴를 선택하게 합니다.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">ICON</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/Item_MenuChange_35.PNG" width="45" height="35"></p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">PROPERTIES</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Set Ment</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_MenuChange_SetMent.PNG" width="572" height="520"></p>
+  <p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Name : <span style="font-weight: normal;">이름을 지정 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">Ment</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Clear Digit Check Box</em> : <span style="font-weight: normal;">재생 전에 디지트 버퍼를 삭제 할지를 설정 합니다.(재생 전에 발생된 디지트를  버퍼에서 삭제 하지 않으면 재생 하려고 하는 멘트가 바로 중단 됩니다)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Choice Ment : <span style="font-weight: normal;">메뉴 선택멘트를 지정 합니다.</span>			</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Ment Type : <span style="font-weight: normal;">멘트의 유형을 설정합니다.(MentID, TTS-KSC5601, TTS-Stream, TTS-File)</span></p>
+			<p><span style="margin: 0px 0px 0px 90px; font-weight: bold;">Speaker ID : <span style="font-weight: normal;">Ment Type이 TTS-Stream, TTS-File이면  Speaker ID 를 설정하여 TTS의 화자를 선택할 수 있습니다.</span></span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">TTS Name : <span style="font-weight: normal;">Ment Type이 TTS-Stream, TTS-File이면  TTS Name 을 설정하여 TTS 서버를 선택할 수 있습니다.(값을 지정하지 않으면 기본 TTS 서버로 처리 됩니다.)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Timeout : <span style="font-weight: normal;">메뉴 입력 Timeout시간을 지정 합니다.(단위. second)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Retry : <span style="font-weight: normal;">Timeout 또는 입력 오류 시 재시도 횟수를 지정 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Play Index : <span style="font-weight: normal;">Timeout-Index로써 선택 멘트가 재생된 후 DTMF의 입력이 없을 경우 Play Index를 지정 하여 그 인덱스의 멘트를 재생 할 수 있습니다. Play Index란 선택 멘트의 Ment항목에 멘트를 설정할 때 여러개의 멘트를 설정 할 수 있는데 첫번째 부터 순서적으로 1 베이스로 인덱스가 설정됩니다.(Ment 항목 가변 멘트 설정의 예 : 'ment1','ment2','ment3' - 멘트는 쉼표( , )로 나누며 변수와 문자를 같이 쓸 수는 없습니다)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Retry DTMF : <span style="font-weight: normal;">선택 멘트를 재청취 하기위한 DTMF 값입니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Clear Digit Error Ment Check Box</em> : <span style="font-weight: normal;">Error Ment Play 시에 입력된 DTMF를 버퍼에서 제거하여 Error Ment가 Skip되지 않도록 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Timeout Ment : <span style="font-weight: normal;">Timeout 시 재생 할 멘트를 지정 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Input Error Ment : <span style="font-weight: normal;">입력오류 시 재생 할 멘트를 지정 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Retry Error Ment : <span style="font-weight: normal;">Retry 횟수 오류 시 재생 할 멘트를 지정 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Play Button</em> : <span style="font-weight: normal;">Ment 항목에 설정된 멘트를 재생 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Stop Button</em> :<span style="font-weight: normal;"> 재생 중인 멘트를 중지 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Description : <span style="font-weight: normal;">Timeout Ment, Input Error Ment, Retry Error Ment 설정 시 멘트 설명이 있을 경우 표시 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Condition : <span style="font-weight: normal;">실행 조건을 지정 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Set Menu</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_MenuChange_SetMenu.PNG" width="572" height="520"></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Top Menu : <span style="font-weight: normal;">Top Key를 눌렀을 때 이동할 메뉴 ID를 지정 합니다.</span></p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Top Key : <span style="font-weight: normal;">Top Menu로 이동할 디지트를 지정 합니다.</span></p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Up Menu : <span style="font-weight: normal;">Up Key를 눌렀을 때 이동할 메뉴 ID를 지정 합니다.</span></p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Up Key : <span style="font-weight: normal;">Up Menu로 이동할 디지트를 지정 합니다.</span></p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;">DTMF Length : <span style="font-weight: normal;">입력 받을 DTMF값의 길이를 지정 합니다.</span></p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;">VR Mask : <span style="font-weight: normal;">정의된 음성인식 인식어 리스트 아이디를 지정 합니다.(Change Menu Data와 함께 인식된 단어에 대하여 비교후 지정한 메뉴로 분기 합니다.)</span></p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">Change Menu Data</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+    	<p style="margin: 0px 0px 0px 90px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>실시간 교체할 메뉴를 설정 합니다.</p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Using a Variable Check Box</em> : <span style="font-weight: normal;">DTMF와 Menu ID에 변수 허용 여부를 설정 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 100px; font-weight: bold;"><a name="AssignChangeMenuData"></a><img src="images/Properties_MenuChange_AssignChangeMenuData.PNG" width="535" height="292"></p>
+  <p style="margin: 0px 0px 0px 100px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: bold;">DTMF :<span style="font-weight: normal;"> 메뉴가 선택 받을 DTMF값을 지정 합니다.(선택 DTMF가 2자리 이상일 경우 직접 입력 합니다)</span></p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: bold;">VR Value :<span style="font-weight: normal;"> 인식결과의 문자와 비교하기 위한 음성인식 값입니다.</span></p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: bold;">Menu ID : <span style="font-weight: normal;">메뉴가 선택 받았을 경우 실행할 메뉴의 ID를 설정 합니다.(메뉴의 ID는 DefineMenu에 설정된 ID 입니다)</span></p>	
+			<p style="margin: 0px 0px 0px 120px; font-weight: bold;">Description : <span style="font-weight: normal;">각 메뉴의 내용을 설명 합니다.</span></p>	
+			<p style="margin: 0px 0px 0px 120px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Up Button</em> : <span style="font-weight: normal;">선택한 메뉴를 위로 이동합니다.</span></p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Down Button</em> : <span style="font-weight: normal;">선택한 메뉴를 아래로 이동 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>X  Button</em> : <span style="font-weight: normal;">선택한 리스트를 잘라냅니다.</span><span style="font-weight: normal;">(Ctrl+X)</span></p>
+		<p><span style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>C Button</em> : <span style="font-weight: normal;">선택한 리스트의 내용을 복사 합니다.(Ctrl+C)</span></span></p>
+		<p><span style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>V Button</em> : <span style="font-weight: normal;">복사한 리스트의 내용을 붙여넣기 합니다.(Ctrl+V)</span></span></p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>E Button</em> : <span style="font-weight: normal;">선택한 메뉴의 내용을 갱신 합니다.(수정 창 팝업)</span></p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>+ Button</em> : <span style="font-weight: normal;">메뉴를 추가 합니다.(추가 창 팝업)</span></p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>- Button</em> : <span style="font-weight: normal;">선택된 메뉴를 삭제 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Set VR Option</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_MenuChange_SetVROption.PNG" width="572" height="520"></p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">Grammar</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>음성인식을 하기 위한 그래머 를 지정 합니다.</p>
+    			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Grammar [ Expression ] : <span style="font-weight: normal;">음성인식 그래머를 지정 합니다. 그래머는 문자형으로 입력 할 경우 여러개의 그래머를 리스트에 지정 가능합니다. 변수형으로 지정할 경우는 하나만 가능 합니다. 대신 변수에 여러 개의 그래머를 구분자 &quot;|&quot; 를 가지고 미리 지정 가능 합니다. 단, 문자형과 변수형은 리스트에 같이 넣을 수 없습니다.(변수에 여러개 의 그래머 지정 시 예 : 'file:test1.grxml | file:test2.grxml | file:test3.grxml') </span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">♣ 그래머 타입에 따른 그래머 입력 방법</p>
+			<p style="margin: 0px 0px 0px 135px; font-weight: normal;">file - Nuance Engine 이 설치된 장비내에 위치하는 Grammar</p>
+			<p style="margin: 0px 0px 0px 135px; font-weight: normal;">builtin - 설치된 언어팩에 내장된 Grammar(각 언어팩에 첨부된 레퍼런스 참조. 한글팩의 경우 Supplement - Korean ko-KR.pdf 참조)</p>
+			<p style="margin: 0px 0px 0px 135px; font-weight: normal;">mcmfile - MCM이 설치된 장비에 위치하는 Grammar(비권장)</p>
+			<p style="margin: 0px 0px 0px 135px; font-weight: normal;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 135px; font-weight: normal;">사용 시에는 그래머 앞에 사용하고 ":"으로 구분한다.</p>
+			<p style="margin: 0px 0px 0px 135px; font-weight: normal;">사용 예 : 'file:testGram.grxml', 'builtin:grammar/currency?language=ko-KR', 'mcmfile:testGram.grxml'</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Grammar Desc : <span style="font-weight: normal;">지정한 그래머의 설명을 입력 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Add Button</em> : <span style="font-weight: normal;">지정한 그래머를 그래머 리스트에 추가 합니다.(문자형으로 지정시 여러 개, 변수형으로 지정시 한개 만 지정 가능)</span></p>
+			<p><span style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Del Button</em> : <span style="font-weight: normal;">선택한 그래머를 삭제 합니다.</span></span></p>
+			<p><span style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Update Button</em> : <span style="font-weight: normal;">선택한 그래머의 내용을 갱신 합니다.</span></span></p>
+            <p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Barge-in Check Box</em> : <span style="font-weight: normal;">음성인식 시 Barge-In 을 처리할 것인지 유무를 지정 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold; color: #00F;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">No Voice Timer</p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold; color: #00F;">&nbsp;</p>
+   			<p style="margin: 0px 0px 0px 90px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>음성인식 서버가 음성인식을 시작 한 후 음성이 입력 되기 까지의 타입아웃을 지정 합니다. 이 값은 지정 하지 않으면 서버 기본 타임아웃이 적용 됩니다.(milisecond 단위)</p>
+   			<p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Set Timer Check Box</em> : <span style="font-weight: normal;">No Voice Timer 사용 유무를 지정 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">Max Timeout</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">&nbsp;</p>
+   			<p style="margin: 0px 0px 0px 90px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>음성인식 서버가 음성인식을 시작 한 후 인식의 결과가 나오기 까지의 최대 시간을 지정 합니다.(milisecond 단위이며, 기본 값은 10초 입니다)</p>
+   			<p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+   	<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Set VR Action</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_MenuChange_SetVRAction.PNG" width="572" height="520"></p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">Recognition Action</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>음성인식 결과를 처리 합니다.</p>
+   			<p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Confidence Score High : <span style="font-weight: normal;">음성인식 신뢰도 높은 값을 지정 합니다.(인식성공으로 처리 하거나 사용자 Confirm 을 받을 때 사용)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Confidence Score Low : <span style="font-weight: normal;">음성인식 신뢰도 낮은 값을 지정 합니다.(인식실패로 처리할 때 사용)</span></p>
+                <p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">VR Error Ment</p>            
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Clear Digit Error Ment Check Box</em> : <span style="font-weight: normal;">Error Ment Play 시에 입력된 DTMF를 버퍼에서 제거하여 Error Ment가 Skip되지 않도록 합니다.(음성인식)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">VR Timeout Ment<em></em> : <span style="font-weight: normal;">Timeout 시 재생 할 멘트</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">VR Input Error Ment<em></em> : <span style="font-weight: normal;">입력오류 시 재생 할 멘트</span>			</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">VR Retry Error Ment<em></em> : <span style="font-weight: normal;">Retry 횟수 오류 시 재생 할 멘트</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Play Button</em> : <span style="font-weight: normal;">Ment 항목에 설정된 멘트를 재생 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Stop Button</em> :<span style="font-weight: normal;"> 재생 중인 멘트를 중지 합니다.</span></p>         
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Description<em></em> : <span style="font-weight: normal;">VR Timeout Ment, VR Input Error Ment, VR Retry Error Ment 설정 시 멘트 설명이 있을 경우 표시 함</span></p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Tracking		</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_MenuChange_Tracking.PNG" width="572" height="520"></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><span style="font-weight: normal;">트래킹을 처리합니다.</span></p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;"><a name="Properties"></a>Properties</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Check Tracking Check Box</em> : <span style="font-weight: normal;">Tracking을 사용 할 것인지를 체크합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Tracking Point Flag Check Box</em> : <span style="font-weight: normal;">특별한 Tracking Flag를 설정하여 SWAT에서 트래킹 시에 이 플래그가 설정된 항목만 트래킹 할 수 있습니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Encryption Value1 Check Box</em> : <span style="font-weight: normal;">Track Value1 속성 데이터에 대해서 암호화 처리를 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+    		<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Track ID : <span style="font-weight: normal;">정의한 Track ID를 선택합니다.</span></p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- DefineTrack Item에 정의된 Track ID가 콤보박스 리스트로 제공됩니다.(Type이 없거나, MenuChange인 경우)</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Track Name<em></em> : <span style="font-weight: normal;">Track ID를 선택하면 같이 정의된 이름을 출력합니다.(SWAT에서 이 이름으로 트랙킹 시에 사용합니다.)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Track Value1<em></em> : <span style="font-weight: normal;">트래킹 시에 사용할 값을 입력 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+	        <p><span style="margin: 0px 0px 0px 90px; font-weight: bold;">Track Value2<em></em> :<span style="font-weight: normal;">트래킹 시에 사용할 값을 입력 합니다.(결과에 대한 Reason값)</span></span></p>
+	<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+<p><span style="margin: 0px 0px 0px 00px; font-weight: bold;">RESULT</span></p>
+<p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 연관  <a href="SessionVariable.htm">세션 변수</a></p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.menu.vr_mask : <span style="font-weight: normal;">메뉴트리 음성인식 인식어 마스크</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.menu.vr_maskid : <span style="font-weight: normal;">메뉴트리 음성인식 추가 인식어 마스크(정의된 음성인식 마스크 아이디)</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.menu.vr_grammar : <span style="font-weight: normal;">메뉴트리 음성인식 그래머(리스트)</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.menu.vr_completeconf : <span style="font-weight: normal;">메뉴트리 음성인식 성공으로 처리하는 신뢰도 값</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.menu.vr_bargein : <span style="font-weight: normal;">메뉴트리 음성인식 바진 여부</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.menu.vr_novoicetimer : <span style="font-weight: normal;">메뉴트리 음성인 묵음 타임아웃 여부</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.menu.vr_novoicetimeout : <span style="font-weight: normal;">메뉴트리 음성인식 묵음 타임아웃 시간</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.menu.vr_maxtimeout : <span style="font-weight: normal;">메뉴트리 음성인식 최대 인식 타임 아웃 시간</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+<p><span style="margin: 0px 0px 0px 00px; font-weight: bold;">RELATED</span></p>
+<p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_DefineMenu_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_DefineMenu.htm">DefineMenu</a></p>
+<p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_OpenVR_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_OpenVR.htm">OpenVR</a></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_CloseVR_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_CloseVR.htm">CloseVR</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+    
+</td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="Item_CDR.htm">다음</a>&nbsp;
+     <a href="Item_ChangeService.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>
