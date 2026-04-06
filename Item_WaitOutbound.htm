@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>WaitOutbound</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">WaitOutbound</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="Item_Disconnect.htm">다음</a>&nbsp;
+     <a href="Item_WaitInbound.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>아웃바운드 시나리오 구현 시 시작 아이템 이며, Dialing 채널을 얻기 위해서는 GetChannel Item 을 사용 하여야 하고, 채널을 얻음과 동시에 WaitOutbound의 시나리오가 시작 됩니다.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">ICON</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/Item_WaitOutbound_35.PNG" width="45" height="35"></p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">PROPERTIES</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Outbound Info</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_WaitOutbound.PNG" width="422" height="406"></p>
+  <p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">User Data : <span style="font-weight: normal;">사용자 데이터를 처리 할 수 있습니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Caller Line No : <span style="font-weight: normal;">Dialing 할 채널번호를 지정합니다.(GetChannel Item으로 할당 받은 물리적인 채널)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">DN Group : <span style="font-weight: normal;">전화를 걸 DN 그룹을 지정합니다.(아웃 바운드 채널 그룹)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>CDR Initialize Check Box</em> : <span style="font-weight: normal;">체크 되어 있으면 호 착신 직후에 Init CDR 을 적재하며 체크 해제 시에는 호 종료 시점에 Init CDR 을 적재 합니다.(Default : TRUE), 이 값을  체크 해제 하고  CDRCtrl Item에서 Init CDR 적재 여부를 설정 할 수 있습니다.</span></p>
+
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">RESULT</p>
+<p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 처리 결과 <a href="SessionVariable.htm">세션 변수</a></p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.sys.id : <span style="font-weight: normal;">SLEE system ID + channel ID 를 조합한 값으로 점유된 호 중에서만 유일</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.sys.systemid : <span style="font-weight: normal;">SLEE system ID</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.sys.channel : <span style="font-weight: normal;">LI(driver Logical Index) 값으로, SLEE 채널 번호로 사용</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.sys.servicekey : <span style="font-weight: normal;">LR(Logical Range) 값으로, 서비스를 선택하기 위한 값으로 사용</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.sys.trunkid : <span style="font-weight: normal;">MCE(TE) system ID</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.sys.physicalline : <span style="font-weight: normal;">MCE physical channel </span>#</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.sys.virtual : <span style="font-weight: normal;">호가 점유된 LI(channel #)가 virtual 회선인지에 대한 값</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.sys.debugservicelr : <span style="font-weight: normal;">-1</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.sys.servicechanged : <span style="font-weight: normal;">서비스 전환 여부(콜의 시작 이므로 0)</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.call.callid : <span style="font-weight: normal;">MCE call ID로, MCE 에서 콜마다 Unique하게 부여하는 ID(구성 : 프로세스 ID 4자리 + Channel ID 4자리+ 시분초(hhmmss) 6자리 + 랜던 6자리)</span></p>
+<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.call.ani : <span style="font-weight: normal;">MCE 또는 시나리오 전환 시 이전 시나리오로 부터 받은 ANI 값</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.call.dnis : <span style="font-weight: normal;">MCE 또는 시나리오 전환 시 이전 시나리오로 부터 받은 DNIS 값</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.call.userdata : <span style="font-weight: normal;">시나리오 전환 시 이전 시나리오로 부터 받은 userdata 값</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">RELATED</p>
+<p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_GetChannel_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_GetChannel.htm">GetChannel</a></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_WaitInbound_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_WaitInbound.htm">WaitInbound</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+    
+</td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="Item_Disconnect.htm">다음</a>&nbsp;
+     <a href="Item_WaitInbound.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

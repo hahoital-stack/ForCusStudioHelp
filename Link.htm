@@ -1,0 +1,311 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>Event Items</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;"> Link</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="Item_LabelandNote.htm">다음</a>&nbsp;
+      <a href="BaseItem.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>아이템과 아이템을 연결하여 시나리오 진행 플로우를 개발 한다.</p>
+  <p>링크는 기본 링크와 분기 링크, 이벤트 링크가 있는데 기본 링크는 단일 링크로 다음 아이템과 연결하는 것이고 분기 링크는 If, Select 아이템과 같이 플로우 진행을 분기하는 다중 연결 링크이며 이벤트 링크는 아이템 처리 결과에 따른  링크를  할 수 있는 다중 연결 링크 이다.</p>
+  <p>이벤트 링크는 GetDigit, Play, PacketCall, DBQuery, PacketJson 아이템에서 가능 하다.</p>
+  <p>이벤트 링크도 기본 링크를 가지고 있는데  &quot;Next&quot; 라는 링크 메뉴로 제공하며 다른 이벤트 링크 없이 &quot;Next&quot;만 연결해도 된다.(이전 버전과 동일)</p>
+<p>&nbsp;</p>
+    <p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">링크 옵션</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000;">&#183;</span> 리본 메뉴 Tools &gt; Options &gt; Application &gt; Link &gt; <a href="Options.htm#Reselect Option">Reselect Option</a> 에서 링크 재 연결 설정</a>을 할 수 있다.</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;&nbsp;링크 재 연결 설정은 아이템에 연결된 링크가 있어도 링크를 다시 하면 이전 링크는 제거되고 링크가 되는 기능 이다.</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;&nbsp;이 설정을 하지 않으면 이미 연결된 링크는 링크 선택 팝업 메뉴에 표시되지 않아 재 연결 할 수 없다.</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">링크 연결</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000;">&#183;</span> 링크 연결은  리본메뉴 Home &gt; Canvas 의 Link 메뉴를 선택하면(또는 편집 화면 빈곳을 마우스 더블클릭) 커서가 &quot;+ &quot; 표시가 되는데 연결하고자 하는 아이템 위로 마우스를 가져가면 &quot;&oplus;&quot; 표시로 바뀌는데 마우스 왼 버튼을 클릭 하고 이동하면 아이템에 선이 그어 지면서 움직일 수 있는데 연결하고자 하는 목적 아이템 위로 마우스를 가져가 다시 마우스 왼 버튼을 클릭 하면 기본 링크는 바로 링크되고 분기 링크, 이벤트 링크는 링크메뉴를 팝업 하며 팝업된 메뉴를 선택하면 링크 된다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"></p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><img src="images/Link_Connection_1.png" width="1041" height="294"></p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">- 링크 모드(&quot;+&quot; 표시)에서 아이템 선택 모드로 바꾸기 위해서는 리본메뉴 Home &gt; Canvas 의 Select 메뉴를 선택하거나 마우스 오른 버튼을 누르면 된다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">링크 라벨</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000;">&#183;</span> 분기 링크, 이벤트 링크는 링크의 라벨을 수정할 수 없지만 기본 링크는 링크의 라벨을 입력/수정할 수 있다. 링크에 마우스 오른 버튼을 누르면 팝업 메뉴가 뜨는 데 Properties 메뉴를 선택하면 된다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;&nbsp;링크 속성 창에서 Label 에 문자열을 입력하고 OK 버튼을 누르면 링크에 라벨에 표시 된다.</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;"><img src="images/Link_Connection_2.png" width="696" height="307"></p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">분기 링크</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000;">&#183;</span> if, Select 아이템에서의 링크 이다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: bold;">If : <span style="font-weight: normal;">True, False 링크 메뉴를 제공하며 링크 하나 연결 후 나머지 연결은 메뉴 팝업 없이 바로 연결 된다.</span></p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: bold;"><img src="images/Link_Branch_If_1.png" width="584" height="196"></p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: bold;">Select : <span style="font-weight: normal;">연결 조건을 값을 설정하지 않아도 Default 링크와 Digit(0 ~ 9, *, #) 링크 메뉴를 제공 한다.</span></p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: bold;"><img src="images/Link_Branch_Select_1.png" width="370" height="356"></p>
+    <p style="margin: 0px 0px 0px 145px; font-weight: normal;">- 기본 제공 링크메뉴 - </p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;"></p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><img src="images/Link_Branch_Select_2.png" width="905" height="548"></p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">- 조건이 설정된 Select 아이템 속성 창에 Condition 과 Linked Component 가 표시 된다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">- Select4 아이템과 연결된 링크 라벨에 Condition이 표시 된다.('A1', '0')</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">- Select4와 Assign4를 링크 하려고 하는데 팝업된 링크메뉴에 Condition과 Linked Component가 표시 된다.(<a href="Options.htm#Reselect Option">링크 재연결 설정</a>에서 Normal link reselect가 설정 되어 있을 때만 링크 연결정보가 표시되고 그렇지 않으면 링크된 항목은 팝업 메뉴에 보이지 않는다.)</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">- 연결된 링크인 'A1' : Assign11 을 선택하면 기본 링크는 제거되고 Select4 와 Assign4가 조건 'A1'으로 재 연결 된다.(<a href="Options.htm#Reselect Option">링크 재연결 설정</a>에서 Normal link reselect 설정)</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="Event Link"></a>이벤트 링크</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000;">&#183;</span> 아이템 처리 결과 이벤트에 대한 후속 처리를 분기 링크(If, Select)를 사용하지 않고 해당 아이템에서 바로 링크하여 직관적이고 개발 편의성을 제공 한다.</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;&nbsp;현재 대상 아이템은 GetDigit, Play, PacketCall, DBQuery, PacketJson 아이템 이다.</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">GetDigit</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000;">&#183;</span> 기본 링크 &quot;Next&quot;와 &quot;Max DTMF&quot;, &quot;Term Digit&quot;, &quot;Timeout&quot;, &quot;Error&quot;, &quot;Invalid&quot;, Digit(1, 2, 3, 4, 5, 6, 7, 8, 9, 0, *, #, Default) 링크를 할 수 있다.</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;&nbsp;GetDigit 아이템 속성 설정에 따라 연결 할 수 있는 링크가 달라지며, 먼저 연결된 링크에 따라서도 달라 진다.</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<table width="1074" border="0" cellpadding="4" cellspacing="1" style="margin: 0px 0px 0px 80px;" >
+	  <tr>
+        <th width="68" bgcolor="#333333" scope="col" style="font-weight: bold; text-align: center; color: #FFF">이벤트</th>
+        <th width="377" bgcolor="#333333" scope="col" style="font-weight: bold; text-align: center; color: #FFF;">설명</th>
+        <th width="304" bgcolor="#333333" scope="col" style="font-weight: bold; text-align: center; color: #FFF;">링크 불가</th>
+        <th width="288" bgcolor="#333333" scope="col" style="font-weight: bold; text-align: center; color: #FFF;">태그</th>
+	</tr>
+    <tr>
+        <td bgcolor="#CCCCCC" style="font-weight: bold; font-size: 9pt; color: #00C">Max DTMF</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">Ment Info탭의 Length의 입력 길이만큼 입력된 이벤트</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">Digit 를 먼저 링크한 경우</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">session.command.reason == _TE_MAX_DTMF_ </td>
+    </tr>
+    <tr>
+        <td bgcolor="#CCCCCC" style="font-weight: bold; font-size: 9pt; color: #00C">Term Digit</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">Digit Info탭의 End Key에 설정된 키가 입력된 이벤트</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">End Key가 설정되지 않은 경우</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">session.command.reason == _TE_TERM_DIGIT_ </td>
+    </tr>
+    <tr>
+        <td bgcolor="#CCCCCC" style="font-weight: bold; font-size: 9pt; color: #00C">Timeout</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000"><p>Digit Info탭의 Timeout, Inter Timeout 동안 입력 되지 않았을 때 이벤트</p>
+          <p>음성인식 타임아웃 이벤트</p></td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">Digit Info탭의 End Method가 disconnect 인 경우</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000"><p>session.command.reason == _TE_TIMEOUT_</p>
+          <p>session.command.reason == -32002 (음성인식)</p></td>
+    </tr>
+    <tr>
+        <td bgcolor="#CCCCCC" style="font-weight: bold; font-size: 9pt; color: #00C">Error</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">Ment Play에러, getdigit, collectdigit 에러 이벤트 </td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">Digit Info탭의 End Method가 disconnect 인 경우</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">session.command.result == _SLEE_FAILED_</td>
+    </tr>
+    <tr>
+        <td bgcolor="#CCCCCC" style="font-weight: bold; font-size: 9pt; color: #00C">Invalid</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">DTMF Mask에 없는 디지트가 입력된 이벤트</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">Digit Info탭의 End Method가 disconnect 인 경우</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">session.command.reason == _TE_FAILED_ </td>
+    </tr>
+	<tr>
+        <td bgcolor="#CCCCCC" style="font-weight: bold; font-size: 9pt; color: #00C">Digit</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000"><p>DTMF Mask에 설정된 디지트(또는 마스크가 없는 경우 0~9, *, # )가 입력된 이벤트</p>
+          <p>Digit Info탭의 End Key에 설정된 디지트는 제외</p>
+          <p>Default 모든 디지트 이벤트 발생 시 처리 가능</p></td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000"><p>Ment Info탭의 Length가 1 이 아닐 때</p>
+          <p>Max DTMF를 먼저 링크한 경우</p>
+          <p>&nbsp;</p></td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000"><p>@name.digits == '1'</p>
+          <p>@name.digits == '2'</p>
+          <p>...</p></td>
+	</tr>
+	</table>
+	<p style="margin: 0px 0px 0px 80px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;">- 이벤트 링크 후에 GetDigit 아이템 속성이 바뀌어 링크 불가 조건이 된 경우에는 빌드 시 에러 처리를 한다.</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;">- Digit 링크를 먼저한 경우 Max DTMF 링크를 할 수 없는데 이것은 Digit 에 대한 링크를 원하는 것이고 또한 Max DTMF 이벤트가 Digit 입력시  발생하기 때문에(Length가 1자리 일 경우만 Digit 링크 가능) 태그 상으로 Max DTMF 이벤트 일 때 디지트를 비교하게 태그가 생성되기 때문에 Max DTMF링크를 따로 할 수 없다.</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;">- Max DTMF 링크를 한 경우에는 Digit 링크를 할 수 없는데 이벤트 처리를 Max DTMF에 대한 처리를 원하는 것이기 때문에 입력 받은 디지트에 대한 처리는 Max DTMF로 링크된 다음 아이템 이후 에서 처리 할 수 있다.</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;"><img src="images/Link_EventLink_GetDigit_5.png" width="482" height="220"></p>
+    <p style="margin: 0px 0px 0px 210px; font-weight: normal;">- GetDigit Event Link Sample - </p>
+    <p style="margin: 0px 0px 0px 210px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: bold;">[속성 설정별 팝업 링크 메뉴]</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal; color: #009">◆ Length(1), DTMF Mask(1 자리 또는 마스크 없음), EndKey(있음), End Method(Next)</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp; </p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;"><img src="images/Link_EventLink_GetDigit_1.png" width="964" height="305"></p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">- DTMF Mask가 없는 경우는 Digit ‘0’ ~ ‘9’, ‘*’, ‘#’ 을 모두 포함한다.(EndKey로 설정된 Digit는 제외)</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">- Digit 메뉴에서 ‘#’ 이 없는 것은 EndKey(Term Digit)로 설정되어 있기 때문이다.</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>	
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal; color: #009">◆ Length(7) , DTMF Mask(1 자리) , EndKey(있음), End Method(Next)</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;"><img src="images/Link_EventLink_GetDigit_2.png" width="880" height="305"></p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">- Length 가 1자리 이상 이면 Digit 링크는 할 수 없다.</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal; color: #009">◆ Length(1) , DTMF Mask(1 자리) , EndKey(있음),  End Method(Disconnect)</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;"><img src="images/Link_EventLink_GetDigit_3.png" width="964" height="305"></p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">- End Method가 Disconnect면 Error, Timeout, Invalid 항목으로 링크 할 수 없다.(Error, Timeout, Invalid 이벤트 발생 시 전화가 끊어 진다.)</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal; color: #009">◆ Length(1) , DTMF Mask(1 자리) , EndKey(없음), End Method(Next)</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;"><img src="images/Link_EventLink_GetDigit_4.png" width="964" height="305"></p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">- EndKey 가 없으면 Term Digit 링크를 할 수 없다.</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: bold;">Play</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000;">&#183;</span> 기본 링크 &quot;Next&quot;와 &quot;Error&quot; 링크를 할 수 있다.</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<table width="749" border="0" cellpadding="4" cellspacing="1" style="margin: 0px 0px 0px 80px;" >
+	  <tr>
+        <th width="68" bgcolor="#333333" scope="col" style="font-weight: bold; text-align: center; color: #FFF">이벤트</th>
+        <th width="377" bgcolor="#333333" scope="col" style="font-weight: bold; text-align: center; color: #FFF;">설명</th>
+        <th width="304" bgcolor="#333333" scope="col" style="font-weight: bold; text-align: center; color: #FFF;">태그</th>
+	</tr>
+    <tr>
+        <td bgcolor="#CCCCCC" style="font-weight: bold; font-size: 9pt; color: #00C">Error</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">Ment Play에러, getdigit, collectdigit 에러 이벤트 </td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">session.command.result == _SLEE_FAILED_</td>
+    </tr>
+	</table>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">PacketCall</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000;">&#183;</span> 기본 링크 &quot;Next&quot;와 &quot;Timeout&quot;, &quot;Error&quot; 링크를 할 수 있다.</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<table width="749" border="0" cellpadding="4" cellspacing="1" style="margin: 0px 0px 0px 80px;" >
+	  <tr>
+        <th width="68" bgcolor="#333333" scope="col" style="font-weight: bold; text-align: center; color: #FFF">이벤트</th>
+        <th width="377" bgcolor="#333333" scope="col" style="font-weight: bold; text-align: center; color: #FFF;">설명</th>
+        <th width="304" bgcolor="#333333" scope="col" style="font-weight: bold; text-align: center; color: #FFF;">태그</th>
+	</tr>
+    <tr>
+        <td bgcolor="#CCCCCC" style="font-weight: bold; font-size: 9pt; color: #00C">Timeout</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000"><p>Packet Info탭의 Timeout 동안 전문이 수신되지 않았을 때 이벤트</p></td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000"><p>session.command.reason == _TB_PKT_TIMEOUT_</p></td>
+    </tr>
+    <tr>
+        <td bgcolor="#CCCCCC" style="font-weight: bold; font-size: 9pt; color: #00C">Error</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">Timeout 및 기타 에러</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">session.command.result == _SLEE_FAILED_</td>
+    </tr>
+	</table>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">DBQuery</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000;">&#183;</span> 기본 링크 &quot;Next&quot;와 &quot;Timeout&quot;, &quot;Error&quot; 링크를 할 수 있다.</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<table width="749" border="0" cellpadding="4" cellspacing="1" style="margin: 0px 0px 0px 80px;" >
+	  <tr>
+        <th width="68" bgcolor="#333333" scope="col" style="font-weight: bold; text-align: center; color: #FFF">이벤트</th>
+        <th width="377" bgcolor="#333333" scope="col" style="font-weight: bold; text-align: center; color: #FFF;">설명</th>
+        <th width="304" bgcolor="#333333" scope="col" style="font-weight: bold; text-align: center; color: #FFF;">태그</th>
+	</tr>
+    <tr>
+        <td bgcolor="#CCCCCC" style="font-weight: bold; font-size: 9pt; color: #00C">Timeout</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000"><p>Query Info탭의 Timeout 동안 전문이 수신되지 않았을 때 이벤트</p></td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000"><p>session.command.reason == _TB_DB_TIMEOUT_</p></td>
+    </tr>
+    <tr>
+        <td bgcolor="#CCCCCC" style="font-weight: bold; font-size: 9pt; color: #00C">Error</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">Timeout 및 기타 에러</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">session.command.result == _SLEE_FAILED_</td>
+    </tr>
+	</table>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">PacketJson</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000;">&#183;</span> 기본 링크 &quot;Next&quot;와 &quot;Timeout&quot;, &quot;Error&quot; 링크를 할 수 있다.</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<table width="749" border="0" cellpadding="4" cellspacing="1" style="margin: 0px 0px 0px 80px;" >
+	  <tr>
+        <th width="68" bgcolor="#333333" scope="col" style="font-weight: bold; text-align: center; color: #FFF">이벤트</th>
+        <th width="377" bgcolor="#333333" scope="col" style="font-weight: bold; text-align: center; color: #FFF;">설명</th>
+        <th width="304" bgcolor="#333333" scope="col" style="font-weight: bold; text-align: center; color: #FFF;">태그</th>
+	</tr>
+    <tr>
+        <td bgcolor="#CCCCCC" style="font-weight: bold; font-size: 9pt; color: #00C">Timeout</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">Packet Info탭의 Timeout 동안 입력 되지 않았을 때 이벤트</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">session.command.reason == _TB_PKT_TIMEOUT_</td>
+    </tr>
+    <tr>
+        <td bgcolor="#CCCCCC" style="font-weight: bold; font-size: 9pt; color: #00C">Error</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">Timeout 및 기타 에러</td>
+        <td bgcolor="#CCCCCC" style="font-weight: normal; font-size: 9pt; color: #000">session.command.result == _SLEE_FAILED_</td>
+    </tr>
+	</table>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+    
+</td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="Item_LabelandNote.htm">다음</a>&nbsp;
+     <a href="BaseItem.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

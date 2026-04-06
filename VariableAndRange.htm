@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>Variable and Range</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">변수와 영역</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="SessionVariable.htm">다음</a>&nbsp;
+      <a href="ForCusStudio_Variables.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>ForCus 서비스를 제공하기 위하여 필요한 다양한 변수를 ForCusStudo 에서 지원 합니다.</p>
+<p>변수는 사용자가 정의 하는 변수 외에 <a href="SessionVariable.htm">세션변수가</a> 존재 하는데 시스템에서 처리시 필요한 변수를 미리 정의해 놓은 것으로 전역으로 간주되며, 모든 시나리오 파일(.ssfx, .msfx, .usfx) 에서 사용가능 합니다.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;">◆ 변수 규칙</p>
+    <form style="margin: 0px 0px 0px 20px; name="form1" method="post" action="">
+        <span id="sprytextarea1">
+        <label>
+            <textarea name="ER" id="ER" cols="92" rows="5"> 
+ 1. 변수는 문자로 시작해야 하며(최소한 하나의 문자 포함), 숫자로 시작하면 expression 오류이다.
+
+ 2. 모두 문자열이 '0' ~ '9'로 이루어지면 숫자이다, 단 '0'으로 시작하면 숫자가 아닌 문자열로 취급한다.</textarea>
+        </label>
+    </form>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">변수 타입</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">- ForCus 에서는 변수의 타입을 따로 지정하지 않으며, 변수에 들어가는 데이터의 타입에 따라 변수의 형이 결정됩니다.</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">예 : gName = 'abc' ⇒ 문자형 변수, gName = 123 ⇒ 정수형 변수</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">변수 구조 타입</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">- 변수를 선언하는 방법에 따라 일반, 배열 변수등으로 선언이 됩니다.</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">일반 변수</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">변수 선언 시 변수 이름을 단일 단어 형태로 선언 합니다.</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">예 : sName, g_nCount</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">배열 변수</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">변수 선언 시 변수 이름을 배열 형태로 선언 합니다. 배열의 첨자는 정의하는 대로만 참조 됩니다.</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">예 : sName[1..5]  ⇒ sName 으로 배열 5 선언, sName[1] = 'a' ⇒ sName 1번 배열에 문자 'a' 입력</p>
+	<p style="margin: 0px 0px 0px 105px; font-weight: normal;">sName[11..20]  ⇒ sName 으로 배열 10 선언, sName[11] = 'a' ⇒ sName 11번 배열에 문자 'a' 입력</p>
+	<p style="margin: 0px 0px 0px 105px; font-weight: normal;">abc[xxx] = 0 하면 abc로 한개짜리 배열이 생성되면서 0이 할당</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;  </p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">구조체 변수</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">변수 선언 시 변수 이름을 구조체 형태로 선언 합니다.</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">예 : sClass.sName ⇒ sClass 변수 하위로 sName 변수를 선언</p>
+	<p style="margin: 0px 0px 0px 105px; font-weight: normal;">Global 변수로 sTable 선언 Local 에서 sTable.Name 선언 ⇒ Global 변수 sTable 의 하위로 Name 변수를 선언(즉, Local 에 선언 했지만 Global 로 간주)</p>
+	<p style="margin: 0px 0px 0px 105px; font-weight: normal;">sTable[1..5].Name ⇒ sTable 로 배열 5 선언하고 그하위로 Name을 각 선언</p>
+	<p style="margin: 0px 0px 0px 105px; font-weight: normal;">sTable.Name[1..5] ⇒ sTable 변수 하위로 Name 변수 배열 5 선언</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">변수 영역</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">- 변수는 지역변수와 전역변수로 구분되며 같은 변수가 지역과 전역에 있다면 전역변수가 사용이 됩니다.</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold; color:#03F">※ ForCusStudio 에서는 전역과 지역에 같은 이름의 변수를 모두 선언 할 수 있지만 실제 SLEE 에서 변수가 생성되는 순서는 Global(Global.ssfx) 에 선언된 변수가 먼저 생성되고 Local(*.ssfx, *.msfx, *.usfx) 에 선언된 변수가 생성 되기 때문에 Local 변수 생성시 Global 로 생성한 변수가 있으면 변수 생성을 하지 않고 Global 로 선언된 변수를 사용 합니다.</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">전역 변수</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">Global.ssfx 시나리오에 정의한 변수를 말하며, 사용자 시나리오 에서는 사용할 수 없습니다.</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">지역 변수</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">Global.ssfx 를 제외한 모든 시나리오에서 정의한 변수를 말하며, 정의한 시나리오 내에서만 사용 가능 합니다.</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">변수 정의  방법</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">변수정의는 Var Item, Assign Item 에서 직접 선언이 가능하며, 그외 아이템에서는 아이템 이름이 변수가 되는 경우와 값을 할당 받는 경우인데 변수가 선언되지 않은 변수라면 선언하지 않아도 생성 됩니다.</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;"><img src="images/Item_Var_35.PNG" width="60" height="35"><a href="Item_Var.htm">Var Item</a></p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">Global.ssfx 에서 선언된 Var Item 의 변수는 전역변수가 되고, 그 외에는 지역 변수 입니다.</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: bold;"><img src="images/Item_Assign_35.PNG" width="60" height="35"><a href="Item_Assign.htm">Assign Item</a></p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">Assign 에 변수를 선언하는 경우 전역, 지역 변수에 선언된 변수가 없으면 생성이 되며, 생성과 동시에 값을 할당 할 수 있습니다.</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+<p>&nbsp;</p>
+    
+</td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="SessionVariable.htm">다음</a>&nbsp;
+     <a href="ForCusStudio_Variables.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

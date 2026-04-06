@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>Play</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">ShowChat</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="Item_GetChat.htm">다음</a>&nbsp;
+      <a href="Item_ChoiceCall.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>쳇 텍스트와 가상 키보드를 전송하는 아이템으로 DefineChatText, DefineCustomKB에 정의한 Text ID, Custom Keyboard ID를 사용 할 수 있습니다.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">ICON</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/Item_ShowChat_35.png" width="45" height="35"></p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">PROPERTIES</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Chat Info</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_ShowChat.png" width="722" height="633"></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;"><a name="Properties"></a>Chat Info</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+    	<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Text ID : <span style="font-weight: normal;">정의한 쳇 텍스트를 선택하거나 입력 합니다. </span></p>
+		<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- DefineChatText Item에 정의된 TextID가 콤보박스 리스트로 제공되며 리스트에서 텍스트를 선택 할 수 있습니다.</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- 텍스트가 들어 있는  변수를 사용 할 수 있습니다.</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- 연산식을 통해 텍스트를  조합 할 수 있습니다. 단, 변수와 문자를 같이 연산 할 수는 없습니다.( 예 : gs_TrData.BI09ZZ.from.O_27_합계금액 * 1 )</p>
+<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- 텍스트 리스트에 여러개의 텍스트를 등록하여 전송 할 수 있습니다.</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: normal;">* Text ID 아래의 넓은 Editbox는 Type이 TextID일 경우에는 선택한 TextID에 해당하는 텍스트가 출력되고 Type이 Text일 경우에는 텍스트 를 편집할 수 있습니다.</p>
+<p style="margin: 0px 0px 0px 120px; font-weight: normal;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold; color: #00F;"><a name="MentType"></a>Type : <span style="font-weight: normal; color: #000">전송할 텍스트  타입을 설정 합니다.</span></p>
+				<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- TextID : Global의 <a href="Item_DefineChatText.htm">DefineChatText</a> 에 정의된 ID</p>
+				<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- Text : 직접 전송할 텍스트 입력</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Condition<em></em> : <span style="font-weight: normal;">각 멘트의 재생 조건을 설정 합니다.</span></p>
+<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Up Button</em> : <span style="font-weight: normal;">선택한 텍스트를 위로 이동 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Down Button</em> : <span style="font-weight: normal;">선택한 텍스트를 아래로 이동 합니다.</span></p>
+	  <p style="margin: 0px 0px 0px 60px; font-weight: bold;"></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Cut  Button</em> : <span style="font-weight: normal;">선택한 리스트를 잘라냅니다.</span><span style="font-weight: normal;">(Ctrl+X)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"></p>
+		<p><span style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Copy Button</em> : <span style="font-weight: normal;">선택한 리스트의 내용을 복사 합니다.(Ctrl+C)</span></span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"></p>
+		<p><span style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Paste Button</em> : <span style="font-weight: normal;">복사한 리스트의 내용을 붙여넣기 합니다.(Ctrl+V)</span></span></p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;"></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Add Button</em> : <span style="font-weight: normal;">지정한 텍스트를 추가 합니다.</span></p>
+	  <p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Del Button</em> : <span style="font-weight: normal;">선택한 텍스트를 삭제 합니다.</span></p>
+	  <p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Update Button</em> : <span style="font-weight: normal;">선택한 텍스트의 내용을 갱신 합니다.</span>	  </p>
+	  <p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;"><a name="Properties"></a>Common</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>User Input Check Box</em> : <span style="font-weight: normal;">사용자 입력을 받습니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Custom Keyboard Check Box</em> : <span style="font-weight: normal;">가상 키보드를 전송합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;"><a name="Properties"></a>Keyboard Layout Info</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 90px; font-weight: normal;">Custom Keyboard 체크 박스를 체크하면 활성화 되며 가상 키보드를 설정합니다.</p>
+<p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;"><span style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Layout ID Combo Box</em> : <span style="font-weight: normal;">DefineCustomKB Item에 정의된 Keyboard Layout을 선택합니다.</span></span></p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;"><span style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Update Text Button</em> :<span style="font-weight: normal;"> 버튼의 텍스트를 수정합니다.(버튼 왼쪽 에디트 박스의 문자를 수정)</span></span></p>
+<p><span style="margin: 0px 0px 0px 00px; font-weight: bold;"><span style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Custom Layout Check Box</em> : <span style="font-weight: normal;">DefineCustomKB에서 정의한 Layout을 사용하지 않고  버튼 레이아웃을 편집합니다.</span></span></span></p>
+<p><span style="margin: 0px 0px 0px 00px; font-weight: bold;"><span style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Add Button </em>: <span style="font-weight: normal;">버튼 레이아웃의 다음 라인에  버튼을 추가합니다.</span></span></span></p>
+<p><span style="margin: 0px 0px 0px 00px; font-weight: bold;"><span style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Del Button</em> : <span style="font-weight: normal;">버튼 레이아웃 에서 선택한 버튼을 제거 합니다.</span></span></span></p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">RESULT</p>
+<p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 처리 결과 <a href="SessionVariable.htm">세션 변수</a></p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.command.result : <span style="font-weight: normal;">처리 성공(_SLEE_SUCCESS_), 실패(_SLEE_FAILED_)</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.command.reason : <span style="font-weight: normal;">실패면 실패 오류코드(<a href="SystemConstant.htm">시스템 상수</a> 참조)</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">RELATED</p>
+<p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_DefineChatText_35.png" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_DefineChatText.htm">DefineChatText</a></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_DefineCustomKB_35.png" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_DefineCustomKB.htm">DefineCustomKB</a></p>
+<p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_GetChat_35.png" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_GetChat.htm">GetChat</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+    
+</td>
+<tr style="vertical-align:top">
+        <td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;">&nbsp;</td>
+</table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="Item_GetChat.htm">다음</a>&nbsp;
+     <a href="Item_ChoiceCall.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

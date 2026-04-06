@@ -1,0 +1,294 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>Scenario Project</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="Scenario Project, Scenario, Project" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">프로젝트 파일 </td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="Scenario_File.htm">다음</a>&nbsp;
+      <a href="CreateNewScenario.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;">
+<p>프로젝트는 단독으로 구성할 수 없으며 솔루션(.sssx)에 소속되어야 합니다. 프로젝트를 생성하면 솔루션도 같이 생성되어 프로젝트는 솔루션에 소속됩니다.</p>
+<p>프로젝트의 구성은 프로젝트 파일(.sspx)과 서비스 시나리오 파일(.ssfx), 메뉴 시나리오 파일(.msfx)로 구성됩니다.</p>
+    <p>프로젝트의 구성은 은 <a href="WorkspaceWindow.htm">Workspace Window</a>에서 확인 할 수 있습니다.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 20px;"><img src="images/WorkspaceWindow.PNG" width="359" height="548"></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>    
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="NewProject"></a>New Project</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 새로운 프로젝트를 생성하는 기능으로 File 메뉴의 New Project를 선택하면 New Project Dialog가 팝업 됩니다.</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px;"><img src="images/NewProject.PNG" width="659" height="304"></p>    
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: bold;">Project Name</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">생성할 프로젝트 이름을 입력합니다. 이름은 76 Byte를 넘을 수 없습니다.(UTF8 기준으로 한글은 3 Byte로 계산됩니다)</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">OK 버튼을 눌렀을 때 같은이름의 프로젝트 이름이  존재한다면 프로젝트 생성이 되지 않습니다.</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px;"><img src="images/NewProject_Failed.PNG" width="482" height="178">
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: bold;">Project Description</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">어떤 프로젝트인지 설명을 입력합니다.</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: bold;">Location</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">생성할 프로젝트가 저장되는 폴더를 선택합니다. 폴더를 선택하지 않으면 실행파일 경로에 프로젝트 폴더가 만들어집니다.</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">프로젝트 이름을 포함하여 전체 경로가 256 Byte를 넘을 수 없습니다.</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: bold;">Solution</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">생성할 프로젝트가 저장되는 폴더를 선택합니다. 폴더를 선택하지 않으면 실행파일 경로에 프로젝트 폴더가 만들어집니다.</p>
+    <p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Create solution folder Check Box</em></p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">체크하면 솔루션 폴더를 생성하며 Solution Name을 입력하는 에디트 박스가 Enable 됩니다.</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: bold;">Solution Name</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">솔루션 이름을 입력합니다. 솔루션 이름이 없으면 프로젝트 이름 앞에 &quot;Solution_&quot;을 붙여서 솔루션 이름을 만들고 프로젝트와 같은 폴더에 솔루션 파일을 생성합니다.</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: bold;">Solution Description</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">솔루션 설명을 입력합니다.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> New Project 창은 프로젝트가 오픈되어 있는 상태에서는 다음과 같이 솔루션을 새로 생성할지 오픈된 솔루션에 프로젝트를 추가 할지에 대한 콤보박스가 활성화 되며 새로 솔루션을 생성하면 오픈되어 있는 솔루션 및 프로젝트는 닫히고 새로 생성되며 오픈된 솔루션에 프로젝트를 추가하는 경우는 생성한 프로젝트가 오픈되어 있는 솔루션에 추가됩니다.</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px;"><img src="images/NewProject2.PNG" width="659" height="304"></p>    
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 프로젝트를 생성하면 기본 시나리오 파일이 자동으로 생성되어 열리게 됩니다. 기본 시나리오 파일은 변경, 삭제가 불가능 합니다.</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+    <p><span style="margin: 0px 0px 0px 60px; font-weight: bold;"><a href="Scenario_File.htm#End.ssfx">End.ssfx</a></span></p>
+    <p><span style="margin: 0px 0px 0px 60px; font-weight: bold;"><a href="Scenario_File.htm#Exception.ssfx">Exception.ssfx</a></span></p>
+    <p><span style="margin: 0px 0px 0px 60px; font-weight: bold;"><a href="Scenario_File.htm#Global.ssfx">Global.ssfx</a></span></p>
+    <p><span style="margin: 0px 0px 0px 60px; font-weight: bold;"><a href="Scenario_File.htm#Main.ssfx">Main.ssfx</a></span></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="OpenSolution"></a>Open Solution</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 프로젝트 파일을 열기위한 기능으로 <a href="#FileMenu">File 메뉴</a>의 Open Solution 또는 리본 메뉴 Home > Open > Open Solution 에서 가능합니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;"></span>프로젝트 파일이 솔루션에 소속되어 있기 때문에 솔루션 파일을 오픈해야 합니다.</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><a name="FileMenu"></a><img src="images/NewProjectMenu.png" width="468" height="492"><span>&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/OpenProjectMenu.png" width="219" height="492"></span></p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/OpenSolutionDialog.png" width="711" height="419"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 기본 열기 파일은 솔루션 파일 확장자인 *.sssx 입니다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 솔루션이 오픈 되어 있는 상태에서 또 솔루션을 오픈하는 경우는 오픈된 솔루션을 닫고, 오픈하는 솔루션을 열게 됩니다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 솔루션에 소속된 프로젝트가 한개인 경우는 자동으로 프로젝트 까지 오픈합니다.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="SaveSolution"></a>Save Solution</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> <a href="#FileMenu">File 메뉴</a>의 Save Solution 또는 리본메뉴의 Home &gt; Save &gt; Solution을 누르면 됩니다.    </p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 솔루션에 소속된 프로젝트의 Description을 변경하는 등 프로젝트 정보를 변경하는 경우에 버튼이 Enable 되며 시나리오 파일을 저장하는 경우에는 자동으로 저장됩니다.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="Open All Project"></a>Open All Project</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 리본메뉴의 Project &gt; Oepn Project &gt; Open All Project 를 누르면 됩니다. 또는 콤보박스에서 오픈하지 않은 프로젝트를 하나 씩 선택해서 오픈 할 수도 있습니다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> Solution View, File View 트리 솔루션 항목에서 마우스 오른 버튼을 눌러 팝업 메뉴에서 Open All Project 를 선택해도 됩니다.</p>
+    <p>&nbsp;</p>    
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="CloseSolution"></a>Close Solution</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> <a href="#FileMenu">File 메뉴</a>의 Close Solution 또는 리본메뉴의 Home &gt; Close &gt; Solution을 누르면 됩니다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 솔루션을 닫으면 오픈된 파일 및 프로젝트가 모두 닫히게 됩니다.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="AddtoSolution"></a>Add to Solution</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> <a href="#FileMenu">File 메뉴</a>의 Add Project to Solution 으로 생성되어져 있는 프로젝트 파일을 솔루션에 추가할 수 있습니다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> <a href="#FileMenu">File 메뉴</a>의 New Project 로 프로젝트를 생성하여 솔루션에 추가할 수 있습니다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> Project Workspace의 Solution 항목에서 마우스 오른 버튼을 눌러 메뉴를 팝업하여 Add to Solution &gt; New Project, Existing Project 에서도 가능합니다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/AddtoSolutionMenu.png" width="470" height="307"></p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="OpenProject"></a>Open Project</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 솔루션에 소속된 프로젝트가 한개인 경우는 자동으로 프로젝트 까지 오픈되지만 여러개인 경우는 Project Workspace &gt; Solution View, File View 에서 오픈하고자 하는 프로젝트를 선택하여 오픈한다.    </p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 솔루션에 소속된 프로젝트가 여러개 이고 오픈된 프로젝트도 한개 이상일 경우에는 Project Workspace에 선택 되어져(프로젝트 항목 또는 소속된 파일 항목)있는  프로젝트가 활성 프로젝트가 됩니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">활성프로젝트일 때 처리하는 프로젝트관련 기능은 다음과 같습니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">. 아이템 정보 데이터 생성(Make Item Information Data)</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">. 자동완성 및 시나리오 정보 데이터 맵 생성(Make Auto Complete Dta)</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">. Save Project</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">. Close Project</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">. Build Project</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">. 검색 / 치환</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">. 북마크 창 팝업 시 아이템 리스트</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">. Breakpoint 창 팝업 시 아이템 리스트</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">. Visual Debugging</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">. Excel Import/Export</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/OpenProjectWorkspace.png" width="360" height="295"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 프로젝를 오픈하면 자동으로 서비스 시작 시나리오인 Main.ssfx를 오픈합니다.</p>
+    <p><span style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 프로젝트를 오픈하면 관련된 작업을 항상 하게 됩니다.</span></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">. 아이템 정보 데이터(IID) 생성</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">. 자동완성 및 시나리오 정보 데이터 맵 생성</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">. 북마크 데이터 로드</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">. Breakpoint 데이터 로드</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal; color: #333;">아이템 정보 데이터(IID) 생성: 오픈한 프로젝트에 포함된 각 시나리오 파일의 아이템과 속성을 읽어서 로컬 DB를 생성합니다.    </p>
+    <p style="margin: 0px 0px 0px 235px; font-weight: normal; color: #333;">IID DB가 존재하지 않은 경우는 생성하고 변경되고 저장되지 않은 경우는 Update를 수행합니다.</p><p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 70px;"><img src="images/MakeItemInformationData.PNG" width="581" height="238">
+    <p style="margin: 0px 0px 0px 70px;"><p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal; color: #333;">자동완성 및 시나리오 정보 데이터 맵 생성 : IID DB 에서 정보를 쿼리하여 생성을 합니다.</p>
+    <p style="margin: 0px 0px 0px 317px; font-weight: normal; color: #333;">이 맵 데이터는 입력 문자열 자동완성, 검색 및 치환, 속성 창 출력 데이터 제공, 프로젝트 빌드에 사용됩니다.</p><p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 70px;"><img src="images/MakeAutoCompleteData.PNG" width="572" height="154">
+    <p style="margin: 0px 0px 0px 70px;"><p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal; color: #333;">북마크 데이터 로드 - 아이템 북마크 정보를 로드합니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal; color: #333;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal; color: #333;">중단점 데이터 로드 - 디버깅시에 사용되는 Breakpoint 정보를 로드합니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal; color: #333;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 프로젝트 파일을 열고 파일을 로드 할 때 경로에 파일이 없는 경우 해당 파일에 대해서 무시, 삭제, 재검색 등을 할 수 있습니다.</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/ProjectOpenConfirmDialog.PNG" width="538" height="184"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Perform the same operation to all files that are not find Check Box</em> : <span style="font-weight: normal;">체크하면 앞으로 발견되지 않을 모든 파일에 대해서 동일한 처리를 하며 이 다이얼로그가 팝업되지 않습니다. 다른 폴더에서 재 검색의 경우 동일한 처리 중에 파일이 검색되지 않으면 다시 다이얼로그가 팝업됩니다.</span></p>
+        <p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Skip : Remained file in project Button </em>: <span style="font-weight: normal;">검색되지 않은 파일에 대해서 어떠한 처리도 하지 않고 무시 합니다.</span></p>
+        <p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Remove in project Button </em> : <span style="font-weight: normal;">검색되지 않은 파일을 프로젝트에서 제거 합니다.</span></p>
+        <p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Re-search other directory Button </em> : <span style="font-weight: normal;">다른 디렉토리에서 재 검색합니다.</span></p>
+        <p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+	        <p style="margin: 0px 0px 0px 90px; font-weight: bold;"><img src="images/ProjectOpenConfirmDialogReSearch.PNG" width="538" height="302"></p>
+        <p style="margin: 0px 0px 0px 60px; font-weight: normal;"></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Search subdirectories Check Box</em> : <span style="font-weight: normal;"> 체크하면 지정한 디렉토리 하위 폴더도 검색합니다.</span></p>
+	        <p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Search Button </em>: <span style="font-weight: normal;">지정한 디렉토리에서 검색하지 못한 파일을 찾고, 파일이 있으면 지정한 디렉토리를 등록합니다. 파일을 찾지 못하면 다시 다이얼로그가 팝업되면서 무시, 삭제, 재검색을 선택` 합니다.</span></p>
+	        <p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Cancel Button </em> : <span style="font-weight: normal;">다시 무시, 삭제, 재검색 선택 다이얼로그로 돌아 갑니다.</span></p>
+        <p style="margin: 0px 0px 0px 60px; font-weight: normal;"></p>
+        <p style="margin: 0px 0px 0px 60px; font-weight: normal;">* Skip : Remained file in project 또는 Remove in project Button을 선택한 경우 무시하거나 제거된 파일 리스트 다이얼로그를 팝업 합니다.</p>
+        <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+        <p style="margin: 0px 0px 0px 70px; font-weight: normal;"><img src="images/ProjectOpenConfirmSkiporRemoveDialog.PNG" width="543" height="389"></p>
+        <p style="margin: 0px 0px 0px 70px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span><a name="Captionbar"></a> Captionbar</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">프로젝를 오픈하면 프로젝트 파일의 정보가 표시 됩니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/CaptionBar.png" width="923" height="37"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">프로젝트명 : [ Path : 프로젝트 경로 ] [ Desc : 프로젝트 설명 ] [ Date : 프로젝트 저장 날자 ]</p>
+        <p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="SaveProject"></a>Save Project</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> <a href="#FileMenu">File 메뉴</a>의 Save Project 또는 리본메뉴의 Home &gt; Save &gt; Project를 누르면 됩니다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 프로젝트에 소속된 시나리오 파일의 Description을 변경하는 등 파일 정보를 변경하는 경우에 버튼이 Enable 되며 시나리오파일 편집후 저장의 경우에는 자동으로 저장됩니다.    </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="CloseProject"></a>Close Project</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> <a href="#FileMenu">File 메뉴</a>의 Close Project 또는 리본메뉴의 Home &gt; Close &gt; Project를 누르면 됩니다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 프로젝트를 닫으면 열린 모든 시나리오 파일이 닫히므로 저장되지 않은 파일이 있으면 저장 유/무를 확인합니다.    </p>
+    <p style="margin: 0px 0px 0px 60px;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/CloseFileSaveConfirm.PNG" width="413" height="165">
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="AddProject"></a>Add Project</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> <a href="#FileMenu">File 메뉴</a>의 Add Scenario to Project 에서 시나리오 파일을 선택 하거나 New Service Scenario, New Menu Scenario 에서 시나리오 파일을 생성하여 프로젝트에 추가 할 수 있습니다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> Workspace Window의 Solution View 또는 File View 에서 프로젝트 항목  에서 마우스 오른 버튼을 눌러서 메뉴를 팝업하여 Add to Project &gt; Existing ..., New Service ..., New Menu ... 로 도 가능합니다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 프로젝트가 오픈 되어야 활성화 되며 프로젝트에 같은 이름의 파일이 이미 있다면 추가되지 않습니다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/AddtoProjectMenu.png" width="498" height="457">
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/AddtoProjectOpenFileDialog.png" width="650" height="388">
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="ProjectConfigurationSettings"></a>Project Configuration Settings</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 리본 메뉴 Project &gt; Configuration &gt; Project Settings 메뉴를 누르면 프로젝트 설정 창이 팝업 됩니다.</p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><img src="images/Project_Configuration_Settings.PNG">
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: bold;">Version</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: bold;">Studio Version : <span style="font-weight: normal;">ForCusStudio 버전이 표시됩니다.</span></p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: bold;">Name Path</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: bold;">Project Name : <span style="font-weight: normal;">프로젝트 이름이 표시됩니다.</span></p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: bold;">Project Path : <span style="font-weight: normal;">프로젝트 시나리오 경로가 표시됩니다.</span></p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: bold;">Description : <span style="font-weight: normal;">프로젝트 설명을 설정합니다. Workspace > Solution View 의 Project Description 에 표시됩니다.</span></p>
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: bold;">Options</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Chat Support Scenario Check Box :</em> <span style="font-weight: normal;">시나리오가 Chat을 지원하며 빌드시 Chat 지원 태그를 생성합니다.</span></p>
+    <p style="margin: 0px 0px 0px 120px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 120px; font-weight: normal;">Check 시 Studio 화면상으로 Chat 지원 시나리오임을 표시합니다.</p>
+    <p style="margin: 0px 0px 0px 120px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 120px; font-weight: normal;">Voice 전용 시나리오</p>
+    <p style="margin: 0px 0px 0px 150px; font-weight: normal;">Caption Bar : <img src="images/Caption_Bar_Voice.png">
+    <p style="margin: 0px 0px 0px 120px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 120px; font-weight: normal;">Chat 지원 시나리오</p>
+    <p style="margin: 0px 0px 0px 150px; font-weight: normal;">Caption Bar : <img src="images/Caption_Bar_Chat.png">
+    <p style="margin: 0px 0px 0px 150px; font-weight: normal;">Status Bar : <img src="images/Status_Bar_Chat.png">
+    <p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;">Notes:</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> IID - Item Information Data의 약자로 아이템의 정보를 DB화 하여 저장 합니다.</p>
+    <p>&nbsp;</p>    
+    <p>&nbsp;</p>
+    </td></tr>
+</table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="Scenario_File.htm">다음</a>&nbsp;
+     <a href="CreateNewScenario.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

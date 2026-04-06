@@ -1,0 +1,289 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>Play</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">Play</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="Item_GetDigit.htm">다음</a>&nbsp;
+      <a href="Telephony_Items.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;">
+	<p>기본적으로 음성 멘트를 재생하기 위한 아이템으로 <a href="Item_DefineMent.htm">DefineMent</a> Item에 정의한 MentID를 사용해서 Play하고, 멘트 파일 직접 입력, TTS등을 지원 합니다.</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 00px; font-weight: bold;">ICON</p>
+	<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/Item_Play_35.PNG" width="45" height="35"></p>
+	<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 00px; font-weight: bold;">PROPERTIES</p>
+	<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Play Info</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_Play.PNG" width="724" height="633"></p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	  		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">Common</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">&nbsp;</p>
+	  			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Ment list all tracking Check Box </em> : <span style="font-weight: normal;">멘트 리스트에 지정된 전체 멘트를 대상으로 트래킹을 처리합니다.(개별 멘트 트래킹보다 우선합니다.)</span></p>
+	  			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>TTS Failure Behavior</em> : <span style="font-weight: normal;">멘트 리스트에서 첫 번째 항목 멘트 타입이 "TTS Stream" 또는 "TTS File" 일 경우 체크 되었을 때 유효하며, 첫 번째 멘트인 TTS Play에서 TTS 서버와 연동이 실패인 경우 첫 번째 멘트 이후 설정된 멘트는(TTS Stream, TTS File 포함 모든 타입) 첫 번째 멘트인 TTS Play의 대체 멘트로 Play 처리 됩니다.</span></p>
+	  			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 100px; font-weight: bold;"><img src="images/Properties_Play_MentList.PNG"></p>
+		  		<p style="margin: 0px 0px 0px 100px; font-weight: bold;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 100px; font-weight: normal;">SXML 태그 예제 : &lt;playtts 태그 아래로 &lt;if 태그 cond 에 session.command.result == _SLEE_FAILED_ 조건으로 TTS 에러를 체크하고 에러면 'm.1', 'm.11', 'm.13' 대체 멘트를 Play 한다.</p>
+				<p style="margin: 0px 0px 0px 100px; font-weight: normal;">이 예제는 보이는 ARS 사용 예제라 대체 멘트 cond에 session.command.reason == _TE_FINISH_ 조건도 비교 한다. 다만 첫 번째 대체 멘트는 무조건 Play 해야 하기 때문에cond = "1" 이다.</p>
+				<p style="margin: 0px 0px 0px 100px; font-weight: bold;">
+				<textarea name="textarea" cols="200" rows="7" style="background-color: #FFC; color: #000; font-family:Tahoma, Geneva, sans-serif">&lt;playtts ciid="Play3" safemode="1" expr="'멀티 멘트 파일 시험을 시작합니다.'" cleardigit="0" type="stream" country="410" speakerid="0" ttsid="0" wait="0" async="0" callno="'First'" cond="1" /&gt;
+&lt;if ciid="Play3" cond="session.command.result == _SLEE_FAILED_"&gt;
+	&lt;assign ciid="Play3" name="session.command.result" expr="_SLEE_SUCCESS_" cond="1" /&gt;
+	&lt;assign ciid="Play3" name="session.command.reason" expr="_TE_FINISH_" cond="1" /&gt;
+	&lt;play ciid="Play3" expr="'m.1'" cleardigit="0" type="MentID" country="410" wait="0" async="0" callno="'First'" cond="1 /&gt;
+	&lt;play ciid="Play3" expr="'m.11'" cleardigit="0" type="MentID" country="410" wait="0" async="0" callno="'First'" cond="1 && session.command.reason == _TE_FINISH_" /&gt;
+&lt;/if&gt;
+				</textarea></p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Choice Call : <span style="font-weight: normal;">Multi Call 에서 콜을 선택 합니다.(2개 콜 까지 가능, GetChannel 로 생성)</span></p>
+	  			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">End Method : <span style="font-weight: normal;">Ment Play 도중 에러 발생 시 다음 Flow로 넘어 갈지 종료 할지를 설정 합니다.</span></p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+	  		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;"><a name="Properties"></a>Ment</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+    			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Expression [Ment ID] : <span style="font-weight: normal;">재생할 음성 파일을 지정합니다. </span></p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- DefineMent Item에 정의된 MentID가 콤보박스 리스트로 제공되며 리스트에서 멘트를 선택 할 수 있습니다.</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- 멘트 파일 이름이나 MentID가 들어있는 변수를 사용 할 수 있습니다.</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- 가변 멘트를 처리 할 수 있습니다. 가변 멘트는 여러개의 멘트를 한번에 재생 합니다. 멘트는 작은 따옴표로 묶고 멘트와 멘트 사이는 콤마로 구분 합니다.( 예 : <span style="color:#06F;">'Ment1','Ment2','Ment3'</span> )</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- 연산식을 통해 멘트 이름을 조합 할 수 있습니다. 단, 변수와 문자를 같이 연산 할 수는 없습니다.( 예 : gs_TrData.BI09ZZ.from.O_27_합계금액 * 1 )</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- 멘트 리스트에 여러개의 멘트를 등록하여 순서대로 재생 할 수 있습니다.</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">&nbsp;</p>
+					<p style="margin: 0px 0px 0px 90px; font-weight: normal;">※ Expression 아래의 넓은 Editbox는 Type이 MentID일 경우에는 Ment Description이 출력되고 TTS일 경우에는 TTS 텍스트 를 편집할 수 있습니다.</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold; color: #00F;"><a name="MentType"></a>Type : <span style="font-weight: normal; color: #000">재생 할 멘트의 타입을 설정 합니다.(MentID, File 타입을 제외한 모든 타입은 Country항목의 영향을 받아서 각 언어별로 멘트를 재생 합니다)</span></p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- MentID : Global의 <a href="Item_DefineMent.htm">DefineMent</a> 에 정의된 ID</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- File : File 직접 Play</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- Number : 숫자 단위 Play( 마이너스 숫자는 재생 할 수 없음 )</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- Digit : 단순 Digit Play</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- Count : 숫자 세기( 1개, 2개, ~ )</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- Ordinal : 서수 Play( 첫번째, 두번째, ~ )</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- Money : 금액 Play</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- Date : 날짜 Play(최소 4자리, yyyymmdd, 6자리 입력이면 yyyymm Play)</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- Time : 시간 Play(최소 4자리, HHMMSS, 4자리 입력이면 HHMM Play)</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- DateTime : 날짜와 시간 Play(최소 6자리, yyyymmddHHMMSS, 6자리 입력이면 yyyymm Play)                </p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- DayOfWeek : 주 Play( &quot;일요일&quot;,	&quot;월요일&quot;,	~	)	</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- TTS-KSC5601 : KSC 5601의 5601자 음성멘트를 Play 합니다.</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- TTS-Stream : TTS Play 시 TTS 서버와 Stream 형식으로 Play</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- TTS-File : TTS Play 시 TTS 서버에서 결과 음성파일을 다운로드 완료 후 그 파일을 Play</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Play Button</em> : <span style="font-weight: normal;">멘트 리스트에서 선택한 멘트가 MentID로 설정 되었다면 재생 합니다.(Tools&gt;Options&gt;Debug&gt;Ment Path 설정 필요, 단, 가변멘트일 경우 현재는 재생 불가</span>)</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Stop Button</em> : <span style="font-weight: normal;">현재 재생 중인 멘트를 중지 합니다.</span></p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Country<em></em>  : <span style="font-weight: normal;">국가별 언어를 설정하여 해당 타입으로 멘트를 재생할 경우 각 언어에 맞게 멘트를 재생 합니다.</span></p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- MentID, File 타입을 제외한 모든 타입 선택시 Country항목이 활성화 됩니다.</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- 현재 지원하는 언어는 한국어, 영어, 중국어, 베트남어, 몽골어를 지원 합니다.</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Speaker<em></em>  : <span style="font-weight: normal;">Type이 TTS-Stream, TTS-File인 경우 TTS Speaker ID(숫자)를 설정합니다.(Speaker ID는 TTS 매뉴얼 참조)</span> </p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">TTS Name : <span style="font-weight: normal;">Ment Type이 TTS-Stream, TTS-File이면  TTS Name 을 설정하여 TTS 서버를 선택할 수 있습니다.</span></p>
+				<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- 값을 지정하지 않으면 기본 TTS 서버로 처리 됩니다.</p>
+				<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- v5.x : 'ADT' 로 지정하면 TTS Adapter 를 통한 TTS 연동을 지원합니다.(Multi TTS 지원 불가)</p>
+				<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- v6.0 이상 : "SWAT>IVR관리>미디어관리>TTS 관리" 에 등록한 Name 을 지정하면 TTS Adapter 를 통한 Multi TTS 연동을 지원합니다.</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Clear Digit Check Box</em> : <span style="font-weight: normal;">재생 전에 디지트 버퍼를 삭제 할지를 설정 합니다.(재생 전에 발생된 디지트를  버퍼에서 삭제 하지 않으면 재생 하려고 하는 멘트가 바로 중단 됩니다)</span></p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Ignore DTMF Check Box </em> : <span style="font-weight: normal;">재생 중에 DTMF 입력을 무시 할지를 설정 합니다. DTMF 를 무시하면 전화 다이얼을 눌러도 멘트가 중지 되지 않기 때문에 멘트가 끝나야 다음 Flow처리를 위한 DTMF 를 받습니다.</span></p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Async Play Check Box </em> : <span style="font-weight: normal;">비동기화 재생을 설정하여 재생을 하고 결과를 기다리지 않고 다음 Flow를 처리 합니다.</span></p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Tracking Check Box </em> : <span style="font-weight: normal;">멘트별로 트래킹을 처리 합니다.</span></p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Encrypt Check Box </em> : <span style="font-weight: normal;">멘트별로 내용을 암호화 하여 AI 시나리오일 경우 Dialogue CDR에 적용하며 Tracking이 함께 체크된 경우 시나리오 타입에 관계없이 Tracking CDR에도 적용합니다.(v6.2 이상)</span></p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Condition<em></em> : <span style="font-weight: normal;">각 멘트의 재생 조건을 설정 합니다.</span></p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>           
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold; color: #00C">&lt;Play 아이템 Ment Play 내부 처리&gt;<em></em></p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: bold; color: #009">Visual ARS 사용 : <span style="font-weight: normal; color: #000">보이는 ARS 사용 시 멘트 리스트에 멘트가 한개 이상일 경우 두 번째 멘트 부터 이전 멘트가 정상 Play 되었는지 체크하고 Ment Play를 하는 조건을 태그에 생성 한다.  </span></p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: bold; color: #000"><span style="font-weight: normal;">Ment Play 중 보이는 ARS 이벤트가(사용자 화면에서 버튼 누름 또는 입력) 발생 할 경우 다음 Ment를 Play 하지 않고 처리를 하기 위함 이다.</span></p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: bold; color: #000"><span style="font-weight: normal;">GetDigit와 연결해서 사용하는 경우는 GetDigit 아이템의 collectdigit에서 보이는 ARS 입력을 받아서 처리 한다.</span></p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: bold; color: #000">&nbsp;</p>
+					<p style="margin: 0px 0px 0px 130px; font-weight: normal; color: #000">SXML 태그 예제: cond 에 session.command.reason == _TE_FINISH_ 조건 추가</p>
+					<p style="margin: 0px 0px 0px 130px; font-weight: normal; color: #000">
+					<textarea name="textarea" cols="192" rows="3" style="background-color: #FFC; color: #000; font-family:Tahoma, Geneva, sans-serif">
+&lt;play ciid="Play3" expr="'m.0'" cleardigit="0" type="MentID" country="410" wait="0" async="0" callno="'First'" cond="1" /&gt;
+&lt;play ciid="Play3" expr="'m.1'" cleardigit="0" type="MentID" country="410" wait="0" async="0" callno="'First'" cond="1 && session.command.reason == _TE_FINISH_" /&gt;
+&lt;play ciid="Play3" expr="'m.2'" cleardigit="0" type="MentID" country="410" wait="0" async="0" callno="'First'" cond="1 && session.command.reason == _TE_FINISH_" /&gt;
+					</textarea></p>
+					<p style="margin: 0px 0px 0px 130px; font-weight: normal; color: #000">* 첫 번째 멘트에는 _TE_FINISH_ 조건이 없는 것은 첫 멘트는 무조건 Play 해야 다음 멘트 부 터 reason 값으로 체크 하는데 개발자가 condition에 다른 조건을 준 경우 Play 안 될 수 도 있다.</p>
+					<p style="margin: 0px 0px 0px 130px; font-weight: normal; color: #000">* 첫 번째 멘트를 cond 조건에 의해 Play하지 못할 경우에 다음 부 터 라도 Play 하기 위해 첫 번 째 멘트 Play 하기 전에 session.command.reason = _TE_FINISH_ 로 초기화 한다.</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: bold;">&nbsp;</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: bold; color: #009">Ment Play 에러 : <span style="font-weight: normal; color: #000">Play 시에 에러가 발생할 경우(파일 없음 또는 기타 시스템 에러) 나머지 멘트를 Play하지 않고 스킵 하는 기능 이다. <a href="Build.htm#Skip digit input">빌드 옵션</a>에서 &quot;Skip digit input at play error in getdigit item&quot; 옵션 설정을 해야 작동 한다.</span></p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: bold; color: #000"><span style="font-weight: normal;">Play Error에 대한 다른 분기 처리가 필요 한 경우에는 <a href="Link.htm#Event Link">&quot;Error&quot; 이벤트 링크</a>를 사용 할 수 있다.</span></p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: bold;">&nbsp;</p>
+					<p style="margin: 0px 0px 0px 130px; font-weight: normal; color: #000">SXML 태그 예제: 첫 번째 &lt;play 태그 아래 &lt;if 태그 cond 에 session.command.result == _SLEE_FAILED_ 조건으로 Play 에러를 체크 하고 에러면 Play 아이템의 마지막으로 이동 한다.</p>
+					<p style="margin: 0px 0px 0px 130px; font-weight: normal; color: #000">
+					<textarea name="textarea" cols="192" rows="10" style="background-color: #FFC; color: #000; font-family:Tahoma, Geneva, sans-serif">
+&lt;play ciid="Play3" expr="'m.0'" cleardigit="0" type="MentID" country="410" wait="0" async="0" callno="'First'" cond="1 && session.command.reason == _TE_FINISH_" /&gt;
+&lt;if ciid="Play3" cond="session.command.result == _SLEE_FAILED_" &gt;
+        &lt;goto ciid="Play3" next="Play3_6071F073_4FE4_454D_83AB_179EE840BC09_END" /&gt;
+&lt;/if&gt;
+&lt;play ciid="Play3" expr="'m.1'" cleardigit="0" type="MentID" country="410" wait="0" async="0" callno="'First'" cond="1 && session.command.reason == _TE_FINISH_" /&gt;
+&lt;if ciid="Play3" cond="session.command.result == _SLEE_FAILED_" &gt;
+        &lt;goto ciid="Play3" next="Play3_6071F073_4FE4_454D_83AB_179EE840BC09_END" /&gt;
+&lt;/if&gt;
+&lt;play ciid="Play3" expr="'m.2'" cleardigit="0" type="MentID" country="410" wait="0" async="0" callno="'First'" cond="1 && session.command.reason == _TE_FINISH_" /&gt;
+&lt;label ciid="Play3" id="Play3_6071F073_4FE4_454D_83AB_179EE840BC09_END" /&gt;
+					</textarea></p>
+					<p style="margin: 0px 0px 0px 130px; font-weight: normal; color: #000">&nbsp;</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Up Button</em> : <span style="font-weight: normal;">선택한 멘트를 위로 이동 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Down Button</em> : <span style="font-weight: normal;">선택한 멘트를 아래로 이동 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Cut  Button</em> : <span style="font-weight: normal;">선택한 리스트를 잘라냅니다.</span><span style="font-weight: normal;">(Ctrl+X)</span></p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p><span style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Copy Button</em> : <span style="font-weight: normal;">선택한 리스트의 내용을 복사 합니다.(Ctrl+C)</span></span></p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p><span style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Paste Button</em> : <span style="font-weight: normal;">복사한 리스트의 내용을 붙여넣기 합니다.(Ctrl+V)</span></span></p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Add Button</em> : <span style="font-weight: normal;">지정한 멘트를 추가 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Del Button</em> : <span style="font-weight: normal;">선택한 멘트를 삭제 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Update Button</em> : <span style="font-weight: normal;">선택한 멘트의 내용을 갱신 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Visual ARS Check Box </em> : <span style="font-weight: normal;">보이는 ARS 사용 여부 체크 박스 입니다.</span></p>
+						<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><span style="font-weight: normal;">Visual ARS 탭에 데이터 리스트가 없으면 체크 박스가 체크되어 있어도 빌드 시 보이는 ARS 태그가 생성되지 않습니다.</span></p>					
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Chat Info</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><span style="margin: 0px 0px 0px 0px; font-weight: bold; color: #F00;">* ForCus v6.0 이상 지원</span></p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp; </p>
+		<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_Play_ChatInfo.PNG" width="724" height="633"></p>
+		<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: normal;">※ <a href="Scenario_Project.htm#ProjectConfigurationSettings">Chat 지원 시나리오 설정</a>을 했을 때 Chat Info 탭이 활성화 됩니다.</p>
+			<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Expression Code : <span style="font-weight: normal;">Chat Text 로 표현하지 못하는 이미지나 아이콘 등을 미리 정의한 코드입니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: normal;">※ 리스트에 입력된 data1, data2 는 Expression Code 8000 의 상세 코드입니다.</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #0A0">※ Chat 콜 일때 Chat Text 출력은 Play Info 탭 > Ment Expression 에 입력된 MentID 의 Description 또는 TTS 인 경우 합성 문자열이 출력 됩니다.</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Visual ARS</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><span style="margin: 0px 0px 0px 0px; font-weight: bold; color: #F00;">* ForCus v5.1 이상 지원</span></p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp; </p>
+		<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_Play_VisualARS.PNG" width="724" height="633"></p>
+		<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;"><a name="Input(Send)"></a>Input(Send)</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 보이는 ARS(VARS) 전송 전문(Json 포멧)을 입력 합니다. 수신 전문이 없는 전송 전용 입니다.</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: normal;">보이는 ARS의 메뉴 입력이 있는 화면에서 입력이 있을 경우(메뉴 선택) 입력에 대한 수신처리는 GetDigit 아이템 collectdigit 에서 입력 처리가 된다.(Digit 입력과 같은 @name.digits 시스템 변수에 값 할당, 보이는 ARS 수신 전문 digits에 값이 할당 되어 있음)</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: normal;">사용자  입력은 있으나 GetDigit 아이템의 collectdigit에서 값을 가져오지 않은 경우에는 Digit 입력과 같이 Digit 버퍼에 사용자가 선택한 메뉴에 대한 번호가 들어 있으며, Play, GetDigit 등의 Visual ARS 탭의 &quot;Clear Digit&quot; 또는 Ment Info 탭의 &quot;Clear Digit&quot; 옵션으로 버퍼 초기화가 가능하다.</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Transaction ID :<span style="font-weight: normal;"> TB 에서 전문을 전송할 대상(보이는 ARS-Adapter)을 찾기 위한 서버 키 입니다.</span></p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Clear Digit Check Box</em> :<span style="font-weight: normal;"> VARS가 결과가 Digit 타입 일 때 Digit 입력과 동일하게 처리 할 수 있기 때문에 상황에 따라 디지트 버퍼를 초기화 한다.</span></p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Tracking Check Box </em>:<span style="font-weight: normal;"> 보이는 ARS에 대한 트래킹 태그를 생성한다.</span>	</p>
+		<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Tracking</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_Play_Tracking.PNG" width="724" height="633"></p>
+		<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><span style="font-weight: normal;">Play하는 Ment ID에 대한 트래킹을 처리합니다.</span></p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;"><a name="Properties"></a>Properties</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Check Tracking Check Box</em> : <span style="font-weight: normal;">Tracking을 사용 할 것인지를 체크합니다.</span></p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Tracking Point Flag Check Box</em> : <span style="font-weight: normal;">특별한 Tracking Flag를 설정하여 SWAT에서 트래킹 시에 이 플래그가 설정된 항목만 트래킹 할 수 있습니다.</span></p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Encryption Value1 Check Box</em> : <span style="font-weight: normal;">Track Value1 속성 데이터에 대해서 암호화 처리를 합니다.</span></p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Track ID : <span style="font-weight: normal;">정의한 Track ID를 선택하거나 입력 합니다.</span></p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- DefineTrack Item에 정의된 Track ID가 콤보박스 리스트로 제공됩니다.(Type이 없거나, Play인 경우)</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Track Name<em></em> : <span style="font-weight: normal;">Track ID를 선택하면 같이 정의된 이름을 출력합니다.(SWAT에서 이 이름으로 트랙킹 시에 사용합니다.)</span></p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Track Value1<em></em> : <span style="font-weight: normal;">트래킹 시에 사용할 값을 입력 합니다.</span></p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+				<p><span style="margin: 0px 0px 0px 90px; font-weight: bold;">Track Value2<em></em> :<span style="font-weight: normal;">트래킹 시에 사용할 값을 입력 합니다.(결과에 대한 Reason값)</span></span></p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 00px; font-weight: bold;">RESULT</p>
+	<p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 처리 결과 <a href="SessionVariable.htm">세션 변수</a></p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.command.result : <span style="font-weight: normal;">처리 성공(_SLEE_SUCCESS_), 실패(_SLEE_FAILED_)</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.command.reason : <span style="font-weight: normal;">실패면 실패 오류코드(<a href="SystemConstant.htm">시스템 상수</a> 참조)</span></p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 00px; font-weight: bold;">RELATED</p>
+	<p>&nbsp;</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_DefineMent_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_DefineMent.htm">DefineMent</a></p>
+	<p>&nbsp;</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_GetDigit_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_GetDigit.htm">GetDigit</a></p>
+	<p>&nbsp;</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_Abort_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_Abort.htm">Abort</a></p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_DefineTrack_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_DefineTrack.htm">DefineTrack</a></p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>    
+		<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_ChoiceMent_35.png" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_ChoiceMent.htm">ChoiceMent</a></p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_ChoiceCall_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_ChoiceCall.htm">ChoiceCall</a></p>    
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>  
+</td>
+<tr style="vertical-align:top">
+        <td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;">&nbsp;</td>
+</table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="Item_GetDigit.htm">다음</a>&nbsp;
+     <a href="Telephony_Items.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

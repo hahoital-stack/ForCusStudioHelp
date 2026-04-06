@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>WaitInbound</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">WaitInbound</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="Item_WaitOutbound.htm">다음</a>&nbsp;
+     <a href="Item_GetDigit.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;">IVR 시스템에서 전화를 기다리는 역할을 수행하며, 서비스 시나리오가 시작되는 위치(Main.SSFX)에 무조건 존재 하여야 합니다. 
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">ICON</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/Item_WaitInbound_35.PNG" width="45" height="35"></p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">PROPERTIES</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Inbound Info</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_WaitInbound.PNG" width="422" height="406"></p>
+  <p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">ANI Info : <span style="font-weight: normal;">교환기로 부터 발신자 번호를 받을 수 있도록 변수를 지정 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">DNI Info : <span style="font-weight: normal;">착신측 서비스 번호를 받을 수 있도록 변수를 지정 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">User Data : <span style="font-weight: normal;">사용자 데이터를 받을 수 있도록 변수를 지정 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Trunk User Data : <span style="font-weight: normal;">사용자 데이터를 받을 수 있도록 변수를 지정 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Ring Time : <span style="font-weight: normal;">SLEE에서 전화를 받기전 Delay 시간을 지정 합니다.(100ms 단위, 1초는 10 입니다.)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>CDR Initialize Check Box</em> : <span style="font-weight: normal;">체크 되어 있으면 호 착신 직후에 Init CDR 을 적재하며 체크 해제 시에는 호 종료 시점에 Init CDR 을 적재 합니다.(Default : TRUE), 이 값을  체크 해제 하고  CDRCtrl Item에서 Init CDR 적재 여부를 설정 할 수 있습니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: normal;">♣ 교환기에서 지원할 경우 값들을 입력 받을 수 있으며, 시나리오 간 전환이 있을 경우는 ChangeService Item에서 각 항목별로 값을 넘겨 받을 수 있습니다.		</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: normal;">♣ CTI 서버를 이용하는 경우는 CB(CTI Bridge)를 통하여 처리 되어야 합니다.</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">RESULT</p>
+<p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 처리 결과 <a href="SessionVariable.htm">세션 변수</a></p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.sys.id : <span style="font-weight: normal;">SLEE system ID + channel ID 를 조합한 값으로 점유된 호 중에서만 유일</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.sys.systemid : <span style="font-weight: normal;">SLEE system ID</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.sys.channel : <span style="font-weight: normal;">LI(driver Logical Index) 값으로, SLEE 채널 번호로 사용</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.sys.servicekey : <span style="font-weight: normal;">LR(Logical Range) 값으로, 서비스를 선택하기 위한 값으로 사용</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.sys.trunkid : <span style="font-weight: normal;">MCE(TE) system ID</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.sys.physicalline : <span style="font-weight: normal;">TE physical channel </span>#</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.sys.virtual : <span style="font-weight: normal;">호가 점유된 LI(channel #)가 virtual 회선인지에 대한 값</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.sys.debugservicelr : <span style="font-weight: normal;">-1</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.sys.servicechanged : <span style="font-weight: normal;">서비스 전환 여부(콜의 시작 이므로 0)</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.call.callid : <span style="font-weight: normal;">TE call ID로, TE에서 콜마다 Unique하게 부여하는 ID(구성 : 프로세스 ID 4자리 + Channel ID 4자리+ 시분초(hhmmss) 6자리 + 랜던 6자리)</span></p>
+<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.call.ani : <span style="font-weight: normal;">TE 또는 시나리오 전환 시 이전 시나리오로 부터 받은 ANI 값</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.call.dnis : <span style="font-weight: normal;">TE 또는 시나리오 전환 시 이전 시나리오로 부터 받은 DNIS 값</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.call.userdata : <span style="font-weight: normal;">시나리오 전환 시 이전 시나리오로 부터 받은 userdata 값</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.call.prevservice : <span style="font-weight: normal;">시나리오 전환 시 이전 시나리오에 대한 service ID</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.call.disconnected : <span style="font-weight: normal;">서비스가 TE disconnect 이벤트를 받았는지 여부(콜의 시작 이므로 0)</span></p>
+<p>&nbsp;</p>
+<p><span style="margin: 0px 0px 0px 40px; font-weight: bold;">session.call.reconn : <span style="font-weight: normal;">복구콜 여부(0:일반콜, 1:복구콜)</span></span></p>
+<p>&nbsp;</p>
+<p><span style="margin: 0px 0px 0px 00px; font-weight: bold;">RELATED</span></p>
+<p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_ChangeService_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_ChangeService.htm">ChangeService</a></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_WaitOutbound_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_WaitOutbound.htm">WaitOutbound</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+    
+</td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="Item_WaitOutbound.htm">다음</a>&nbsp;
+     <a href="Item_GetDigit.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

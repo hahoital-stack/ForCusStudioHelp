@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>PacketSize</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">PacketSize</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="Item_PacketJson.htm">다음</a>&nbsp;
+     <a href="Item_PacketCall.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>Send 전문 사이즈를 구할 수 있는 아이템 입니다.</p>
+<p>&nbsp;</p>
+<p>전문 정의는 Global에 정의 되어 있으므로 PacketSize 아이템을 시나리오 어디에서도 적용 가능 하지만 실제 사이즈를 정확하게 얻기 위해서는 PacketCall 아이템 전에 호출 되어야 합니다.</p>
+<p>&nbsp;</p>
+<p>* 이 아이템은 ForCus 4.3 이상 버전에서만 사용 가능 합니다.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">ICON</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/Item_PacketSize_35.PNG" width="45" height="35"></p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">PROPERTIES</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Packet Info</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_PacketSize.PNG" width="422" height="406"></p>
+  <p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Name : <span style="font-weight: normal;">아이템 이름을 입력합니다.(결과 시스템 변수를 참조할 때 사용 합니다), <img src="images/Item_PacketCall_35.PNG" width="45" height="35"> PacketCall Item 의 이름을 입력 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Packet ID : <span style="font-weight: normal;">전문 사이즈를 구할 정의된 Packet을 지정 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Open Packet Item Button</em> : <span style="font-weight: normal;">Packet ID에 지정된 정의된 DefinePacket Item으로 이동 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Condition : <span style="font-weight: normal;">아이템 수행 조건을 지정 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">RESULT</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 아이템  속성 변수(@name 은 Name 항목에서 지정한 이름)</p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 40px; font-weight: bold;">@name.sendsize : <span style="font-weight: normal;">전송할 패킷 데이터 사이즈(반복 부 포함)</span></p>
+    <p style="margin: 0px 0px 0px 40px; font-weight: bold;">@name.sendpartsize : <span style="font-weight: normal;">전송할 패킷 데이터 사이즈(반복 부 제외)</span></p>
+    <p style="margin: 0px 0px 0px 40px; font-weight: bold;">@name.sendrepeatsize[XX] : <span style="font-weight: normal;">반복 부별 정의된 보내는 전문 사이즈(반복 부는 9개 까지 지원),
+XX(repeat 카운트 인덱스, 1 base)</span></p>
+    <p style="margin: 0px 0px 0px 40px; font-weight: bold;">@name.repeatcount : <span style="font-weight: normal;">전송할 패킷에 포함된 반복 부 개수</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>        
+<p><span style="margin: 0px 0px 0px 00px; font-weight: bold;">RELATED</span></p>
+<p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_DefinePacket_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_DefinePacket.htm">DefinePacket</a></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_PacketCall_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_PacketCall.htm">PacketCall</a></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+    
+</td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="Item_PacketJson.htm">다음</a>&nbsp;
+     <a href="Item_PacketCall.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

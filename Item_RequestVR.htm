@@ -1,0 +1,252 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>RequestVR</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">RequestVR</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="Item_ResponseVR.htm">다음</a>&nbsp;
+     <a href="Item_CloseVR.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>음성인식을 시작 합니다. VoiceRecognize 아이템에서 음성인식 시작 부분만 떼어 놓은 것입니다.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+<p>음성인식 시작과 결과가 떨어져 있기 때문에 예외상황이 많이 발생하는 부분이기도 합니다. </p>
+<p>&nbsp;</p>
+<p>- 음성인식 결과를 받는 아이템 : ResponseVR, VoiceRecognize(RequestVR후 호출), GetDigit(음성인식사용, RequestVR후 호출)</p>
+<p>&nbsp;</p>
+<p>- Menu도 음성인식을 시작하고 결과를 받는 부분이 있어서, session.vr.recognizestart를 체크하지만 메뉴를 호출하기 전에는 RequestVR을 호출하지 않는 것이 좋을 듯 합니다.</p>
+<p>&nbsp;</p>
+<p>* 주의사항</p>
+<p>&nbsp;</p>
+<p>1. ReqestVR에서 Barge-in은 중요한 속성으로 Barge-in 이 체크 되어 있으면 음성인식을 시작하고 체크 되어 있지 않으면 음성인식은 ResponseVR, VoiceRecognize, GetDigit(음성인식사용) 에서 음성인식 시작과 결과가 같이 작동합니다.</p>
+<p>&nbsp;</p>
+<p>2. RequestVR을 호출하면 session.vr.recognizestart가 TRUE가 되어  음성인식 결과를 받는 아이템을 호출하거나 Abort Item을 호출하지 않으면 다음 RequestVR에서는 속성에 상관없이 음성인식을 시작하지 않고 넘어갑니다.</p>
+<p>&nbsp;</p>
+<p>3.  RequestVR을 호출하고 음성인식 결과를 받지 않고 다시 RequestVR을 호출하는 경우는 두가지 예외가 발생합니다. 이전의 RequestVR에서 음성인식 중인 경우는 다음 RequestVR에서 음성인식을 시작하지 않으므로 음성인식 결과를 받는 아이템호출시 이전 음성인식의  결과가 받아집니다. 두번째는 이전의 RequestVR에서 음성인식이 되어버린 경우로 이경우도 다음 RequestVR에서 음성인식을 시작하지 않으므로 음성인식 결과를 받는 아이템 호출 시 이미 받아진 이전 음성인식 결과가 받아 집니다.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">ICON</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/Item_RequestVR_35.PNG" width="45" height="35"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">PROPERTIES</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><a name="VROption"></a><img src="images/StatementTab.PNG" width="16" height="15"> Recognize Info</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_RequestVR_RecognizeInfo.PNG" width="572" height="520"></p>
+  <p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">Grammar</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>음성인식을 하기 위한 그래머 및 연속어 인식의 경우 결과 변수를 지정 합니다.</p>
+    	<p style="margin: 0px 0px 0px 70px; font-weight: normal;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Grammar [ Expression ] : <span style="font-weight: normal;">음성인식 그래머를 지정 합니다. 그래머는 문자형으로 입력 할 경우 여러개의 </span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><span style="font-weight: normal;">그래머를 리스트에 지정 가능합니다. 변수형으로 지정할 경우는 하나만 가능 합니다. 대신 변수에 여러 개의 </span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><span style="font-weight: normal;">그래머를 구분자 &quot;|&quot; 를 가지고 미리 지정 가능 합니다. 단, 문자형과 변수형은 리스트에 같이 넣을 수 </span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><span style="font-weight: normal;">없습니다.(변수에 여러개 의 그래머 지정 시 예 : 'file:test1.grxml | file:test2.grxml | file:test3.grxml') </span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">♣ 그래머 타입에 따른 그래머 입력 방법</p>
+			<p style="margin: 0px 0px 0px 135px; font-weight: normal;">file - Nuance Engine 이 설치된 장비내에 위치하는 Grammar</p>
+			<p style="margin: 0px 0px 0px 135px; font-weight: normal;">builtin - 설치된 언어팩에 내장된 Grammar(각 언어팩에 첨부된 레퍼런스 참조. 한글팩의 경우 </p>
+			<p style="margin: 0px 0px 0px 135px; font-weight: normal;">Supplement - Korean ko-KR.pdf 참조)</p>
+			<p style="margin: 0px 0px 0px 135px; font-weight: normal;">mcmfile - MCM이 설치된 장비에 위치하는 Grammar(비권장)</p>
+			<p style="margin: 0px 0px 0px 135px; font-weight: normal;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 135px; font-weight: normal;">사용 시에는 그래머 앞에 사용하고 ":"으로 구분한다.</p>
+			<p style="margin: 0px 0px 0px 135px; font-weight: normal;">사용 예 : 'file:testGram.grxml', 'builtin:grammar/currency?language=ko-KR', 'mcmfile:testGram.grxml'</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Grammar Desc : <span style="font-weight: normal;">지정한 그래머의 설명을 입력 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Add Button</em> : <span style="font-weight: normal;">지정한 그래머를 그래머 리스트에 추가 합니다.(문자형으로 지정시 여러 개, 변수형으로 </span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><span style="font-weight: normal;">지정시 한개 만 지정 가능)</span></p>
+			<p><span style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Del Button</em> : <span style="font-weight: normal;">선택한 그래머를 삭제 합니다.</span></span></p>
+			<p><span style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Update Button</em> : <span style="font-weight: normal;">선택한 그래머의 내용을 갱신 합니다.</span></span></p	><p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Barge-In Check Box</em> : <span style="font-weight: normal;">음성인식 시 Barge-In 을 처리할 것인지 유무를 지정 합니다.</span></p>
+	  <p style="margin: 0px 0px 0px 196px; font-weight: normal;">Barge-In 체크 시 Ment List에 멘트가 있을 경우 &lt;Play 태그 보다 앞에 &lt;voicerecognizestart 태그를 생성하여 VR엔진을 시작한 후에 멘트를 Play하여 Play중 발성에 대해서 인식할 수 있게 한다. 체크를 하지 않은 경우는 &lt;voicerecognizestart 태그를 ResponseVR 아이템 에서 생성 합니다.</p>
+	  <p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Confirm Check Box</em> : <span style="font-weight: normal;">음성인식 결과에 대한 사용자 질의를 음성인식으로 할때 체크 합니다. 예를 들면 &quot;브리지텍&quot; </span><span style="font-weight: normal;">이라는 음성인식 결과에 대해 &quot;브리지텍이 맞습니까? 예 아니오로 대답해 주세요&quot; 라고 음성인식을 할때 사용하며, </span><span style="font-weight: normal;">이 음성인식의 결과인 &quot;예, 아니오&quot; 에 따라서 &quot;브리지텍&quot;이라고 음성인식을 한 결과의 VR_REJECT 라는 항목의 </span><span style="font-weight: normal;">갱신 자료로 사용 됩니다.(데이터의 갱신은 VERIFY Item을 사용 합니다.)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Ignore DTMF Check Box</em> : <span style="font-weight: normal;">음성인식 시에 디지트 입력을 무시하여 디지트에 의해 음성인식이 중단되는 것을 막습니다.(v6.0 이상)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">STT Name : <span style="font-weight: normal;">등록된 STT Name 입력으로 Multi STT 를 지원합니다.(SWAT>IVR관리>미디어관리>STT 관리)(v6.0 이상)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">No Voice Timeout</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Set Timer Check Box</em> : <span style="font-weight: normal;">Set Timer 체크가 되면 음성인식 서버가 시작(voicerecognizestart 태그) 된 후 바로 타이머가 동작하며 체크되지 않으면 음성인식 처리 태그인 voicerecognizeresult 태그 에서 타이머 체크가 시작됩니다.</span></p>
+	  <p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+	  <p style="margin: 0px 0px 0px 90px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>Timeout(ms)은 음성이 입력 되기 까지의 타입아웃을 지정 합니다.</p>
+	  <p style="margin: 0px 0px 0px 98px; font-weight: normal;">- 타임아웃 시간을 지정 하지 않으면 서버 기본 타임아웃이 적용 됩니다.(milisecond 단위)</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">Max Timeout</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">&nbsp;</p>
+   			<p style="margin: 0px 0px 0px 90px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>음성인식 서버가 음성인식을 시작 한 후 인식의 결과가 나오기 까지의 최대 시간을 지정 합니다.(milisecond 단위이며, 기본 값은 10초 입니다)</p>
+   			<p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+   			<p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Common &amp; Ment Info</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_RequestVR_CommonandMentInfo.PNG" width="572" height="520"></p>
+  <p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">Common</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>음성인식 공통 속성입니다.</p>
+    	<p style="margin: 0px 0px 0px 70px; font-weight: normal;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>CDR Write Check Box</em> :<span style="font-weight: normal;"> 음성인식 결과 또는 입력된 디지트를 CDR에 기록 여부를 체크 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Clear Digit Check Box</em> :<span style="font-weight: normal;"> 멘트 리스트를 재생하기 전에 디지트 버퍼를 지울지 여부를 체크 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Encrypt Check Box</em> : <span style="font-weight: normal;">음성인식 결과 또는 입력된 디지트를 CDR에 기록 할 때 암호화 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Ment list all tracking Check Box</em> : <span style="font-weight: normal;">멘트 리스트에 지정된 전체 멘트를 대상으로 트래킹을 처리합니다.(개별 멘트 트래킹보다 우선합니다.)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>TTS Failure Behavior</em> : <span style="font-weight: normal;">멘트 리스트에서 첫 번째 항목 멘트 타입이 "TTS Stream" 또는 "TTS File" 일 경우 체크 되었을 때 유효하며, 첫 번째 멘트인 TTS Play에서 TTS 서버와 연동이 실패인 경우 첫 번째 멘트 이후 설정된 멘트는(TTS Stream, TTS File 포함 모든 타입) 첫 번째 멘트인 TTS Play의 대체 멘트로 처리 됩니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">Ment</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Expression [Ment ID] : <span style="font-weight: normal;">재생할 음성 파일을 지정합니다. </span></p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- DefineMent Item에 정의된 MentID가 콤보박스 리스트로 제공되며 리스트에서 멘트를 선택 할 수 있습니다.</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- 멘트 파일 이름이나 MentID가 들어있는 변수를 사용 할 수 있습니다.</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- 가변 멘트를 처리 할 수 있습니다. 가변 멘트는 여러개의 멘트를 한번에 재생 합니다. 멘트는 작은 따옴표로 묶고 멘트와 멘트 사이는 콤마로 구분 합니다.( 예 : <span style="color:#06F;">'Ment1','Ment2','Ment3'</span> )</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- 연산식을 통해 멘트 이름을 조합 할 수 있습니다. 단, 변수와 문자를 같이 연산 할 수는 없습니다.( 예 : gs_TrData.BI09ZZ.from.O_27_합계금액 * 1 )</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- 멘트 리스트에 여러개의 멘트를 등록하여 순서대로 재생 할 수 있습니다.</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><a href="Item_Play.htm#MentType">Type</a> : <span style="font-weight: normal;">재생 할 멘트의 타입을 설정 합니다.(MentID, File 타입을 제외한 모든 타입은 Country항목의 영향을 받아서 각 언어별로 멘트를 재생 합니다)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Play Button</em> : <span style="font-weight: normal;">멘트 리스트에서 선택한 멘트가 MentID로 설정 되었다면 재생 합니다.(Tools&gt;Options&gt;Debug&gt;Ment Path 설정 필요, 단, 가변멘트일 경우 현재는 재생 불가</span>)</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Stop Button</em> : <span style="font-weight: normal;">현재 재생 중인 멘트를 중지 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Country<em></em>  : <span style="font-weight: normal;">국가별 언어를 설정하여 해당 타입으로 멘트를 재생할 경우 각 언어에 맞게 멘트를 재생 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- MentID, File 타입을 제외한 모든 타입 선택시 Country항목이 활성화 됩니다.</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- 현재 지원하는 언어는 한국어, 영어, 중국어, 베트남어, 몽골어를 지원 합니다.</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Speaker<em></em>  : <span style="font-weight: normal;">Ment Type이 TTS-Stream, TTS-File이면  Speaker ID 를 설정하여 TTS의 화자를 선택할 수 있습니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">TTS Name : <span style="font-weight: normal;">Ment Type이 TTS-Stream, TTS-File이면  TTS Name 을 설정하여 TTS 서버를 선택할 수 있습니다.</span></p>
+				<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- 값을 지정하지 않으면 기본 TTS 서버로 처리 됩니다.</p>
+				<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- v5.x : 'ADT' 로 지정하면 TTS Adapter 를 통한 TTS 연동을 지원합니다.(Multi TTS 지원 불가)</p>
+				<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- v6.0 이상 : "SWAT>IVR관리>미디어관리>TTS 관리" 에 등록한 Name 을 지정하면 TTS Adapter 를 통한 Multi TTS 연동을 지원합니다.</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Tracking Check Box</em> : <span style="font-weight: normal;">멘트별로 트래킹을 처리합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Ignore DTMF Check Box</em> : <span style="font-weight: normal;">멘트 재생 중에 DTMF 입력을 무시 할지를 설정 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Encrypt Check Box </em> : <span style="font-weight: normal;">멘트별로 내용을 암호화 하여 AI 시나리오일 경우 Dialogue CDR에 적용하며 Tracking이 함께 체크된 경우 시나리오 타입에 관계없이 Tracking CDR에도 적용합니다.(v6.2 이상)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Condition<em></em> : <span style="font-weight: normal;">각 멘트의 재생 조건을 설정 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Up Button</em> : <span style="font-weight: normal;">선택한 멘트를 위로 이동 합니다..</span>			</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Down Button</em> : <span style="font-weight: normal;">선택한 멘트를 아래로 이동 합니다.</span>			</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Cut Button</em> : <span style="font-weight: normal;">선택한 리스트를 잘라냅니다.(Ctrl+X)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Copy Button</em> : <span style="font-weight: normal;">선택한 리스트의 내용을 복사 합니다.(Ctrl+C)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Paste Button</em> : <span style="font-weight: normal;">복사한 리스트의 내용을 붙여넣기 합니다.(Ctrl+V)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Add Button</em> : <span style="font-weight: normal;">지정한 멘트를 멘트 리스트에 추가 합니다.</span>			</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Del Button</em> : <span style="font-weight: normal;">선택한 멘트를 멘트 리스트에서 삭제 합니다.</span>			</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Update Button</em> : <span style="font-weight: normal;">선택한 멘트의 내용을 갱신 합니다.</span>			</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Description :<span style="font-weight: normal;"> Expression 에 지정된 멘트의 설명이 있다면 표시 합니다.</span></p>
+
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Chat Info</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><span style="margin: 0px 0px 0px 0px; font-weight: bold; color: #F00;">* ForCus v6.0 이상 지원</span></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_RequestVR_ChatInfo.png" width="572" height="520"></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: normal;">※ <a href="Scenario_Project.htm#ProjectConfigurationSettings">Chat 지원 시나리오 설정</a>을 했을 때 Chat Info 탭이 활성화 됩니다.</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Expression Code : <span style="font-weight: normal;">Chat Text 로 표현하지 못하는 이미지나 아이콘 등을 미리 정의한 코드입니다.</span></p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: normal;">※ 리스트에 입력된 tttt1, tttt2 는 Expression Code 7700 의 상세 코드입니다.</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #0A0">※ Chat 콜 일때 Chat Text 출력은 Common & Ment Info 탭 > Ment Expression 에 입력된 MentID 의 Description 또는 TTS 인 경우 합성 문자열이 출력 됩니다.</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Tracking		</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_RequestVR_Tracking.PNG" width="572" height="520"></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><span style="font-weight: normal;">트래킹을 처리합니다.</span></p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;"><a name="Properties"></a>Properties</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Check Tracking Check Box</em> : <span style="font-weight: normal;">Tracking을 사용 할 것인지를 체크합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Tracking Point Flag Check Box</em> : <span style="font-weight: normal;">특별한 Tracking Flag를 설정하여 SWAT에서 트래킹 시에 이 플래그가 설정된 항목만 트래킹 할 수 있습니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Encryption Value1 Check Box</em> : <span style="font-weight: normal;">Track Value1 속성 데이터에 대해서 암호화 처리를 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+    		<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Track ID : <span style="font-weight: normal;">정의한 Track ID를 선택합니다.</span></p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- DefineTrack Item에 정의된 Track ID가 콤보박스 리스트로 제공됩니다.(Type이 없거나, RequestVR인 경우)</p>
+					<p style="margin: 0px 0px 0px 120px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Track Name<em></em> : <span style="font-weight: normal;">Track ID를 선택하면 같이 정의된 이름을 출력합니다.(SWAT에서 이 이름으로 트랙킹 시에 사용합니다.)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Track Value1<em></em> : <span style="font-weight: normal;">트래킹 시에 사용할 값을 입력 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+	        <p><span style="margin: 0px 0px 0px 90px; font-weight: bold;">Track Value2<em></em> :<span style="font-weight: normal;">트래킹 시에 사용할 값을 입력 합니다.(결과에 대한 Reason값)</span></span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">RESULT</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.vr.recognizestart : <span style="font-weight: normal;">음성인식 시작 여부(RequestVR에서 TRUE로 세팅되고, ResponseVR, VoiceRecognize, GetDigit(음성인식사용), Abort(Media Type:VR)에서 FALSE로 세팅 됩니다)</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">RELATED</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_OpenVR_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_OpenVR.htm">OpenVR</a></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_CloseVR_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_CloseVR.htm">CloseVR</a></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_ResponseVR_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_ResponseVR.htm">ResponseVR</a></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_VoiceRecognize_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_VoiceRecognize.htm">VoiceRecognize</a></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_GetDigit_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_GetDigit.htm">GetDigit</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+    
+</td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="Item_ResponseVR.htm">다음</a>&nbsp;
+     <a href="Item_CloseVR.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

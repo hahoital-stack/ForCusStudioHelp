@@ -1,0 +1,242 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>RequestPush</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">RequestPush</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="Item_RequestInfo.htm">다음</a>&nbsp;
+     <a href="Item_GetPageData.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>웹 페이지(HTML 파일)를 화면에 출력 하도록  스마트 폰으로 알림 메시지를 보냅니다.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">ICON</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/Item_RequestPush_35.PNG" width="45" height="35"></p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">PROPERTIES</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Push Info</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><a name="RequestPush_PushInfo"></a><img src="images/Properties_RequestPush_PushInfo.PNG" width="572" height="520"></p>
+  <p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Name : <span style="font-weight: normal;">아이템 이름을 지정 합니다.(결과 변수에 접근할 때 사용 합니다.)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Transaction ID :<span style="font-weight: normal;"> TB 에서 전문을 전송할 대상(iWeb-Adapter)을 찾기 위한 서버 키 입니다.(ForCus v5.0.1 이상 부터는 필수 입력)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">Push Type</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Dummy Push Check Box : </em><span style="font-weight: normal;">내용이 없는 Push를 보내서 실제 스마트폰이 Push Receive가 가능인지 체크한다.</span></p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>DTMF  Push Check Box : </em><span style="font-weight: normal;">스마트폰에 다이얼 패드 창을 팝업 시킨다.</span></p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Popup Push Check Box : </em><span style="font-weight: normal;">스마트폰 화면 상단에 팝업창을 출력한다.</span></p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Native Push Check Box : </em><span style="font-weight: normal;">SDE 작성한 JSON파일을 파싱하여 정보를 푸시한다.</span></p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Visual Push Check Box : </em><span style="font-weight: normal;">IVR메뉴 멘트와 스마트폰 화면을 싱크하여 화면에 메뉴내용을 출력한다.</span></p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Timeout : <span style="font-weight: normal;">Dummy Push, DTMF Push일 경우 Timeout을 설정합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">URL : <span style="font-weight: normal;">출력할 HTML URL 정보를 지정 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Message : <span style="font-weight: normal;">스마트폰 화면에 설정한 메시지가 출력됩니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">TelNo : <span style="font-weight: normal;">출력할 스마트 폰의 전화번호를 지정 합니다.(알림 메시지를 위한 Device ID 를 찾기 위한 키)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">DNI : <span style="font-weight: normal;">웹콜  서비스 시나리오를 위한 서비스 식별번호를 지정 합니다.(Dialed Number Identification)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Condition<em></em>  : <span style="font-weight: normal;">아이템의  실행 조건을 설정 합니다.</span> </p			
+        >
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Hide push popup window Check Box : </em><span style="font-weight: normal;">푸시 요청시 팝업되는 윈도우를 이것을 체크하면 팝업하지 않습니다.(아이폰 전용)</span></p>
+		<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold; color: #999;"><img src="images/StatementTab.PNG" width="16" height="15"> Html Info<span style="font-weight: normal;"> : 현재 지원하지 않습니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Popup Push Info</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><a name="RequestPush_PopupPushInfo"></a><img src="images/Properties_RequestPush_PopupPush.PNG" width="572" height="520"></p>
+	  <p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Popup Title : <span style="font-weight: normal;">팝업 타이틀을 설정합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Popup Message : <span style="font-weight: normal;">팝업 메시지를 설정합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Gravity : <span style="font-weight: normal;">팝업 메시지 출력 위치를 선택합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Use Vibration Check Box</em> : <span style="font-weight: normal;">팝업 진동알림을 설정합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Layout Type : <span style="font-weight: normal;">Push 화면 배치를 선택합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Background Color  : <span style="font-weight: normal;">Push 배경 색을 선택합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Title Font Color : <span style="font-weight: normal;">Push 타이틀 폰트 색을 선택합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Title Font Size : <span style="font-weight: normal;">Push 타이틀 폰트 크기를 설정합니다.(10 ~ 30 dpi)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Message Font Color : <span style="font-weight: normal;">Push 메시지 폰트 색을 선택합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Message Font Size : <span style="font-weight: normal;">Push 메시지 폰트 크기를 설정합니다.(10 ~ 30 dpi)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Popup Time : <span style="font-weight: normal;">팝업 지속시간을 설정합니다.(Max 30000 ms)</span></p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Preview Button</em>  : <span style="font-weight: normal;">팝업 미리보기</span></p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Native Push Info</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><a name="RequestPush_NativePushInfo"></a><img src="images/Properties_RequestPush_NativePush.PNG" width="572" height="520"></p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">JSON Root Path : <span style="font-weight: normal;">JSON 파일이 있는 로컬 디렉토리를 전체 경로로 표시 합니다</span></p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Load JSON Name : <span style="font-weight: normal;">선택한 JSON 파일 이름을 표시 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Load JSON Button :</em> <span style="font-weight: normal;">JSON 파일을 선택하면 내용을 파싱하여 ID, Screen ID, Version, Build 값을 읽어 옵니다.</span></p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">JSON Meta Data</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 90px; font-weight: bold;">ID : <span style="font-weight: normal;">JSON 파일이 빌드 될때 생성되는 Unique한 ID</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Screen ID : <span style="font-weight: normal;">Push Screen ID</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Version : <span style="font-weight: normal;">JSON 파일이 빌드 될때 생성되는 버전</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Build : <span style="font-weight: normal;">JSON 파일이 빌드 될때 생성되는 빌드 번호</span></p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Visual Push Info</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><a name="RequestPush_VisualPushInfo"></a><img src="images/Properties_RequestPush_VisualPush.PNG" width="572" height="520"></p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Visual Push Title : <span style="font-weight: normal;">Visual Push 타이틀을 설정합니다.</span></p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Visual Push Message Combo Box : <span style="font-weight: normal;">Ment를 선택 하여 Description을 Visual Push Message Edit Box의 현재 커서 위치에 붙여 넣습니다.</span></p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Using Expression Check Box</em> : <span style="font-weight: normal;">Visual Push Message Edit Box의 내용을  연산식으로 처리 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&bull; 선택 멘트 리스트</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&bull; Visual Push Message Edit Box</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Preview Button</em> : <span style="font-weight: normal;">Visual Push 미리 보기</span></p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Del Button</em> : <span style="font-weight: normal;">Visual Push Message 콤보박스에서 멘트를 선택하면 멘트 리스트에 선택한 Ment와 Description이 추가되는데, 멘트 리스트에서  선택한 멘트를 제거한다.</span></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Insert Message &gt;&gt; Button</em> : <span style="font-weight: normal;">멘트 리스트에서 선택한 멘트의 Description을 Visual Push Message Edit Box의 현재 커서 위치에 붙여 넣습니다.</span></p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Visual Push Notify : <span style="font-weight: normal;">Visual Push 알림을 설정합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Layout Type : <span style="font-weight: normal;">Push 화면 배치를 선택합니다.</span></p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><em>Use Vibration Check Box</em> : <span style="font-weight: normal;">팝업 진동알림을 설정합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Background Color  : <span style="font-weight: normal;">Push 배경 색을 선택합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Title Font Color : <span style="font-weight: normal;">Push 타이틀 폰트 색을 선택합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Title Font Size : <span style="font-weight: normal;">Push 타이틀 폰트 크기를 설정합니다.(10 ~ 30 dpi)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Message Font Color : <span style="font-weight: normal;">Push 메시지 폰트 색을 선택합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Message Font Size : <span style="font-weight: normal;">Push 메시지 폰트 크기를 설정합니다.(10 ~ 30 dpi)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Notify Font Color : <span style="font-weight: normal;">Push 알림  폰트 색을 선택합니다.</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">Notify Font Size : <span style="font-weight: normal;">Push 알림 폰트 크기를 설정합니다.(10 ~ 30 dpi)</span></p>
+		<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/StatementTab.PNG" width="16" height="15"> Tracking		</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;"><img src="images/Properties_RequestPush_Tracking.PNG" width="572" height="520"></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><span style="font-weight: normal;">Push 요청한 데이터에 대한 트래킹을 처리합니다.</span></p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold; color: #00F;"><a name="Properties"></a>Properties</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Check Tracking Check Box</em> : <span style="font-weight: normal;">Tracking을 사용 할 것인지를 체크합니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Tracking Point Flag Check Box</em> : <span style="font-weight: normal;">특별한 Tracking Flag를 설정하여 SWAT에서 트래킹 시에 이 플래그가 설정된 항목만 트래킹 할 수 있습니다.</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;"><em>Encryption Value1 Check Box</em> : <span style="font-weight: normal;">Track Value1 속성 데이터에 대해서 암호화 처리를 합니다.</span></p>
+		<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+   		<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Track ID : <span style="font-weight: normal;">정의한 Track ID를 선택하거나 입력 합니다.</span></p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">- DefineTrack Item에 정의된 Track ID가 콤보박스 리스트로 제공됩니다.(Type이 없거나, RequestPsuh인 경우)</p>
+			<p style="margin: 0px 0px 0px 120px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Track Name<em></em> : <span style="font-weight: normal;">Track ID를 선택하면 같이 정의된 이름을 출력합니다.(SWAT에서 이 이름으로 트랙킹 시에 사용합니다.)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+				<p style="margin: 0px 0px 0px 90px; font-weight: bold;">Track Value1<em></em> : <span style="font-weight: normal;">트래킹 시에 사용할 값을 입력 합니다.(값이 없으면 요청시 사용된 전화번호를 기본값으로 사용합니다.)</span></p>
+			<p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+	        <p><span style="margin: 0px 0px 0px 90px; font-weight: bold;">Track Value2<em></em> :<span style="font-weight: normal;">트래킹 시에 사용할 값을 입력 합니다.(결과에 대한 Reason값)</span></span></p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+		<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 00px; font-weight: bold;">RESULT</p>
+<p>&nbsp;</p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;"> <span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 처리 결과 <a href="SessionVariable.htm">세션 변수</a></p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.command.result : <span style="font-weight: normal;">처리 성공(_SLEE_SUCCESS_), 실패(_SLEE_FAILED_)</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">session.command.reason : <span style="font-weight: normal;">실패면 실패 오류코드(<a href="SystemConstant.htm">시스템 상수</a> 참조)</span>	</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>        
+<p><span style="margin: 0px 0px 0px 00px; font-weight: bold;">RELATED</span></p>
+<p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_RequestInfo_35.PNG" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_RequestInfo.htm">RequestInfo</a></p>
+<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_RegistServer_35.PNG" alt="" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_RegistServer.htm">RegistServer</a></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/Item_UnregistServer_35.PNG" alt="" width="45" height="35">&nbsp;&nbsp;&nbsp;&nbsp;<a href="Item_UnregistServer.htm">UnregistServer</a></p>
+<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p></td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="Item_RequestInfo.htm">다음</a>&nbsp;
+     <a href="Item_GetPageData.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

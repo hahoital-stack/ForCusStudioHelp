@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>User Scenario</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="User Scenario, User, Scenario" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">사용자 시나리오</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="DataImportExport.htm">다음</a>&nbsp;
+      <a href="AutoComplete.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>프로젝트 독립적인 시나리오로써 하나의 시나리오가 마치 공통함수 처럼 사용이 됩니다.</p>
+    <p>프로젝트 독립적인 성격이므로 프로젝트가 포함하고 있는 Global.ssfx 의 전역 변수나 정의는 사용하지 못하고, 지역변수나 세션변수, 시스템 함수 등은 사용이 가능합니다.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">구조</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>File ( .USFX : User Scenario File Extend )</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 사용자 시나리오 파일은 생성하면 .USFX 라는 확장자로 생성 됩니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>Directory</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 사용자 시나리오 파일은 생성 시에는 프로젝트 디렉토리 또는 유저가 지정한 디렉토리에 생성 됩니다. 유저가 이 시나리오를 사용하기 위해서는 등록하여야 하는데 등록하게 되면 기본으로 지정된 사용자 시나리오 디렉토리나 유저가 설정한 디렉토리로 복사를 하게 됩니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 기본 사용자 시나리오 등록 디렉토리는 <span style="color: #00F;" >&quot;C:\Documents and Settings\윈도우 로그인 아이디
+\Application Data\Bridgetec\Forcus\User Scenario\&quot;</span> 이며, 작성한 시나리오를 사용자 시나리오로 등록하면 복사되는 곳입니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>Project Independence</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 사용자 시나리오 파일은 프로젝트에 포함되지 않습니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 사용자 시나리오 파일은 프로젝트와 같이 백업되지 않습니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 사용자 시나리오 파일은 검색/치환 대상에서 제외됩니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 사용자 시나리오 파일에서는 전역 변수, 전역 정의를 사용할 수 없습니다.</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="Create"></a>생성</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>File&gt;Create User Scenario 메뉴를 선택하면 편집창이 나타나면서 생성하고자 하는 파일 이름을 입력하는 창이 팝업 됩니다. 생성된 파일의 기본 저장 디렉토리는 오픈한 프로젝트 디렉토리 입니다.</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px;><span font-weight: normal;"><img src="images/UserScenario_Create.PNG" width="524" height="253"></p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>	
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="Regist"></a>등록</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp; </p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>생성한 시나리오는 등록을 해야만 사용이 가능합니다.</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>Tools&gt;Regist User Scenario 메뉴를 선택하면 저장된 디렉토리의 사용자 시나리오를 선택할 수 있도록 창이 팝업 됩니다. 여러개의 파일을 동시에 선택 가능 합니다.</p>
+    <p style="margin: 0px 0px 0px 60px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px;><span font-weight: normal;"><img src="images/UserScenario_Regist.PNG" width="524" height="253"></p>
+    <p style="margin: 0px 0px 0px 60px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;"><a name="Regist"></a>&#183; </span>등록을 하게 되면 선택한 .usfx 파일은 지정한 사용자 시나리오 파일 디렉토리나(<a href="Options.htm#UserScenarioTab">Tools>Options 의 User Scenario Tab</a> 에서 설정) 기본 사용자 시나리오 파일에 복사 됩니다.(등록된 같은 이름의 사용자 시나리오 파일이 이미 존재할 경우 등록이 되지 않습니다.)</p>
+    <p style="margin: 0px 0px 0px 60px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px;><span font-weight: normal;"><img src="images/UserScenario_Regist_Result.PNG" width="578" height="215"></p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>사용자 시나리오로 등록이 되면 Item Toolbar 의 User 에 등록한 시나리오가 표시 됩니다.(사용자 시나리오는 현재 이름 순으로 최대 20개 까지만 표시 됩니다.)</p>
+    <p style="margin: 0px 0px 0px 60px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px;><span font-weight: normal;"><img src="images/UserScenario_Toolbar.PNG" width="161" height="190"></p>
+    <p style="margin: 0px 0px 0px 60px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>시나리오 등록에 있어 위의 등록 절차가 아닌 파일 복사만 하여도 시나리오는 등록됩니다. 지정한 시나리오 폴더나 기본 사용자 시나리오 폴더에 작성한 사용자 시나리오 파일(.usfx)을 복사하면 됩니다.(이 경우는 ForCusStudio 를 재실행 하여야 적용됩니다)</p>    
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="Edit"></a>편집</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>등록된 사용자 시나리오 파일은 File&gt;Edit User Scenario 메뉴에서 등록된 시나리오 폴더로 바로 접근하여 편집할 수 있습니다.</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>	
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;">제거</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>등록된 시나리오의 삭제는 따로 메뉴가 없고, 등록 디렉토리에서 해당 파일의 삭제로 완료 되며, 적용은 ForCusStudio 를 재실행 하여야 합니다.</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>	
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;">사용</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>Item Toolbar 의 User 에서 사용하고자 하는 시나리오를 선택할 수 있습니다.(또는 Toolbox)</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>자세한 사용법은 <a href="Item_UserCall.htm">UserCall</a> Item 에서 참조 바랍니다.</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;">컴파일</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>컴파일을 하게 되면 &quot;*.uxml&quot; 이 생성 되며, 한번 생성되면 변경이나 삭제가 아니면 다시 생성 되지 않습니다.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+    
+</td></tr></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="DataImportExport.htm">다음</a>&nbsp;
+     <a href="AutoComplete.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>
