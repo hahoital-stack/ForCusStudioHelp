@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>Auto Save</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검?어?력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">?나리오 ?상관?- Show Log</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">?작</a>&nbsp;
+     <a href="CM(SVN)_Function_CFModification.htm">?음</a>&nbsp;
+      <a href="CM(SVN)_Function_Commit.htm">?전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><a name="Func_WB_Log">Show Log</a></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">- 디렉토리 또는 파일이 Commit 된 Revision 번호를 리스팅 하며 각 Revision 별 로 상세한 정보를 볼 수 있습니다. </p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: normal;"><img src="images/CM(SVN)_LogMessage.png" width="686" height="703"></p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 98px; font-weight: bold;"> Filter : <span style="font-weight: normal;">입력한 값을 리스트에서 Author, Date, Message 항목의 값과 비교하여 같은 문자가 있는 Revison만 리스팅 합니다.</span></p>
+    <p style="margin: 0px 0px 0px 98px; font-weight: bold;"><em>Author Checkbox</em> : <span style="font-weight: normal;">Author를 필터링 항목으로 체크, 체크해제 합니다.</span></p>
+    <p style="margin: 0px 0px 0px 98px; font-weight: bold;"><em>Date Checkbox</em> : <span style="font-weight: normal;">Date를 필터링 항목으로 체크, 체크해제 합니다.</span></p>
+    <p style="margin: 0px 0px 0px 98px; font-weight: bold;"><em>Message Checkbox</em> : <span style="font-weight: normal;">Message를 필터링 항목으로 체크, 체크해제 합니다.</span></p>
+    <p style="margin: 0px 0px 0px 98px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 98px; font-weight: bold;"><em>Lookup period revision Checkbox</em> : <span style="font-weight: normal;">지정한 Revision 번호 사이의 Revision을 조회 합니다.</span></p>
+    <p style="margin: 0px 0px 0px 98px; font-weight: bold;"><em>Lookup period date Checkbox</em> : <span style="font-weight: normal;">지정한 날자에 해당 하는 Revision을 조회 합니다.</span></p>
+    <p style="margin: 0px 0px 0px 98px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 98px; font-weight: bold;">Revision List : <span style="font-weight: normal;">지정한 날자에 해당 하는 Revision을 조회 합니다.</span></p>
+    <p style="margin: 0px 0px 0px 98px; font-weight: bold;">Message Box : <span style="font-weight: normal;">Revision List 에서 선택한 Revision 이 Commit 될 때 입력한 메시지를 표시 합니다.</span></p>
+    <p style="margin: 0px 0px 0px 98px; font-weight: bold;">Item List : <span style="font-weight: normal;">Revision List 에서 선택한 Revision 에 같이 Commit 된 항목 리스트를 리스팅 합니다.</span></p>
+    <p style="margin: 0px 0px 0px 98px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 98px; font-weight: bold;"><em>Retrieve stop on copy/rename Checkbox</em> : <span style="font-weight: normal;">복사, 이름 변경이 일어난 지점 까지만 로그를 수집합니다.(해당 branches의 변경 사항 만 표시할 때 유용합니다.</span></p>
+    <p style="margin: 0px 0px 0px 98px; font-weight: bold;"><em>Retrieve merged revisions Checkbox</em>  : <span style="font-weight: normal;">Merged Revision 로그를 수집합니다.</span></p>
+    <p style="margin: 0px 0px 0px 98px; font-weight: bold;"><em>Refresh Button</em> : <span style="font-weight: normal;">리스팅 화면을 갱신합니다.</span></p>
+    <p style="margin: 0px 0px 0px 98px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 98px; font-weight: bold;">Popup Menu : <span style="font-weight: normal;">Item List의 항목에서 마우스 오른 버튼을 누르면 팝업됩니다.</span>    </p>
+    <p style="margin: 0px 0px 0px 190px; font-weight: bold;"><a href="CM(SVN)_Function_UnifiedDiff.htm">Unified diff</a> : <span style="font-weight: normal;">선택한 파일의 현재 Revision과 바로 전 Revision의 내용을 비교.</span></p>
+    <p style="margin: 0px 0px 0px 190px; font-weight: bold;"><a href="CM(SVN)_Function_Blame.htm">Blame</a> : <span style="font-weight: normal;">선택한 파일의 각 라인 별로 Commit한 작성자, Revision, 수정 날자등을 보여줌.</span></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p></td></table>
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">?작</a>&nbsp;   
+     <a href="CM(SVN)_Function_CFModification.htm">?음</a>&nbsp;
+      <a href="CM(SVN)_Function_Commit.htm">?전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

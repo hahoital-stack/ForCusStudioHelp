@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>NUMBER  diff_datetime( DATETIME_FLAG, START_DATE_TIME, END_DATE_TIME )</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+.text-align {
+	text-align: left;
+}
+.color {
+	color: #F00;
+}
+.color {
+	color: #F00;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="82%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">NUMBER  diff_datetime( DATETIME_FLAG, START_DATE_TIME, END_DATE_TIME )</td>
+    <td width="18%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="InnerFunction_isholyday.htm">다음</a>&nbsp;
+      <a href="InnerFunction_diff_date.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top ">
+<td style="text-align:left; color: #000; font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-weight: normal;">
+<h2 style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="diff_datetime"></a>diff_datetime</h2>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">두 개의 일자 시각 사이의 차이 정보를 구한다.</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><em>Parameter:</em></p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">DATETIME_FLAG</span></td>
+            <td width="552"><p><span class="f_Body" style="font-weight: normal;">[in] 차이  결과  정보에  대한  선택  사항.  대소문자를 유념하여 사용 해야 한다.</span></p></td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200">&nbsp;</td>
+            <td width="30"><span class="f_Body" style="font-weight: normal;">'Y' </span></td>
+            <td width="468"><p><span class="f_Body" style="font-weight: normal;">: 차이 연 수</span></p>
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200">&nbsp;</td>
+            <td width="30"><span class="f_Body" style="font-weight: normal;">'M' </span></td>
+            <td width="468"><p><span class="f_Body" style="font-weight: normal;">: 차이 월 수</span></p>
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200">&nbsp;</td>
+            <td width="30"><span class="f_Body" style="font-weight: normal;">'D' </span></td>
+            <td width="468"><p><span class="f_Body" style="font-weight: normal;">: 차이 일 수</span></p>
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200">&nbsp;</td>
+            <td width="30"><span class="f_Body" style="font-weight: normal;">'h' </span></td>
+            <td width="468"><p><span class="f_Body" style="font-weight: normal;">: 차이 시간</span></p>
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200">&nbsp;</td>
+            <td width="30"><span class="f_Body" style="font-weight: normal;">'m' </span></td>
+            <td width="468"><p><span class="f_Body" style="font-weight: normal;">: 차이 분</span></p>
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200">&nbsp;</td>
+            <td width="30"><span class="f_Body" style="font-weight: normal;">'s' </span></td>
+            <td width="468"><p><span class="f_Body" style="font-weight: normal;">: 차이 초</span></p>
+            </td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">START_DATE_TIME</span></td>
+            <td width="552"><span class="f_Body" style="font-weight: normal;">[in] 시작  일자시각.  YYYYMMDDhhmmss</span></td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">END_DATE_TIME	</span></td>
+            <td width="552"><span class="f_Body" style="font-weight: normal;">[in] 종료  일자시각.  YYYYMMDDhhmmss</span></td>
+        </tr>
+    </table>
+</div>
+   
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><em>Return:</em></p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+            <tr style="vertical-align:baseline" valign="baseline">
+                <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">NUMBER</span></td>
+                <td width="552"><p><span class="f_Body" style="font-weight: normal;">DATETIME_FLAG 값에 따라, 시작 일자 시각과 종료 일자 시각 사이의 차이 연 수, 차이 월 수, 차이 일 수, 차이 시간, 차이 분, 또는 차이 초를 리턴 한다.</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">START_DATE_TIME 이 END_DATE_TIME 보다 더 늦은 일자시각 이면, 차이 정보를 음수로 리턴 한다.</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">DATETIME_FLAG 값이 올바르지 않거나 START_DATE_TIME, END_DATE_TIME 이 올바르지 않다면, 아무것도 리턴 하지 않는다.</span></p></td>
+            </tr>
+        </table>
+    </div>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><em>Remark:</em></p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+            <tr style="vertical-align:baseline" valign="baseline">
+                <td width="25"><span style="font-weight: normal; font-size: 10pt; color: #000">ex)</span></td>
+                <td width="590"><p style="font-weight: normal; font-size: 10pt; color: #000">diff_datetime('D', '20130927121134', '20130928110411')</p>
+                    <p style="font-weight: normal; font-size: 10pt; color: #000">⇒ 1</p></td>
+                <td width="49">&nbsp;</td>
+            </tr>
+	</table>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="InnerFunction_isholyday.htm">다음</a>&nbsp;
+     <a href="InnerFunction_diff_date.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>Auto Save</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">시나리오 형상관리 - 사용 하기</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="CM(SVN)_Function_SCE.htm">다음</a>&nbsp;
+      <a href="CM(SVN)_StatusInfo.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 10px; font-weight: bold; color: #00F;"><a name="Menu4">형상관리 사용</a></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&bull; 형상관리 시나리오를 오픈한 경우 가장 먼저 할 일</p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><a href="CM(SVN)_Function_Update.htm">리본 메뉴 Home > CM(SVN) > Update</a> 또는 <a href="CM(SVN)_Function_Update.htm">리본 메뉴 CM > Subversiond(SVN) > Update</a> 실행 하기</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">- 시나리오를 Import 하거나 또는 Checkout 으로 받은 시나리오는 형상관리 중인 시나리오입니다.</p>
+    <p style="margin: 0px 0px 0px 68px; font-weight: normal;">개발 시에 여러 개발자가 시나리오을 오픈하여 개발을 하게 되는데 수정, 추가, 삭제한 내용을 수시로 Commit하여 SVN Server의 Repository에 업로드 하게 됩니다.</p>
+    <p style="margin: 0px 0px 0px 68px; font-weight: normal;">그런데, 같은 파일을 수정 시에 Working copy 디렉토리에 있는 파일을  이미 다른 사람이 수정하여 Commit한 경우에 나중에 이 파일을 Commit하게 되면 충돌이 발생하게 됩니다.</p>
+    <p style="margin: 0px 0px 0px 68px; font-weight: normal;">그래서 시나리오  편집 전에 <a href="CM(SVN)_Function_Update.htm">Update</a> 기능을 사용하여 Repository에 있는 가장 최신에 Commit 된 버전의  파일로 Working copy에 있는 파일을 업데이트 하여 수정된 파일을 편집 할 수 있도록 해야 합니다.</p>
+    <p style="margin: 0px 0px 0px 68px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal; color: #F30">※ 주의 : 다른 개발자가 시나리오 파일을 추가, 삭제, 변경 한 경우 Update 수행 후 프로젝트 파일 및 시나리오 파일은 갱신이 되지만 프로젝트가 열려 있기 때문에 Solution View, File View 트리에는 잘못 표시 되고 있으므로 프로젝트 또는 솔루션을 닫았다가 다시 열어 야 합니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal; color: #F30">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&bull; 시나리오 수정, 추가 파일 Repository에 전송하기</p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">시나리오 수정, 파일 추가, 파일 삭제 한 후에 <a href="CM(SVN)_Function_Commit.htm">리본 메뉴 Home > CM(SVN) > Commit</a> 또는 <a href="CM(SVN)_Function_Commit.htm">리본 메뉴 CM > Subversiond(SVN) > Commit</a> 을 실행 하여 Repository에 저장  해야 합니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&bull; 시나리오 파일(또는 프로젝트 파일) 추가</p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">프로젝트에 시나리오 파일을 새로 생성하거나 추가한 경우 형상관리를 하기 위해서는 <a href="CM(SVN)_Function_Add.htm">Add</a> 해야 합니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/CM(SVN)_4.3_Tree.png" width="226" height="91"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">프로젝트에 추가한 <span style="font-weight: normal; color: #7391BE;">ServiceScenario14897</span> 파일이 <span style="font-weight: normal; color: #7391BE;">NotVersioned</span> 상태로 보이는데 <a href="CM(SVN)_Function_Add.htm">Add</a> 대상 파일 입니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><a href="CM(SVN)_Function_Add.htm">리본 메뉴 CM > Subversiond(SVN) > Add</a> 를 실행하면 <a href="CM(SVN)_Function_Add.htm">Add</a> 창이 팝업 됩니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/CM(SVN)_Add.png" width="516" height="383"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">형상관리 중인 Working copy디렉토리 전체에서 <a href="CM(SVN)_Function_Add.htm">Add</a> 대상 파일을 리스팅 한 화면이며 Add 하지 않을 파일을 선택 해제 할 수 있습니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal; color:#F00">단, 프로젝트에 추가한 파일은 반드시 Add 해야 다른 개발자도 Update를 통해서 파일을 공유할 수 있습니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/CM(SVN)_AddResult.png" width="740" height="266"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><a href="CM(SVN)_Function_Add.htm">Add</a> 결과 창에 추가된 항목이 있습니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/CM(SVN)_4.3_AddTree.png" width="226" height="91"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><a href="CM(SVN)_Function_Add.htm">Add</a> 한 후 Solution View Tree에 <span style="font-weight: normal; color: #00F;">Added</span> 상태의 파일 <span style="font-weight: normal; color: #00F;">ServiceScenario14897</span> 이 보입니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><a href="CM(SVN)_Function_Commit.htm">리본 메뉴 Home > CM(SVN) > Commit</a> 또는 <a href="CM(SVN)_Function_Commit.htm">리본 메뉴 CM > Subversiond(SVN) > Commit</a> 을 실행 하여 Repository에 업로드 합니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/CM(SVN)_Commit_Added.png" width="686" height="703"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><span style="font-weight: normal; color: #00F;">Added</span> 한 항목과 변경된 프로젝트 파일이 Commit 대상 리스트에 있습니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal; color:#F00">SCE는 프로젝트에 파일을 Add 한 상태이기 때문에 프로젝트가 변경이 되었으므로 Add한 파일과 프로젝트를 반드시 같이 커밋 해야 문제가 발생하지 않습니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/CM(SVN)_Commit_AddedResult.png" width="740" height="276"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><span style="font-weight: normal; color: #00F;">Added</span> 항목을 Commit 한 결과 창 입니다. Repository에  업로드된  상태 입니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&bull; 시나리오 파일  이름 변경</p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">SCE Solution View, File View 에서 이름 변경 하고 자 하는 파일 항목에서 마우스 오른 버튼을 누르면 팝업되는 메뉴에서 &quot;Rename File&quot; 메뉴를 선택합니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/CM(SVN)_SolutionView.png" width="308" height="328"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">Rename File 은 SVN Rename 과 연동되어 있고 Commit을 하도록 자동으로 Commit 창이 팝업됩니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/CM(SVN)_Rename.png" width="458" height="98"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/CM(SVN)_Commit_Rename.png" width="686" height="487"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">Rename은 대상 파일을 Delete 후에 Add 하는 방식으로 처리 되기 때문에 Commit 대상 리스트에 원본 파일은 <span style="font-weight: normal; color: #FF873C;">Deleted</span>, 이름 변경 파일은 <span style="font-weight: normal; color: #00F;">Added</span> 된 것을 볼수 있습니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 78px; font-weight: normal;"><img src="images/CM(SVN)_Rename_Tree.png" width="419" height="84"></p>
+    <p style="margin: 0px 0px 0px 78px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 78px; font-weight: normal;">왼쪽은 Rename을 한 개발자의 SCE Solution View Tree 오른 쪽은 같은 시나리오를 개발하는 다른 개발자의 SCE Solution View Tree 이며 오른쪽은 파일 이름이 그대로 있고 SVN에는 이 파일이 없기 때문에 SVN 상태가 <span style="font-weight: normal; color: #C8BEE6;">None</span> 으로 표시 되고 있습니다.</p>
+    <p style="margin: 0px 0px 0px 78px; font-weight: normal;">프로젝트를 닫고 다시 열어야 합니다.</p>
+    <p style="margin: 0px 0px 0px 78px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 78px; font-weight: normal; color: #F30">* 만약 Update  하지 않은 상태에서 이전 이름의 파일을  편집 하고 Commit 하게 되는 경우면 Repository에 파일이 없기 때문에 Commit 에러가 발생한다.</p>
+	<p style="margin: 0px 0px 0px 78px; font-weight: normal; color: #F30">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 84px; font-weight: normal; color: #F30"><img src="images/CM(SVN)_CommitResult_Rename_.png" width="740" height="520"></p>
+	<p style="margin: 0px 0px 0px 78px; font-weight: normal; color: #F30">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 78px; font-weight: normal; color: #F30">&nbsp;</p>   
+    <p style="margin: 0px 0px 0px 78px; font-weight: normal; color: #F30">*  또 다른 경우는 Rename하고 Commit 시 에 이전 파일이 Delete 되지 않았다면 서로 다른 파일을 편집 하는 경우가 발생 합니다..</p>
+    <p style="margin: 0px 0px 0px 78px; font-weight: normal; color: #F30">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 84px; font-weight: normal;">ex) A 개발자가 ServiceScenario13284_2.ssfx 라는 파일을 ServiceScenario13284_rename.ssfx 로 Rename 하고 Commit할 때  Delete된 이전 파일을  Commit 하지 않게 되면 B 개발자는 Update를 해도  이전 파일을 편집 할 수 있어서 Commit 까지 한 후 Repository Browser를 보면 두개 파일이 다 있는 것을 확인 할 수 있습니다.</p>
+    <p style="margin: 0px 0px 0px 84px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: normal;"><img src="images/CM(SVN)_Repository_Rename.png" width="786" height="593"></p>
+    <p style="margin: 0px 0px 0px 78px; font-weight: normal; color: #F30">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 78px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&bull; 시나리오 파일 삭제 </p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">SCE 에서 Remove File은 시나리오 프로젝트에서 파일 정보만 제거되고 실제 파일은 삭제 되지 않습니다. 형상관리 중인 파일이면 계속 형상관리 상태입니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>   
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&bull; Repository 에서 Checkout 받기</p>
+    <p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">형상관리 중인 시나리오를 여러가지 이유로 다시 다운 받을 경우가 생기는데 <a href="CM(SVN)_Function_Repo_Browser.htm">리본 메뉴 Home > Repo-Browser</a> 또는 <a href="CM(SVN)_Function_Repo_Browser.htm">리본 메뉴 CM > Subversiond(SVN) > Repository browser</a> 에서 할 수 있습니다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&bull; 형상관리 사용중 알수 없는 오류로 락이 걸려 기능 동작을 하지 못할 때</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">- 락이 걸리면 Update, Commit등 아무것도 할 수 없다.</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">- 락이 걸리는 원인은 여러가지가 있을 수 있는데 Svn 기능 처리 중 작업 취소 등이 한 원인일 수 있습니다.</p>
+    <p style="margin: 0px 0px 0px 70px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 70px; font-weight: normal;"><img src="images/CM(SVN)_4.7.png" width="343" height="198"></p>
+    <p style="margin: 0px 0px 0px 70px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><a href="CM(SVN)_Function_CleanUp.htm">리본메뉴 CM > Subversiond(SVN) > Clean Up</a> 버튼을 눌러서 락 걸린 항목을 제거</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p></td></table>
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="CM(SVN)_Function_SCE.htm">다음</a>&nbsp;
+      <a href="CM(SVN)_StatusInfo.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

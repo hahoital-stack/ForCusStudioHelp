@@ -1,0 +1,691 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>Hint, Tip and Trick</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">Hint, Tip and Trick</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="systemrequirements.htm">다음</a>&nbsp;
+      <a href="ConversionProject.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-weight: normal;">
+<h3 style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="ASCII입력"></a>&#9632; ASCII 입력</h3>
+<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 44px; font-weight: normal;">ASCII ( American Standard Code for Information Interchange ) 는 미국 국립 표준 협회 ( American National Standards Institute, ANSI ) 에서 표준화한 정보교환용 7비트 부호체계이다. </p>
+<p style="margin: 0px 0px 0px 40px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 40px; font-weight: normal;">ForCus 시나리오에서 ASCII 를 사용해야 하는 대표적인 경우는 문자열 입력에서 "(쌍따옴표) 입력 시 인데 SXML 데이터 표현이 Key="Value" 구조로 하기 때문에 "(쌍따옴표)를 바로 입력하면 태그오류가 발생하기 때문에 할 수 없다.</p>
+<p style="margin: 0px 0px 0px 40px; font-weight: normal;">그외에 시나리오 데이터가 SXML 구성과 중복되는 경우 ASCII 로 입력 해야 한다.</p>
+<p style="margin: 0px 0px 0px 40px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 40px; font-weight: bold;">사용방법</p>
+<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">표현 : 역슬래쉬x아스키</p>
+<p style="margin: 0px 0px 0px 90px; font-weight: normal;">&#8251; 아스키는 Hex 값으로 입력해야 하며 영문이 포함된 경우 대문자로 해야한다.</p>
+<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">예제 : 문자열 '안녕하세요? 김영희 입니다.' 에서 '김영희' 앞뒤로 "(쌍따옴표) 입력</p>
+<p style="margin: 0px 0px 0px 90px; font-weight: normal; color:#3F9B0B;">'안녕하세요? \x22김영희\x22 입니다.'
+<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 40px; font-weight: bold;">ASCII Table</p>
+<p style="margin: 0px 0px 0px 40px; font-weight: bold;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 50px; color: #000;">
+  <table width="1200" border="0" cellpadding="2" cellspacing="0";>
+    <tr>
+      <th width="12" bgcolor="#BCC6CC" scope="col" style="font-weight: normal; text-align: center; color: #000">Char</th>
+      <th width="12" bgcolor="#BCC6CC" scope="col" style="font-weight: normal; text-align: center; color: #000">Dec</th>
+      <th width="12" bgcolor="#BCC6CC" scope="col" style="font-weight: normal; text-align: center; color: #000;">Hex</th>
+      <th width="180" bgcolor="#BCC6CC" scope="col" style="font-weight: normal; text-align: center; color: #000;">Name</th>
+      <th width="12" bgcolor="#BCC6CC" scope="col" style="font-weight: normal; text-align: center; color: #000">Char</th>
+      <th width="12" bgcolor="#BCC6CC" scope="col" style="font-weight: normal; text-align: center; color: #000">Dec</th>
+      <th width="12" bgcolor="#BCC6CC" scope="col" style="font-weight: normal; text-align: center; color: #000;">Hex</th>
+      <th width="180" bgcolor="#BCC6CC" scope="col" style="font-weight: normal; text-align: center; color: #000;">Name</th>
+      <th width="12" bgcolor="#BCC6CC" scope="col" style="font-weight: normal; text-align: center; color: #000">Char</th>
+      <th width="12" bgcolor="#BCC6CC" scope="col" style="font-weight: normal; text-align: center; color: #000">Dec</th>
+      <th width="12" bgcolor="#BCC6CC" scope="col" style="font-weight: normal; text-align: center; color: #000;">Hex</th>
+      <th width="180" bgcolor="#BCC6CC" scope="col" style="font-weight: normal; text-align: center; color: #000;">Name</th>
+      <th width="12" bgcolor="#BCC6CC" scope="col" style="font-weight: normal; text-align: center; color: #000">Char</th>
+      <th width="12" bgcolor="#BCC6CC" scope="col" style="font-weight: normal; text-align: center; color: #000">Dec</th>
+      <th width="12" bgcolor="#BCC6CC" scope="col" style="font-weight: normal; text-align: center; color: #000;">Hex</th>
+      <th width="180" bgcolor="#BCC6CC" scope="col" style="font-weight: normal; text-align: center; color: #000;">Name</th>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">00</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">00</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">NUL (null)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"> </td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">32</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">20</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">SPACE</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">@</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">64</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">40</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">`</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">96</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">60</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">backtick</td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">01</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">01</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">SOH (start of heading)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">!</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">33</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">21</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">A</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">65</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">41</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">a</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">97</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">61</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">02</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">02</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">STX (start of text)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">"</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">34</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">22</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">double quotaion</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">B</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">66</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">42</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">b</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">98</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">62</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">03</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">03</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">ETX (end of text)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">#</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">35</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">23</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">C</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">67</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">43</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">c</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">99</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">63</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">04</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">04</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">EOT (end of transmission)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">$</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">36</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">24</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">D</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">68</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">44</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">d</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">100</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">64</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">05</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">05</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">ENQ (enquiry)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">%</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">37</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">25</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">E</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">69</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">45</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">e</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">101</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">65</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">06</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">06</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">ACK (acknowledge)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">&amp;</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">38</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">26</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">F</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">70</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">46</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">f</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">102</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">66</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">07</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">07</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">BEL (bell)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">'</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">39</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">27</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">single quotaion</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">G</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">71</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">47</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">g</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">103</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">67</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">08</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">08</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">BS (backspace)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">(</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">40</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">28</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">H</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">72</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">48</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">h</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">104</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">68</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">09</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">09</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">TAB (horizontal tab)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">)</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">41</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">29</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">I</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">73</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">49</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">i</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">105</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">69</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">10</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">0A</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">LF (NL line feed, new line)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">*</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">42</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">2A</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">multiply</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">J</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">74</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">4A</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">j</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">106</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">6A</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">11</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">0B</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">VT (vertical tab)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">+</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">43</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">2B</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">K</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">75</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">4B</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">k</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">107</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">6B</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">12</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">0C</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">FF (NP form feed, new page)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">,</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">44</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">2C</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">comma</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">L</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">76</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">4C</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">l</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">108</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">6C</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">13</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">0D</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">CR (carriage return)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">-</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">45</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">2D</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">minus, hypen</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">M</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">77</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">4D</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">m</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">109</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">6D</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">14</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">0E</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">SO (shift out)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">.</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">46</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">2E</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">dot</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">N</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">78</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">4E</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">n</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">110</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">6E</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">15</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">0F</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">SI (shift in)</tdv>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">/</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">47</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">2F</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">divide, slash</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">O</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">79</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">4F</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">o</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">111</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">6F</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">16</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">10</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">DLE (data link escape)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">0</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">48</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">30</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">P</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">80</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">50</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">p</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">112</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">70</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">17</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">11</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">DC1 (device control 1)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">1</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">49</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">31</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">Q</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">81</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">51</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">q</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">113</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">71</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">18</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">12</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">DC2 (device control 2)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">2</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">50</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">32</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">R</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">82</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">52</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">r</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">114</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">72</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">19</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">13</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">DC3 (device control 3)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">3</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">51</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">33</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">S</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">83</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">53</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">s</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">115</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">73</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">20</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">14</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">DC4 (device control 4)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">4</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">52</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">34</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">T</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">84</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">54</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">t</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">116</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">74</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">21</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">15</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">NAK (negative acknowledge)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">5</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">53</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">35</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">U</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">85</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">55</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">u</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">117</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">75</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">22</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">16</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">SYN (synchronous idle)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">6</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">54</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">36</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">V</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">86</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">56</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">v</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">118</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">76</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">23</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">17</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">ETB (end of trans. block)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">7</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">55</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">37</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">W</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">87</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">57</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">w</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">119</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">77</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">24</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">18</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">CAN (cancel)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">8</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">56</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">38</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">X</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">88</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">58</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">x</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">120</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">78</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">25</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">19</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">EM (end of medium)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">9</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">57</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">39</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">Y</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">89</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">59</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">y</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">121</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">79</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">26</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">1A</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">SUB (substitute)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">:</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">58</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">3A</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">colon</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">Z</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">90</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">5A</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">z</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">122</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">7A</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">27</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">1B</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">ESC (escape)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">;</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">59</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">3B</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">semicolon</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">[</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">91</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">5B</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">{</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">123</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">7B</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">28</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">1C</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">FS (file separator)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">&lt;</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">60</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">3C</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">\</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">92</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">5C</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">backslash</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">|</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">124</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">7C</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">pipe</td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">29</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">1D</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">GS (group separator)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">=</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">61</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">3D</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">]</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">93</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">5D</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">}</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">125</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">7D</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">30</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">1E</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">RS (record separator)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">&gt;</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">62</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">3E</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">^</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">94</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">5E</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">~</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">126</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">7E</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">31</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">1F</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">US (unit separator)</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">?</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">63</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">3F</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">_</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">95</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">5F</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">underscore</td>
+      <td bgcolor="#DADBDD" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000"></td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #000">127</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: center; font-size: 10pt; color: #00F">7F</td>
+      <td bgcolor="#E5E4E2" style="font-weight: normal; text-align: left; font-size: 10pt; color: #000">DEL</td>
+    </tr>
+
+  </table>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+    
+</td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="systemrequirements.htm">다음</a>&nbsp;
+     <a href="ConversionProject.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>Auto Save</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">시나리오 형상관리 - Diff</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="CM(SVN)_Function_UnifiedDiff.htm">다음</a>&nbsp;
+      <a href="CM(SVN)_Function_CFModification.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>&nbsp;</p>
+    <!--- <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><a name="Func_Diff">5.2.6. Diff</a></p> --->
+    <p style="margin: 0px 0px 0px 60px; font-weight: bold;"><a name="Func_WB_UDiff">Diff</a></p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">- <span style="font-weight: normal;">선택한 로컬파일(Working Copy File)과 Head Revision의 내용을 비교하여 변경된 부분을 보여줍니다.</span></p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">- 비교하는 양쪽파일을 수정할 수 있으며 Diff 화면에서 파일의 변경된 부분을 더블클릭 시 SCE의 해당 파일, 아이템으로 이동합니다.</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">- SCE Solution View, File View에서 개별 파일 선택비교와 프로젝트 파일을 선택하여 소속된 전체파일을 Diff Dialog 에서  비교를 할 수 있습니다.</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><img src="images/CM(SVN)_Diff_Menu.png" width="413" height="538"></p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><img src="images/CM(SVN)_Diff_Dialog.png" width="1112" height="752"></p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><img src="images/CM(SVN)_Diff_Toolbar.png" width="352" height="48"></p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><strong>a :</strong><span style="font-weight: normal;"> 솔루션 오픈</span>(Ctrl + Shift +O)</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><strong>b :</strong> 파일 오픈(Ctrl + O)</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><strong>c :</strong> 파일 닫기(Ctrl + C)</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><strong>d :</strong> 현재 비교파일 제외하고 모두 닫기(솔루션 비교에서)</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><strong>e :</strong> 모든 비교파일 닫기(Ctrl + Shift + C)</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><strong>f :</strong> 변경내용 저장(Ctrl + S)</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><strong> g :</strong> 변경한 모든 파일을 저장(Ctrl + Shift + S)</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><strong>h :</strong> 다음 다른내용 이동(Alt + Down Arrow)</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><strong>i :</strong> 이전 다른내용 이동(Alt + Up Arrow)</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><strong>j :</strong>  비교창 왼쪽의 선택된 변경 내용을 오픈쪽 창으로 복사(Alt + Right Arrow)</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><strong>k :</strong> 비교창 오른쪽의 선택된 변경 내용을 왼쪽 창으로 복사(Alt + Left Arrow)</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><strong>l :</strong> 비교창 왼쪽의 모든 변경 내용을 오른쪽 창으로 복사</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><strong>m :</strong> 비교창 오른쪽의 모든 변경 내용을 왼쪽 창으로 복사</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><strong> n :</strong> Refresh</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p></td></table>
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="CM(SVN)_Function_UnifiedDiff.htm">다음</a>&nbsp;
+      <a href="CM(SVN)_Function_CFModification.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

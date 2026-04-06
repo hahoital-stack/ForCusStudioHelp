@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>Auto Save</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">시나리오 형상관리 - Commit</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="CM(SVN)_Function_LogMessage.htm">다음</a>&nbsp;
+      <a href="CM(SVN)_Function_Update.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><a name="Func_WB_Commit">Commit</a></p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: normal;">- 시나리오 수정, 추가, 삭제, 이름 변경 등 시나리오 파일이 변경 되었을 때 Commit 을 해야 원격 저장소(Repository) 에도 적용 됩니다.</p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: normal;"><img src="images/CM(SVN)_Commit.png" width="686" height="703"></p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: bold;">Local directory : <span style="font-weight: normal;">형상관리 중인 Working copy 디렉토리(대부분은 솔루션 디렉토리)</span></p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: bold;">Remote repository : <span style="font-weight: normal;">원격 저장소 URL 주소</span></p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: bold;">Commit message : <span style="font-weight: normal;">Commit 시에 시나리오 수정 내용 등을 입력하여 추 후 해당 Revision(Commit 시에 부여되는 관리 번호) 이 어떤 내용이 수정되었는지 알 수 있습니다.</span></p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: bold;">Changes List : <span style="font-weight: normal;">Commit 대상 파일 리스트 이며 왼쪽의 체크 박스를 체크하여 대상에서 제외할 수 있습니다.</span></p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: bold;"><em>Show unversioned files Checkbox</em> : <span style="font-weight: normal;"><span style="font-weight: normal; color: #7391BE;">NotVersioned</span> 파일을 모두 Changes List에 리스팅 하고 체크 박스로 체크 한 후 Commit 하면 해당 파일을 바로 Add 및 커밋 합니다.</span></p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: bold;"><em>Keep locks Checkbox</em> : <span style="font-weight: normal;">파일에 <a href="CM(SVN)_Function_GetLock.htm">SVN Lock</a> 을 건 상태에서  Commit 시에 Lock이 풀리는 것을 방지 합니다.</span></p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 100px; font-weight: bold;"><em><a href="CM(SVN)_Function_LogMessage.htm">Show log</a> Button </em> : <span style="font-weight: normal;">Remote repository URL 주소에 해당하는 원격 저장소에 Commit된 Revision 리스트를 볼수 있습니다.</span></p>
+    <p style="margin: 0px 0px 0px 215px; font-weight: normal;">ex) 위 그림에서 처럼 URL 주소 /trunk 에 Commit된 Revision 리스트를 볼수 있습니다.</p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: normal;">* 디렉토리를 선택하면 하위의 Commit 대상 파일들이 Changes List 에 리스팅 되고, 파일을 선택하면 선택한 파일 만 리스팅 합니다.</p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: normal;">* SCE 리본 메뉴의 Commit은 솔루션의 모든 Commit 대상 파일들을 리스팅 합니다.</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p></td></table>
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="CM(SVN)_Function_LogMessage.htm">다음</a>&nbsp;
+      <a href="CM(SVN)_Function_Update.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

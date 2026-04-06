@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>STRING channelstate( NUMBER, STRING )</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+.text-align {
+	text-align: left;
+}
+.color {
+	color: #F00;
+}
+.color {
+	color: #F00;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">STRING channelstate( NUMBER, STRING )</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="InnerFunction_enc_aes128.htm">다음</a>&nbsp;
+      <a href="InnerFunction_customtrackmenu.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top ">
+<td style="text-align:left; color: #000; font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-weight: normal;">
+<h2 style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="channelstate"></a>channelstate</h2>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">입력한 채널(Leg)의 상태를 리턴한다.</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><em>Parameter:</em></p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">NUMBER</span></td>
+            <td width="552"><span class="f_Body" style="font-weight: normal;">[in] SLEE 채널번호(-1 은 자기 채널)</span></td>
+        </tr>
+    </table>
+</div>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+        <tr style="vertical-align:baseline" valign="baseline">
+            <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">STRING</span></td>
+            <td width="552"><span class="f_Body" style="font-weight: normal;">[in] MultiCall 문자열('First', 'Second'), ''(공백)은 'First' 로 처리</span></td>
+        </tr>
+    </table>
+</div>
+   
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><em>Return:</em></p>
+<p style="margin: 0px 0px 0px 20px; font-weight: normal;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+            <tr style="vertical-align:baseline" valign="baseline">
+                <td width="200"><span style="font-weight: normal; font-size: 10pt; color: #000">STRING</span></td>
+                <td width="552"><p><span class="f_Body" style="font-weight: normal;">채널 상태 문자열</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">&nbsp</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">'----'' : NULL, 최초 값</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">&nbsp</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">[ Inbound ]</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">'Incom' : Incomming</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">'Ring' : Ringing</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">'ChatIncom' : Chat Incomming</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">'Hold' : Hold</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">&nbsp</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">[ MakeCall ]</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">'Make' : MakeInit</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">'Calling' : Calling</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">'Conn' : Connected</span></p>
+                </td>
+            </tr>
+        </table>
+    </div>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><em>Remark:</em></p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 20px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+            <tr style="vertical-align:baseline" valign="baseline">
+                <td width="25"><span style="font-weight: normal; font-size: 10pt; color: #000">ex)</span></td>
+                <td width="590"><p style="font-weight: normal; font-size: 10pt; color: #000">channelstate(2, '')</p>
+                <p style="font-weight: normal; font-size: 10pt; color: #000">⇒ 'Calling'</p></td>
+            </tr>
+	</table>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="InnerFunction_enc_aes128.htm">다음</a>&nbsp;
+     <a href="InnerFunction_customtrackmenu.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

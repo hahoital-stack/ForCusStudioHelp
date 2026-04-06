@@ -1,0 +1,1134 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="Window Styles" value="0x800025">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Bridgetec Home">
+		<param name="Local" value="Bridgetec_Home.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="시스템 요구사항">
+		<param name="Local" value="systemrequirements.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ForCusStudio 설치">
+		<param name="Local" value="ForCusStudio_Install.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ForCusStudio 개요">
+		<param name="Local" value="ForCusStudio_overview.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="ForCusStudio">
+		<param name="Local" value="ForCusStudio.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ForCusStudio는...">
+			<param name="Local" value="WhatisForcusStudio.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="시작하기">
+			<param name="Local" value="GettingStarted.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="시나리오 생성하기">
+				<param name="Local" value="CreateNewScenario.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="프로젝트 파일">
+				<param name="Local" value="Scenario_Project.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="시나리오 파일">
+				<param name="Local" value="Scenario_File.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ForCusStudio 둘러보기">
+			<param name="Local" value="GettingAroundinForCusStudio.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Ribbonbar">
+				<param name="Local" value="Ribbonbar.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Options">
+				<param name="Local" value="Options.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Workspace Window">
+				<param name="Local" value="WorkspaceWindow.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Solution Pane">
+					<param name="Local" value="SolutionPane.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="File Pane">
+					<param name="Local" value="FilePane.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Menu Pane">
+					<param name="Local" value="MenuPane.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Output Window">
+				<param name="Local" value="OutputWindow.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Information Window">
+				<param name="Local" value="InformationWindow.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Scenario Edit Window">
+				<param name="Local" value="ScenarioEditWindow.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Properties Window">
+				<param name="Local" value="PropertiesWindow.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="시나리오 구성 아이템">
+			<param name="Local" value="ComponentItem.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="기본 아이템">
+				<param name="Local" value="BaseItem.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Link">
+					<param name="Local" value="Link.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Label, Note">
+					<param name="Local" value="Item_LabelandNote.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Start">
+					<param name="Local" value="Item_Start.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Global Items">
+				<param name="Local" value="Global_Items.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DefineMent">
+					<param name="Local" value="Item_DefineMent.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DefineMenu">
+					<param name="Local" value="Item_DefineMenu.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DefinePacket">
+					<param name="Local" value="Item_DefinePacket.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DefineLog">
+					<param name="Local" value="Item_DefineLog.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DefineUserFunc">
+					<param name="Local" value="Item_DefineUserFunc.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Var">
+					<param name="Local" value="Item_Var.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DefineVRMask">
+					<param name="Local" value="Item_DefineVRMask.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DefineCDR">
+					<param name="Local" value="Item_DefineCDR.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DefineTrack">
+					<param name="Local" value="Item_DefineTrack.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DefineService">
+					<param name="Local" value="Item_DefineService.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DefineMenuStat">
+					<param name="Local" value="Item_DefineMenuStat.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DefineString">
+					<param name="Local" value="Item_DefineString.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DefineChatText">
+					<param name="Local" value="Item_DefineChatText.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DefineCustomKB">
+					<param name="Local" value="Item_DefineCustomKB.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DefineIntent">
+					<param name="Local" value="Item_DefineIntent.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Telephony Items">
+				<param name="Local" value="Telephony_Items.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Play">
+					<param name="Local" value="Item_Play.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetDigit">
+					<param name="Local" value="Item_GetDigit.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="WaitInbound">
+					<param name="Local" value="Item_WaitInbound.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="WaitOutbound">
+					<param name="Local" value="Item_WaitOutbound.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Disconnect">
+					<param name="Local" value="Item_Disconnect.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Record">
+					<param name="Local" value="Item_Record.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Abort">
+					<param name="Local" value="Item_Abort.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Switch">
+					<param name="Local" value="Item_Switch.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DisSwitch">
+					<param name="Local" value="Item_DisSwitch.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Transfer">
+					<param name="Local" value="Item_Transfer.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="MakeCall">
+					<param name="Local" value="Item_MakeCall.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetChannel">
+					<param name="Local" value="Item_GetChannel.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="CtiCall">
+					<param name="Local" value="Item_CtiCall.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="PlayVideo">
+					<param name="Local" value="Item_PlayVideo.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="OnHook">
+					<param name="Local" value="Item_OnHook.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="OffHook">
+					<param name="Local" value="Item_OffHook.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="PushTone">
+					<param name="Local" value="Item_PushTone.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="ChoiceMent">
+					<param name="Local" value="Item_ChoiceMent.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="ChoiceCall">
+					<param name="Local" value="Item_ChoiceCall.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="ShowChat">
+					<param name="Local" value="Item_ShowChat.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetChat">
+					<param name="Local" value="Item_GetChat.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="ToneDetect">
+					<param name="Local" value="Item_ToneDetect.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Pause">
+					<param name="Local" value="Item_Pause.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Resume">
+					<param name="Local" value="Item_Resume.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="VR Items">
+				<param name="Local" value="VR_Items.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="VoiceRecognize">
+					<param name="Local" value="Item_VoiceRecognize.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="OpenVR">
+					<param name="Local" value="Item_OpenVR.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="CloseVR">
+					<param name="Local" value="Item_CloseVR.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="RequestVR">
+					<param name="Local" value="Item_RequestVR.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="ResponseVR">
+					<param name="Local" value="Item_ResponseVR.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="SpeakerVerify">
+					<param name="Local" value="Item_SpeakerVerify.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Verify">
+					<param name="Local" value="Item_Verify.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="iWeb Items">
+				<param name="Local" value="Web_Items.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="RequestPage">
+					<param name="Local" value="Item_RequestPage.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetPageData">
+					<param name="Local" value="Item_GetPageData.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="RequestPush">
+					<param name="Local" value="Item_RequestPush.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="RequestInfo">
+					<param name="Local" value="Item_RequestInfo.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="RegistServer">
+					<param name="Local" value="Item_RegistServer.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="UnregistServer">
+					<param name="Local" value="Item_UnregistServer.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="WaitWebInbound">
+					<param name="Local" value="Item_WaitWebInbound.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DisconnectWeb">
+					<param name="Local" value="Item_DisconnectWeb.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AI Items">
+				<param name="Local" value="Ai_Items.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="NLURequest">
+					<param name="Local" value="Item_NLURequest.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="IntentCall">
+					<param name="Local" value="Item_IntentCall.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="EntityCall">
+					<param name="Local" value="Item_EntityCall.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Route Items">
+				<param name="Local" value="Route_Items.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="RouteSkill">
+					<param name="Local" value="Item_RouteSkill.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="RouteGroup">
+					<param name="Local" value="Item_RouteGroup.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="RouteSkillGroup">
+					<param name="Local" value="Item_RouteSkillGroup.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="UserData">
+					<param name="Local" value="Item_UserData.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="RouteACD">
+					<param name="Local" value="Item_RouteACD.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="RouteQueueRule">
+					<param name="Local" value="Item_RouteQueueRule.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Flow Items">
+				<param name="Local" value="Flow_Items.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="If">
+					<param name="Local" value="Item_If.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Select">
+					<param name="Local" value="Item_Select.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Var">
+					<param name="Local" value="Item_Var_Local.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Assign">
+					<param name="Local" value="Item_Assign.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="MenuCall">
+					<param name="Local" value="Item_MenuCall.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="MenuReturn">
+					<param name="Local" value="Item_MenuReturn.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="SubCall">
+					<param name="Local" value="Item_SubCall.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Return">
+					<param name="Local" value="Item_Return.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="End">
+					<param name="Local" value="Item_End.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="ChangeService">
+					<param name="Local" value="Item_ChangeService.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="MenuChange">
+					<param name="Local" value="Item_MenuChange.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Cdr">
+					<param name="Local" value="Item_CDR.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="CdrCtrl">
+					<param name="Local" value="Item_CdrCtrl.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="CdrCall">
+					<param name="Local" value="Item_CdrCall.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Sleep">
+					<param name="Local" value="Item_Sleep.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="UserEnv">
+					<param name="Local" value="Item_UserEnv.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="SetLabel">
+					<param name="Local" value="Item_SetLabel.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GotoLabel">
+					<param name="Local" value="Item_GotoLabel.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="StringParser">
+					<param name="Local" value="Item_StringParser.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="UserFunc Items">
+				<param name="Local" value="UserFunc_Items.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="UserFuncCall">
+					<param name="Local" value="Item_UserFuncCall.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Packet Items">
+				<param name="Local" value="Packet_Items.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="PacketCall">
+					<param name="Local" value="Item_PacketCall.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="PacketSize">
+					<param name="Local" value="Item_PacketSize.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="PacketJson">
+					<param name="Local" value="Item_PacketJson.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="PacketJsonEx">
+					<param name="Local" value="Item_PacketJsonEx.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="RequestHTTP">
+					<param name="Local" value="Item_RequestHTTP.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Database Items">
+				<param name="Local" value="DB_Items.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DBQuery">
+					<param name="Local" value="Item_DBQuery.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Log Items">
+				<param name="Local" value="Log_Items.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="LogWrite">
+					<param name="Local" value="Item_LogWrite.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Event Items">
+				<param name="Local" value="Event_Items.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="SetEvent">
+					<param name="Local" value="Item_SetEvent.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="WaitEvent">
+					<param name="Local" value="Item_WaitEvent.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Tracking Items">
+				<param name="Local" value="Tracking_Items.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Tracking">
+					<param name="Local" value="Item_Tracking.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="ConsumerMonit">
+					<param name="Local" value="Item_ConsumerMonit.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="UserMenuStat">
+					<param name="Local" value="Item_UserMenuStat.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Etc Items">
+				<param name="Local" value="Etc_Items.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Memo Item">
+					<param name="Local" value="Item_Memo.htm">
+					</OBJECT>
+			</UL>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ForCusStudio 기능">
+			<param name="Local" value="ForCusStudio_Funtion.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="북마크 기능">
+				<param name="Local" value="Bookmark.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="검색/치환 기능">
+				<param name="Local" value="SearchandReplace.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="툴팁 기능">
+				<param name="Local" value="Tooltip.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Quick Map 기능">
+				<param name="Local" value="QuickMap.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="빌드 기능">
+				<param name="Local" value="Build.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="디버깅 기능">
+				<param name="Local" value="Debug.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="자동완성 기능">
+				<param name="Local" value="AutoComplete.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Data Import/Export">
+				<param name="Local" value="DataImportExport.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="자동 저장">
+				<param name="Local" value="Autosave.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="외부변수 등록 기능">
+				<param name="Local" value="SystemVariable.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="형상관리(SVN) 기능">
+				<param name="Local" value="CM(SVN)_Main.htm">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="동작 구조">
+					<param name="Local" value="CM(SVN)_OperationStruct.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="시작">
+					<param name="Local" value="CM(SVN)_Start.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="상태 정보">
+					<param name="Local" value="CM(SVN)_StatusInfo.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="사용 하기">
+					<param name="Local" value="CM(SVN)_UsingWell.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="SCE 연동 기능">
+					<param name="Local" value="CM(SVN)_Function_SCE.htm">
+					</OBJECT>
+				<UL>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Import">
+						<param name="Local" value="CM(SVN)_Function_Import.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Clean Up">
+						<param name="Local" value="CM(SVN)_Function_CleanUp.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Settings">
+						<param name="Local" value="CM(SVN)_Function_Settings.htm">
+						</OBJECT>
+				</UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Working copy browser 기능">
+					<param name="Local" value="CM(SVN)_Function_WC_Browser.htm">
+					</OBJECT>
+				<UL>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Update">
+						<param name="Local" value="CM(SVN)_Function_Update.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Commit">
+						<param name="Local" value="CM(SVN)_Function_Commit.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Show Log">
+						<param name="Local" value="CM(SVN)_Function_LogMessage.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Check for Modification">
+						<param name="Local" value="CM(SVN)_Function_CFModification.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Diff">
+						<param name="Local" value="CM(SVN)_Function_Diff.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Unified Diff">
+						<param name="Local" value="CM(SVN)_Function_UnifiedDiff.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Blame">
+						<param name="Local" value="CM(SVN)_Function_Blame.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Rename">
+						<param name="Local" value="CM(SVN)_Function_Rename.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Delete">
+						<param name="Local" value="CM(SVN)_Function_Delete.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Get Lock">
+						<param name="Local" value="CM(SVN)_Function_GetLock.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Release Lock">
+						<param name="Local" value="CM(SVN)_Function_ReleaseLock.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Add">
+						<param name="Local" value="CM(SVN)_Function_Add.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Undo Add">
+						<param name="Local" value="CM(SVN)_Function_UndoAdd.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Add Ignore">
+						<param name="Local" value="CM(SVN)_Function_AddIgnore.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Remove Ignore">
+						<param name="Local" value="CM(SVN)_Function_RemoveIgnore.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Ignore List">
+						<param name="Local" value="CM(SVN)_Function_IgnoreList.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Revert">
+						<param name="Local" value="CM(SVN)_Function_Revert.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Resolve">
+						<param name="Local" value="CM(SVN)_Function_Resolve.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Settings">
+						<param name="Local" value="CM(SVN)_Function_WC_Settings.htm">
+						</OBJECT>
+				</UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Repository browser 기능">
+					<param name="Local" value="CM(SVN)_Function_Repo_Browser.htm">
+					</OBJECT>
+				<UL>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Export">
+						<param name="Local" value="CM(SVN)_Function_Export.htm">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Checkout">
+						<param name="Local" value="CM(SVN)_Function_Checkout.htm">
+						</OBJECT>
+				</UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="충돌 관리">
+					<param name="Local" value="CM(SVN)_ConflictManagement.htm">
+					</OBJECT>
+			</UL>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="변수와 상수">
+			<param name="Local" value="ForCusStudio_Variables.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="변수와 영역">
+				<param name="Local" value="VariableAndRange.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="세션 변수">
+				<param name="Local" value="SessionVariable.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="시스템 상수">
+				<param name="Local" value="SystemConstant.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="연산자">
+			<param name="Local" value="ForCusStudio_Operator.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="내장함수">
+			<param name="Local" value="InnerFunction.htm">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ceil">
+				<param name="Local" value="InnerFunction_ceil.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="floor">
+				<param name="Local" value="InnerFunction_floor.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="round">
+				<param name="Local" value="InnerFunction_round.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="mod">
+				<param name="Local" value="InnerFunction_mod.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="rand">
+				<param name="Local" value="InnerFunction_rand.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="erase">
+				<param name="Local" value="InnerFunction_erase.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="erase_chars">
+				<param name="Local" value="InnerFunction_erase_chars.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="erase_str">
+				<param name="Local" value="InnerFunction_erase_str.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="fill_l">
+				<param name="Local" value="InnerFunction_fill_l.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="fill_r">
+				<param name="Local" value="InnerFunction_fill_r.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="find">
+				<param name="Local" value="InnerFunction_find.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="find_one_of">
+				<param name="Local" value="InnerFunction_find_one_of.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="token">
+				<param name="Local" value="InnerFunction_token.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="token_iter">
+				<param name="Local" value="InnerFunction_token_iter.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="insert">
+				<param name="Local" value="InnerFunction_insert.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="len">
+				<param name="Local" value="InnerFunction_len.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="lower">
+				<param name="Local" value="InnerFunction_lower.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="replace">
+				<param name="Local" value="InnerFunction_replace.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="replace_chars">
+				<param name="Local" value="InnerFunction_replace_chars.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="replace_str">
+				<param name="Local" value="InnerFunction_replace_str.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="str_format">
+				<param name="Local" value="InnerFunction_str_format.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="str_keyval">
+				<param name="Local" value="InnerFunction_str_keyval.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="str_type">
+				<param name="Local" value="InnerFunction_str_type.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="insert_auto">
+				<param name="Local" value="InnerFunction_insert_auto.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="money_number">
+				<param name="Local" value="InnerFunction_money_number.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="substr">
+				<param name="Local" value="InnerFunction_substr.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="rsubstr">
+				<param name="Local" value="InnerFunction_rsubstr.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ksubstr">
+				<param name="Local" value="InnerFunction_ksubstr.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="trim">
+				<param name="Local" value="InnerFunction_trim.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="trim_l">
+				<param name="Local" value="InnerFunction_trim_l.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="trim_r">
+				<param name="Local" value="InnerFunction_trim_r.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="upper">
+				<param name="Local" value="InnerFunction_upper.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="cur_time">
+				<param name="Local" value="InnerFunction_cur_time.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="cur_time_ms">
+				<param name="Local" value="InnerFunction_cur_time_ms.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="cur_time_inform">
+				<param name="Local" value="InnerFunction_cur_time_inform.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="cur_date">
+				<param name="Local" value="InnerFunction_cur_date.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="cur_date_inform">
+				<param name="Local" value="InnerFunction_cur_date_inform.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="cur_datetime">
+				<param name="Local" value="InnerFunction_cur_datetime.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="cur_datetime_ms">
+				<param name="Local" value="InnerFunction_cur_datetime_ms.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="cur_datetime_ns">
+				<param name="Local" value="InnerFunction_cur_datetime_ns.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="cur_time_ns">
+				<param name="Local" value="InnerFunction_cur_time_ns.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="cur_datetime_inform">
+				<param name="Local" value="InnerFunction_cur_datetime_inform.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="cur_datetime_format">
+				<param name="Local" value="InnerFunction_cur_datetime_format.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="cur_weekday">
+				<param name="Local" value="InnerFunction_cur_weekday.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="weekday">
+				<param name="Local" value="InnerFunction_weekday.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="time_format">
+				<param name="Local" value="InnerFunction_time_format.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="date_format">
+				<param name="Local" value="InnerFunction_date_format.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="datetime_format">
+				<param name="Local" value="InnerFunction_datetime_format.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="add_time">
+				<param name="Local" value="InnerFunction_add_time.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="add_date">
+				<param name="Local" value="InnerFunction_add_date.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="add_datetime">
+				<param name="Local" value="InnerFunction_add_datetime.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="diff_time">
+				<param name="Local" value="InnerFunction_diff_time.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="diff_date">
+				<param name="Local" value="InnerFunction_diff_date.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="diff_datetime">
+				<param name="Local" value="InnerFunction_diff_datetime.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="isholyday">
+				<param name="Local" value="InnerFunction_isholyday.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="isworktime">
+				<param name="Local" value="InnerFunction_isworktime.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="valid_date">
+				<param name="Local" value="InnerFunction_valid_date.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="sec2time_format">
+				<param name="Local" value="InnerFunction_sec2time_format.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="set_callinfo">
+				<param name="Local" value="InnerFunction_set_callinfo.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="read_env">
+				<param name="Local" value="InnerFunction_read_env.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="write_env">
+				<param name="Local" value="InnerFunction_write_env.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="chk_ssn">
+				<param name="Local" value="InnerFunction_chk_ssn.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ch_availcnt">
+				<param name="Local" value="InnerFunction_ch_availcnt.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="customtrackmenu">
+				<param name="Local" value="InnerFunction_customtrackmenu.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="channelstate">
+				<param name="Local" value="InnerFunction_channelstate.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="enc_aes128">
+				<param name="Local" value="InnerFunction_enc_aes128.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="dec_aes128">
+				<param name="Local" value="InnerFunction_dec_aes128.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="enc_aes256">
+				<param name="Local" value="InnerFunction_enc_aes256.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="dec_aes256">
+				<param name="Local" value="InnerFunction_dec_aes256.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="enc_sha256">
+				<param name="Local" value="InnerFunction_enc_sha256.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="safestr">
+				<param name="Local" value="InnerFunction_safestr.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="maskstr">
+				<param name="Local" value="InnerFunction_maskstr.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="str2hex">
+				<param name="Local" value="InnerFunction_str2hex.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="num2hex">
+				<param name="Local" value="InnerFunction_num2hex.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="hex2str">
+				<param name="Local" value="InnerFunction_hex2str.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="num2hexdigit">
+				<param name="Local" value="InnerFunction_num2hexdigit.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="hex2num">
+				<param name="Local" value="InnerFunction_hex2num.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="encode_utf8">
+				<param name="Local" value="InnerFunction_encode_utf8.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="encode_euc_kr">
+				<param name="Local" value="InnerFunction_encode_euc-kr.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="프로젝트 컨버전 및 버전체크">
+			<param name="Local" value="ConversionProject.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="힌트, 팁 및 트릭">
+		<param name="Local" value="Hint_Tip_Trick.htm">
+		</OBJECT>
+</UL>
+</BODY></HTML>

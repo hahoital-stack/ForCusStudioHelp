@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>Auto Save</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">시나리오 형상관리 - 상태 정보</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="CM(SVN)_UsingWell.htm">다음</a>&nbsp;
+      <a href="CM(SVN)_Start.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 10px; font-weight: bold; color: #00F;"><a name="Menu3">형상관리 상태 정보</a></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">Import가 완료되면 SCE는 주기적으로 형상관리한 로컬 솔루션 디렉토리(Working copy directory)의 파일 상태 정보를 갱신하여 개발자가 수정하거나 추가한 파일들의 상태를 표시합니다.</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"><img src="images/CM(SVN)_3-1.png" width="354" height="260">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/CM(SVN)_3-2.png" width="354" height="260"></p>
+	<p><span style="margin: 0px 0px 0px 170px; font-weight: normal;">[일반 상태]</span> <span style="margin: 0px 0px 0px 310px; font-weight: normal;">[형상관리 상태]</span></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">- 상태별 이미지 및 텍스트 칼라</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 40px; font-weight: bold;">+ <img src="images/CM(SVN)_Status_1None.png" width="76" height="16"><span style="margin: 0px 0px 0px 80px; font-weight: bold; color: #C8BEE6;">:</span><span style="font-weight: normal; color: #C8BEE6;"> SVN 상태가 에러일 경우 또는 형상관리 중인 파일이 삭제된 경우</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">+ <img src="images/CM(SVN)_Status_2NotVersioned.png" width="125" height="19"><span style="margin: 0px 0px 0px 30px; font-weight: bold; color: #7391BE;">:</span><span style="font-weight: normal; color: #7391BE;"> 형상관리 파일이 아님  - Working copy 디렉토리에 새로  생성되거나 복사된 파일.</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">+ <img src="images/CM(SVN)_Status_3Normal.png" width="87" height="18"><span style="margin: 0px 0px 0px 68px; font-weight: bold; color: #004000;">:</span><span style="font-weight: normal; color: #004000;"> 형상관리 중인 파일 - Working copy 파일과 Repository 파일 내용이 변경 없이 동일함.</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">+ <img src="images/CM(SVN)_Status_4Added.png" width="84" height="18"><span style="margin: 0px 0px 0px 70px; font-weight: bold; color: #0000E1;">:</span><span style="font-weight: normal; color: #0000E1;"> 형상관리 파일이 아닌 파일을 형상관리 하기 위해 추가한 상태(Working copy) - Commit하기 전의 파일로 Repository에는 이 파일이 없음.</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">+ <img src="images/CM(SVN)_Status_5Deleted.png" width="88" height="18"><span style="margin: 0px 0px 0px 66px; font-weight: bold; color: #FF873C;">:</span><span style="font-weight: normal; color: #FF873C;"> 형상관리 중인 파일을 삭제한 상태(Working copy) - Commit하기 전의 파일로 Repository에는 이 파일이 있음.</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">+ <img src="images/CM(SVN)_Status_6Replaced.png" width="102" height="18"><span style="margin: 0px 0px 0px 52px; font-weight: bold; color: #964B0A;">:</span><span style="font-weight: normal; color: #964B0A;">  항목이 교체된 경우(Working copy) -  파일이 교체되면 Deleted, Added 예약이 되는데 파일 이름이 같은 경우에 해당함.</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">+ <img src="images/CM(SVN)_Status_7Modified.png" width="99" height="18"><span style="margin: 0px 0px 0px 54px; font-weight: bold; color: #A80000;">:</span><span style="font-weight: normal; color: #A80000;"> 파일이 수정 되었음(Working copy) - Commit하기 전의 파일로 Repository의 파일 내용은 수정 전임.</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">+ <img src="images/CM(SVN)_Status_8Merged.png" width="91" height="18"><span style="margin: 0px 0px 0px 61px; font-weight: bold; color: #5C0000;">:</span><span style="font-weight: normal; color: #5C0000;"> Merge한 파일.</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">+ <img src="images/CM(SVN)_Status_9Conflicted.png" width="104" height="18"><span style="margin: 0px 0px 0px 48px; font-weight: bold; color: #FF1E23;">:</span><span style="font-weight: normal; color: #FF1E23;"> Update, Commit, Merge등 에서 항목의 속성이 Repository에서 받은 속성과 충돌 - 주로 같은 파일을 여러 명이 편집 하고 Commit 하는 경우에 발생.</span></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: bold;">+ <img src="images/CM(SVN)_Status_10Ignored.png" width="91" height="18"><span style="margin: 0px 0px 0px 61px; font-weight: bold; color: #808080;">:</span><span style="font-weight: normal; color: #808080;"> <a href="CM(SVN)_Function_Settings.htm">리본 메뉴 CM > Subversiond(SVN) > Setting</a> 의 Global ignore pattern에 제외 파일로 설정  또는 <a href="CM(SVN)_Function_AddIgnore.htm">Working copy browser의 Add Ignore</a> 를 통해서 제외한 파일.</span></p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 40px; font-weight: normal; color: #666">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">- <a href="CM(SVN)_Function_WC_Browser.htm">Working copy browser</a> 에서는 상태별 칼라와 Ststus 컬럼에 상태 문자를 표시 합니다.</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: normal;">&nbsp; </p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: normal;"><img src="images/CM(SVN)_WC_Browser_Status.png" width="1010" height="761"></p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 40px; font-weight: normal;">* Working copy(로컬 솔루션 디렉토리), Repository(원격 저장소)</p>
+    <p style="margin: 0px 0px 0px 40px; font-weight: normal; color: #666">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 40px; font-weight: normal; color: #666">※ SCE 가 어떤 처리 중 일 때는 상태 갱신을 하지 않습니다.</p>
+    <p style="margin: 0px 0px 0px 56px; font-weight: normal; color: #666">- Item Information Data 처리 중 일 때</p>
+    <p style="margin: 0px 0px 0px 56px; font-weight: normal; color: #666">- Auto Complete Data 처리 중 일 때</p>
+    <p style="margin: 0px 0px 0px 56px; font-weight: normal; color: #666">- 검색 &amp; 치환 중 일 때</p>
+    <p style="margin: 0px 0px 0px 56px; font-weight: normal; color: #666">- 빌드 중 일 때</p>
+    <p style="margin: 0px 0px 0px 56px; font-weight: normal; color: #666">- SVN 기능 처리 중 일 때(Update, Commit, Add, Undo Add 등)</p>
+    <p style="margin: 0px 0px 0px 56px; font-weight: normal; color: #666">- 기타 작업 중 일 때</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p></td></table>
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="CM(SVN)_UsingWell.htm">다음</a>&nbsp;
+      <a href="CM(SVN)_Start.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

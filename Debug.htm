@@ -1,0 +1,384 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>Visual Debugging</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">Visual Debugging</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="AutoComplete.htm">다음</a>&nbsp;
+     <a href="Build.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;">
+<p>화면상에서 개발한 시나리오의 로직이 정상적으로 구동되는지 눈으로 확인할 수 있으며 설정한 변수의 값을 확인해 볼 수도 있습니다. </p>
+<p>&nbsp;</p>
+<p><span style="margin: 0px 0px 0px 20px; font-weight: bold;">사전 준비 사항</span></p>
+<p>&nbsp;</p>
+<p><span style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>ForCus가 설치된 서버(네트웍크가 분리되어 있고 방화벽이 있는 경우 디버깅 포트에 대한 방화벽 처리)</span></p>
+<p><span style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>운영관리</span> 서버</p>
+<p><span style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>SIP Phone 및 Soft Phone</span></p>
+<p><span style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>디버깅</span> 시작 시나리오(기본 제공 또는 없는 경우 작성햐여 운영관리(SWAT)  업로드)</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;"><img src="images/VisualDebugging_DebugStartScenario.PNG" width="1041" height="590"></p>
+<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px;">시나리오 작성 시 WaitInbound -> GetDigit -> ChangeService 아이템 순으로 배치 한 다음 그림과 같이 속성을 설정합니다.</p>
+<p style="margin: 0px 0px 0px 60px;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px;">GetDigit</p>
+<p style="margin: 0px 0px 0px 60px;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 70px;">&bull; Name : svcchgDigit</p>
+<p style="margin: 0px 0px 0px 70px;">&bull; Length : 4</p>
+<p style="margin: 0px 0px 0px 70px;">&bull; Retry : 3</p>
+<p style="margin: 0px 0px 0px 70px;">&bull; Ment</p>
+<p style="margin: 0px 0px 0px 90px;">Expression [Ment ID] : '전환할 서비스 아이디와 샵버튼을 눌러주십시오.'</p>
+<p style="margin: 0px 0px 0px 90px;">Type : TTS-Stream</p>
+<p style="margin: 0px 0px 0px 90px;">Country : KOREA, REPUBLIC OF</p>
+<p style="margin: 0px 0px 0px 90px;">...</p>
+<p style="margin: 0px 0px 0px 90px;">...</p>
+<p style="margin: 0px 0px 0px 90px;">Condition : 1</p>
+<p style="margin: 0px 0px 0px 60px;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px;">ChangeService </p>
+<p style="margin: 0px 0px 0px 60px;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 70px;">&bull; Service : svcchgDigit.digits</p>
+<p style="margin: 0px 0px 0px 70px;">&bull; Ani : session.call.ani</p>
+<p><span style="margin: 0px 0px 0px 70px;">&bull; Dnis : </span>session.call.dnis</p>
+<p><span style="margin: 0px 0px 0px 70px;">&bull; User Data : </span>session.call.sessiondata</p>
+<p style="margin: 0px 0px 0px 60px;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">동작 구조</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><img src="images/VisualDebugging_Structure.PNG" width="681" height="206"></p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 40px; font-weight: normal;">&bull; 멀티 디버깅 지원 : 멀티 채널 디버깅을 지원하여 여러명이 동시에 디버깅 진행이 가능하다.</p>
+<p style="margin: 0px 0px 0px 10px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 10px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">디버깅 시작 시나리오 및 디버깅 DN 설정</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>기본 디버깅 시작 시나리오를 운영관리에 등록 하여야 합니다.</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">운영관리(SWAT)에 접속 하여 기본 시나리오를 등록 합니다.</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/VisualDebugging_SWAT1.png" width="769" height="411"></p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; ForCus(IR) 탭으로 이동</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 구성관리 &gt; IVR 서비스 관리 &gt; 시나리오/버전 관리로 이동</p>
+<p><span style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 등록할 테넌트 선택 후 추가 버튼을 클릭</span></p>
+<p><span style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 기본 디버깅 시작 시나리오를 등록</span></p>
+<p><span style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 구성 관리 -> IVR 서비스 관리 -> 시나리오별 시스템 할당으로 이동</span></p>
+<p><span style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 등록한 테넌트  선택</span></p>
+<p><span style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull;<span lang="EN-US"> 디버깅</span>용 시나리오를 선택 후 시스템 할당 버튼을 클릭</span></p>
+<p><span style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 디버깅을 사용할 시스템을 체크 하여 할당</span></p>
+<p><span style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 서비스<span lang="EN-US"> -&gt; IVR </span>시나리오<span lang="EN-US"> -&gt; </span>시나리오 적용 메뉴로 이동</span></p>
+<p><span style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 등록한 테넌트를  선택후<span lang="EN-US"> Visual Debugging </span>용 시나리오를 선택</span></p>
+<p><span style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 시나리오 적용  버튼을 클릭하여 시스템에 시나리오를 적용</span></p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>디버깅으로 사용할 DN을 설정하여야 합니다.</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">운영관리(SWAT)에 접속 하여 디버깅 시나리오용 IVR Group DN을 등록 합니다.</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/VisualDebugging_SWAT3.png" width="794" height="437"></p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; ForCus(IR) 탭으로 이동</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 구성 관리<span lang="EN-US"> -&gt; </span>그룹<span lang="EN-US">DN -&gt; SIP </span>트렁크 메뉴로 이동</p>
+<p><span style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull;</span> 해당 테넌트  선택</p>
+<p><span style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 추가 버튼을  클릭하여 그룹<span lang="EN-US"> DN </span>을 등록</span></p>
+<p><span style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 등록한 그룹<span lang="EN-US"> DN</span>을 선택 후 그룹<span lang="EN-US"> DN</span>별 멤버 관리 버튼을 클릭</span></p>
+<p><span style="margin: 0px 0px 0px 60px; font-weight: normal;"> &bull;<span lang="EN-US"> SIP </span>트렁크 배정</span></p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>디버깅 시나리오에 DNIS를 등록 합니다.</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/VisualDebugging_SWAT2.png" width="780" height="445"></p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; ForCus(IR) 탭으로 이동</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 구성관리<span lang="EN-US"> -&gt; IVR </span>서비스 관리<span lang="EN-US"> -&gt; IVR DNIS </span>정보 관리  메뉴로 이동</p>
+<p><span style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 해당 테넌트를  선택한 다음 추가 버튼을 클릭</span></p>
+<p><span style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull;<span lang="EN-US"> DNIS </span>에<span lang="EN-US"> </span>등록한 그룹<span lang="EN-US"> DN </span>을 입력</span></p>
+<p><span style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull;</span><span lang="EN-US"> DNIS </span>명은 알아 볼수 있도록 이름을 지정</p>
+<p><span style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 시나리오명은 기본 디버깅 시작 시나리오를 선택</span></p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>기본 디버깅 시작 시나리오 등록 여부 및 작동 확인</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 시스템에 SSH로 접속</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull;<span lang="EN-US"> icli </span>를 실행 한 다음<span lang="EN-US"> ir.loadscn </span>명령 수행 시  등록한<span lang="EN-US"> Visual Debugging </span>시나리오가<span lang="EN-US"> Load </span>되어  있는지 확인</p>
+<p style="margin: 0px 0px 0px 70px; font-weight: normal;"><img src="images/VisualDebugging_icli_ir.loadscn.png" width="828" height="163"></p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 해당 시스템에 등록된 단말에서 등록한 그룹 DN으로 호를 시도하여 기본 디버깅 시나리오 GetDigit에 설정한 TTS가 재생되는지 확인</p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>운영관리가 없는 경우 SLEE Config에 직접 디버깅용 DN번호를 설정하고 &quot;디버깅 시작 시나리오&quot;를 매핑한다.</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="DebuggingEnvironment"></a>디버깅 환경설정</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>SCE 디버깅 정보는 <a href="Options.htm#DebugTab">리본메뉴 Tools > Options > Debug/Ment</a> Tab 에서 지정 할 수 있습니다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/VisualDebugging_DebugInfo_Dialog.PNG" width="488" height="477"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: bold;">Local IP : <span style="font-weight: normal;">SCE가 실행 중인 로컬 PC의 IP를 입력합니다.</span></p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: bold;">Server IP : <span style="font-weight: normal;">ForCus가 설치된 서버의 IP를 입력합니다.</span></p>
+    <p><span style="margin: 0px 0px 0px 80px; font-weight: bold;">Send Port : <span style="font-weight: normal;">ForCus가 설치된 서버의 디버깅 포트를 입력합니다.(기본 15001)</span></span></p>
+    <p><span style="margin: 0px 0px 0px 80px; font-weight: bold;">Receive Port : <span style="font-weight: normal;">SCE의 디버깅 포트를 입력합니다.(기본 15003)</span></span></p>
+    <p><span style="margin: 0px 0px 0px 80px; font-weight: bold;"><em>Scenario Upload Auto Check Box </em> : <span style="font-weight: normal;">Ftp(sFtp)</span></span>가 허용되는 경우 디버깅 시나리오 자동 업로드를 할수 있습니다.    </p>
+    <p style="margin: 0px 0px 0px 300px; font-weight: normal;">체크 한 경우 Upload 설정이 되어 있어야 자동 업로드 됩니다.</p>
+    <p style="margin: 0px 0px 0px 300px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><img src="images/VisualDebugging_UploadInfo_Dialog.PNG" width="488" height="477"></p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 100px; font-weight: bold;">Secure FPT : <span style="font-weight: normal;">Secure FTP 를  체크 합니다.</span></p>
+	<p style="margin: 0px 0px 0px 100px; font-weight: bold;">IP Address : <span style="font-weight: normal;">SXML을 업로드 할 ForCus 엔진 서버 IP를 입력합니다.</span></p>
+    <p><span style="margin: 0px 0px 0px 100px; font-weight: bold;">Port : <span style="font-weight: normal;">SXML을 업로드 할 ForCus 엔진 서버 FTP 포트를 입력합니다.</span></span></p>
+    <p><span style="margin: 0px 0px 0px 100px; font-weight: bold;">User ID : <span style="font-weight: normal;">로그인 ID를 입력합니다.</span></span></p>
+    <p><span style="margin: 0px 0px 0px 100px; font-weight: bold;">Password : <span style="font-weight: normal;">패스워드를 입력합니다.</span></span></p>
+    <p><span style="margin: 0px 0px 0px 100px; font-weight: bold;">Upload Directory : <span style="font-weight: normal;">업로드 할 디렉토리를 입력합니다.</span></span></p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>디버깅할 시나리오를 빌드 완료합니다.</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>SCE에서 디버깅 시나리오 자동전송이 되지 않거나 사용하지 않는 경우에 디버깅할 빌드 완료된 시나리오를 디버깅 서버로 전송하여야 합니다.</p>
+    <p style="margin: 0px 0px 0px 59px; font-weight: normal;">디버깅 서버의 시나리오 디렉토리에 복사를 해야 하며, 다른 디버깅 시나리오나 서비스로 등록된 시나리오 이름과 중복되지 않게 하여야 합니다.</p>
+    <p style="margin: 0px 0px 0px 59px; font-weight: normal;">디버깅 시나리오 자동전송의 경우는 시스템의 로컬 IP를 시나리오 이름에 붙여서 전송합니다.(ex. IR_TEST.SXML_DEBUG_100.100.105.44)</p>
+    <p style="margin: 0px 0px 0px 59px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>특정 아이템에서 디버깅이 멈추는 것을 원한다면 대상 Item에 Breakpoint를 설정합니다.(한개 또는 여러개 설정)</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="Run"></a>디버깅 실행</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;"><strong>1.</strong></span> 리본메뉴 Debug &gt; Debugging &gt;  Start(단축키 F5) 메뉴를 클릭하여 디버깅을 시작합니다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&bull; 디버깅 시나리오 자동전송이 설정되어 있으면, 빌드완료된 시나리오를 전송합니다.</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 75px; font-weight: normal;"><img src="images/VisualDebugging_ScenarioAutoSending.PNG" width="427" height="450"></p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&bull; 디버깅 정보 다이얼로그를 팝업 합니다.</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 75px; font-weight: normal;"><img src="images/VisualDebugging_DebugInfo1.PNG" width="407" height="276">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/VisualDebugging_DebugInfo2.PNG" width="407" height="276"></p>
+    <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 210px;">
+    <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+            <tr style="vertical-align:baseline" valign="baseline">
+                <td width="430"><p style="margin: 0px 0px 0px 0px; font-weight: normal;">[ 시나리오 자동 전송 ]</p></td>
+                <td width="200"><p style="margin: 0px 0px 0px 0px; font-weight: normal;">[ 시나리오 수동 전송 ]</p></td>
+            </tr>
+        </table>
+    </div>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&bull; 시나리오 수동 전송인 경우 전송한 디버깅 시나리오 이름을 입력합니다.</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&bull; 디버깅 정보를 확인하고 <strong>Run</strong> 버튼을 눌러서 디버깅을 진행합니다.</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&bull; 디버깅 정보가 디버깅 서버에 있는 정보와 일치 하지 않으면 다음과 같은  에러 창이 팝업되면서 디버깅이 중단됩니다.</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 75px; font-weight: normal;"><img src="images/VisualDebugging_scenario_noexist.PNG" width="433" height="165"></p>
+	<p style="margin: 0px 0px 0px 75px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&bull; 디버깅 정보가 디버깅 서버에 있는 정보와 일치하고 SLEE가 정상이면 에서 가상 DNIS를 발급하여 SCE로 전송합니다.</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 75px; font-weight: normal;"><img src="images/VisualDebugging_VDN.PNG" width="407" height="253"></p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&bull; 가상 DNIS를 확인하고 <strong>OK</strong> 버튼을 눌러서 디버깅을 진행합니다.</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 75px; font-weight: normal;"><img src="images/VisualDebugging_DebugWaitView.PNG" width="689" height="384"></p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;"><strong>2.</strong></span> 디버깅으로 설정된 Group DN으로 전화를 겁니다.</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&bull; <span lang="EN-US">“</span>전환할 서비스<span lang="EN-US"> ID</span>와 우물정자를 눌러 주십시요<span lang="EN-US">” </span>라는  멘트가 송출 되면 가상 DNIS 번호를 입력하고 #을 누릅니다.(0003#)</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&bull; 가상 DNIS와 매핑된 디버깅할 시나리오로 Service Change되면서 시나리오 디버깅이 진행됩니다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;"><strong>3.</strong></span> 디버깅 컨트롤키 등으로 디버깅을 진행합니다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&bull; Breakpoint 가 설정된 Item 이 있으면 시나리오 진행을 중단 하고 사용자 컨트롤 입력을 기다립니다.</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;">Breakpoint 가 설정된 아이템에서 멈춘 상태</p>
+<p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><img src="images/Item_Play_35_6.PNG"></p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;">Breakpoint 가 설정된 아이템에서 멈춘 후 다음 아이템 진행 키(F10, F11) 을 누른 경우, F5인 경우는 다음 Breakpoint까지 진행합니다.</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><img src="images/VisualDebugging_BreakpointItem.PNG" width="100" height="172"></p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;">사용자 입력 단축키 및  툴바 버튼 </p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+    <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 90px;">
+        <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+            <tr style="vertical-align:baseline" valign="baseline">
+                <td width="81"><span style="font-weight: normal; font-size: 10pt; color: #000">F5</span></td>
+                <td width="30">&nbsp;</td>
+                <td width="867" ><p><span class="f_Body" style="font-weight: normal;">Start(Go), 디버깅 시작(계속)</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">Breakpoint 가 설정된 Item 이 있으면 설정된 Item 에서 중지</span></p></td>
+            </tr>
+        </table>
+    </div>
+    <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 90px;">
+        <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+            <tr style="vertical-align:baseline" valign="baseline">
+                <td width="81"><span style="font-weight: normal; font-size: 10pt; color: #000">Ctrl + F5</span></td>
+                <td width="30">&nbsp;</td>
+                <td width="811" ><span class="f_Body" style="font-weight: normal;">Stop, 디버깅 종료</span></td>
+            </tr>
+        </table>
+    </div>    
+    <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 90px;">
+        <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+            <tr style="vertical-align:baseline" valign="baseline">
+                <td width="81"><span style="font-weight: normal; font-size: 10pt; color: #000">F11</span></td>
+                <td width="30">&nbsp;</td>
+                <td width="864" ><p><span class="f_Body" style="font-weight: normal;">Step Into, 다음 아이템 수행</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">SubCall 처럼 시나리오 호출 아이템일 경우 호출할 시나리오로 가서 아이템별로 진행</span></p></td>
+            </tr>
+        </table>
+    </div>    
+    <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 90px;">
+        <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+            <tr style="vertical-align:baseline" valign="baseline">
+                <td width="81"><span style="font-weight: normal; font-size: 10pt; color: #000">F10</span></td>
+                <td width="30">&nbsp;</td>
+                <td ><p><span class="f_Body" style="font-weight: normal;">Step Over, 다음 아이템 수행</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">SubCall 처럼 시나리오 호출 아이템일 경우 호출할  시나리오로 가서 아이템별로 진행하지 않고 시나리오를 자동 진행하고, SubCall 다음 아이템에서 중지,  SubCall 안에 BreakPoint Item 이 있을 경우 해당 Item 에서 중지</span></p></td>
+            </tr>
+        </table>
+    </div>    
+    <div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 90px;">
+        <table border="0" cellpadding="0" cellspacing="0" style="line-height: normal;">
+            <tr style="vertical-align:baseline" valign="baseline">
+                <td width="81"><span style="font-weight: normal; font-size: 10pt; color: #000">Shift + F11</span></td>
+                <td width="30">&nbsp;</td>
+                <td width="869" ><p><span class="f_Body" style="font-weight: normal;">Step Out, 현재 시나리오 에서 나감</span></p>
+                    <p><span class="f_Body" style="font-weight: normal;">현재 시나리오를 모두 자동 진행하고 호출한 시나리오의 SubCall 다음 Item 에서 중지</span></p></td>
+            </tr>
+        </table>
+    </div>    
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&bull; 변수 값 확인(Get Variable) 및 변수 값 설정(Set Variable)</p>
+	<p style="margin: 0px 0px 0px 75px; font-weight: normal;">디버깅 중 중단점 에서 대기 중 변수를 Watch(Global Window)에 설정하여 아이템 진행에 따른 변수의 값을 확인 할 수 있습니다.</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 75px; font-weight: normal;"><img src="images/VisualDebugging_DebugView.PNG" width="512" height="241"></p>
+	<p style="margin: 0px 0px 0px 75px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 75px; font-weight: normal;"><img src="images/VisualDebugging_DebugWatch.PNG" width="428" height="178"></p>
+	<p style="margin: 0px 0px 0px 75px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 75px; font-weight: normal;">Watch 변수 및 값 설정 방법은 Name 또는 Value 리스트박스의 셀을 더블클릭 또는 셀을 선택 후 키보드 F2를 누르면 추가할 수 있습니다.</p>
+	<p style="margin: 0px 0px 0px 75px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 75px; font-weight: normal;">icCallInfo.oparam0 은 CtiCall 아이템의 Output 탭의 0번째 파라미터 변수 입니다.</p>
+	<p style="margin: 0px 0px 0px 75px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 75px; font-weight: normal;">Next Step(Step Over, Step Into)으로 진행하여 CtiCall 아이템을 처리한 후 Watch에 설정한 변수의 값을 확인 할 수 있습니다.</p>
+	<p style="margin: 0px 0px 0px 75px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 65px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 65px; font-weight: normal;">&bull; Debugging 이 중단되거나 중지 시키면 중단 되었다는 창이 팝업 됩니다.    </p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"></p>
+<p style="margin: 0px 0px 0px 75px; font-weight: normal;"><img src="images/VisualDebugging_StopDialog.PNG" width="284" height="165"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="Breakpoint"></a>BreakPoint</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>시나리오 중단점을 아이템에 설정하여 설정된 아이템부터 디버깅이 가능하도록 합니다.</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: bold;">설정</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>아이템에 설정하는 것이므로 아이템이 선택된 상태에서만 설정 가능 하며, 리본메뉴 Debug &gt; Breakpoints &gt; Insert/Remove(단축키 F9) 메뉴를 선택 하거나 아이템에 마우스 오른 버튼을 누르면 창이 팝업되는데  Breakpoint 를 선택 합니다.</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;"><img src="images/VisualDebugging_Breakpoint.PNG" width="222" height="68"></p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">Breakpoint 로 설정된 아이템은 이미지가 바뀝니다.</p>
+    <p style="margin: 0px 0px 0px 100px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: bold;">삭제</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>아이템을 선택한 상태에서 리본메뉴 Debug &gt; Breakpoints &gt; Insert/Remove(단축키 F9) 메뉴를 선택 하거나 아이템에 마우스 오른 버튼을 누르면 창이 팝업되는데 Breakpoint 를 선택 합니다. 전체 Breakpoints 삭제는 리본메뉴 Debug &gt; Breakpoints &gt;
+Remove All Breakpoints 메뉴를 선택합니다.</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>전체 Breakpoints 삭제는 리본메뉴 Debug &gt; Breakpoints &gt;
+Remove All Breakpoints 메뉴를 선택합니다.</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: bold;">관리</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: bold;"><img src="images/VisualDebugging_BreakpointListDialog.PNG" width="527" height="308"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183;</span> 리본메뉴 Debug &gt; Breakpoints &gt; Breakpoints(단축키 Ctrl+B) 메뉴를 선택하면 관리창이 팝업 됩니다.</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>Breakpoint 리스트에서 아이템을 더블 클릭 하면 해당 아이템으로 이동 합니다.</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: bold;"><em>Goto Item Button</em> : <span style="font-weight: normal;">선택한 아이템으로 이동 합니다.</span></p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: bold;"><em>Remove Button</em> : <span style="font-weight: normal;">선택한 아이템을 Breakpoint 에서 삭제 합니다.</span></p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: bold;"><em>Remove All Button</em> : <span style="font-weight: normal;">모든 Breakpoint 를 삭제 합니다.</span></p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;"><a name="DebugMessage"></a>디버깅 메시지</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>Output Window 의 Dubug Pane 에 Debug 진행 메시지 들이 출력 되면서 디버깅이 시작 됩니다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"><img src="images/VisualDebugging_DebugLog.PNG" width="540" height="216"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&quot;Debugging... wait command...&quot; : 디버깅 준비 완료 - 디버그 명령을 기다림</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">예외 사항</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>디버깅 사용 중 Stop Debugging을 사용하지 않거나 비정상적으로 디버깅이 종료 되었을 경우 VDN(가상 DN) 해제 여부를 확인 하여야 합니다.</p>
+    <p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">VDN할당 여부 확인 및 해제</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 시스템에 SSH로 접속</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; icli를 시작</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; <span lang="EN-US">Ir.vdbg </span>명령을 이용하여 보여지는 값을 확인</p>
+    <p style="margin: 0px 0px 0px 70px; font-weight: normal;"><img src="images/VisualDebugging_icli_ir.vdbg.png" width="754" height="86"></p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull;<span lang="EN-US"> VDN </span>이 등록되어 있다면<span lang="EN-US"> 디버깅 </span>기능을  위해<span lang="EN-US">VDN </span>이 할당되어 있는 상태</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;">&bull; 비정상 종료  인해 해당<span lang="EN-US"> VDN </span>을 해제 하려면 <strong><span lang="EN-US">ir.dvdn 0002</span></strong><span lang="EN-US"> </span>와 같이<span lang="EN-US"> dvdn </span>명령 뒤에<span lang="EN-US"> VDN </span>을 입력하여 해제 할 수 있음</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: normal;"></p>
+<p style="margin: 0px 0px 0px 60px; font-weight: normal;">&nbsp;</p>
+    <p>&nbsp;</p>
+    
+</td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="AutoComplete.htm">다음</a>&nbsp;
+     <a href="Build.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

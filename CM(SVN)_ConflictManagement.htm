@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>Auto Save</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">시나리오 형상관리 - 충돌 관리</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="ForCusStudio_Variables.htm">다음</a>&nbsp;
+      <a href="CM(SVN)_Function_Checkout.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 10px; font-weight: bold; color: #00F;"><a name="Menu4">충돌 관리</a></p>
+	<p style="margin: 0px 0px 0px 10px; font-weight: bold; color: #00F;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;"> 형상관리 중인 디렉토리나 파일의 이름 변경, 삭제 시 에 다른 사용자는 CheckOut을 다시 받아야 할 수 도 있습니다.</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: normal;">  윈도우 탐색기에서 형상관리 중인 디렉토리, 파일을 삭제, 이름 변경 등을  하면 Repository리는 변경이 안되기 때문에 형상관리 툴 등을 통해서 처리 해야 합니다.</p>
+	<p style="margin: 0px 0px 0px 38px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 38px; font-weight: normal; color : #F00">* 형상관리 중인 디렉토리, 파일의 삭제, 이름 변경등은 신중히 해야 하며 같은 시나리오를 개발 중인  개발자들도 해당 항목을 확인하고 처리 해야 합니다. </p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: normal;">SCE 시나리오 형상관리에서 가장 빈번하게 발생 할 수 있는 충돌 상황 및 원인</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 37px; color: #000;">
+	  <table width="971" border="1" >
+	  <tr>
+	    <th width="204" bgcolor="#990000" scope="col" style="font-weight: bold; text-align: center; color: #FFF;">상황</th>
+	    <th width="751" bgcolor="#990000" scope="col" style="font-weight: bold; text-align: center; color: #FFF;">원인</th>
+	    </tr>
+	  <tr>
+	    <td bgcolor="#FFFFCC" style="font-weight: normal; font-size: 9pt; color: #000"><strong>솔루션 파일 동시 변경</strong></td>
+	    <td bgcolor="#FFFFCC" style="font-weight: normal; font-size: 9pt; color: #000"><p><strong> - 솔루션에 프로젝트를 추가, 삭제, 이름변경을 서로 다른 개발자가 동시에 하는 경우</strong></p>
+<p>&nbsp;</p>
+	      <p style="color:#F00">=&gt; 예방 : 추가, 삭제, 이름변경을 동시에 한 사람만 하고  Commit 까지 완료 후 다른 개발자는  Update 수행.(Update 하지 않고 위와 같은 작업은 충돌 발생)</p></td>
+	    </tr>
+	  <tr>
+	    <td bgcolor="#FFFFCC" style="font-weight: normal; font-size: 9pt; color: #000"><strong>프로젝트 파일 동시 변경</strong></td>
+	    <td bgcolor="#FFFFCC" style="font-weight: normal; font-size: 9pt; color: #000"><p><strong> - 프로젝트에 시나리오 파일 추가, 삭제, 이름변경을 서로 다른 개발자가 동시에 하는 경우 </strong></p>
+<p>&nbsp;</p>
+	      <p><strong> - 프로젝트 Solution View, File View 트리 작업</strong></p>
+	      <p><strong>&nbsp;&nbsp;&nbsp;+ 트리에 폴더 추가 / 삭제 / 이름변경</strong></p>
+	      <p><strong>&nbsp;&nbsp;&nbsp;+ 시나리오 파일 설명 편집</strong></p>
+	      <p>&nbsp;</p>
+	      <p><strong>- 리본 메뉴 Build &gt; Build Settings 에서 Project Description 변경</strong></p>
+	      <p>&nbsp;</p>
+		  <p style="color:#F00">=&gt; 예방 : 같은 프로젝트를 서로 다른 개발자가 같이 개발 중이라면 위와 같은 상황은 동시에 한 사람만 하고 Commit 까지 완료 후 다른 개발자는  Update 수행.(Update 하지 않고 위와 같은 작업은 충돌 발생)</p>
+		  <p style="color:#F00">&nbsp;</p>
+          <p style="color:#F00">=&gt; Commit 시에 프로젝트에 파일 추가, 삭제, 이름 변경 등은 프로젝트 파일이 변경되므로 반드시 프로젝트 파일(.sspx)도 Commit 해야 한다.</p>
+          </td>
+	    </tr>
+	  <tr>
+	    <td bgcolor="#FFFFCC" style="font-weight: normal; font-size: 9pt; color: #000"><strong>시나리오  파일 동시 변경</strong></td>
+	    <td bgcolor="#FFFFCC" style="font-weight: normal; font-size: 9pt; color: #000"><p><strong>- 같은 시나리오 파일을 편집하고 Commit 하지 않고 있다가 다른 개발자가 편집 하고  Commit 한 후에 나중에  Commit 하는 경우</strong></p>
+<p>&nbsp;</p>
+	      <p><strong>- 같은 시나리오 파일을 다른  개발자가 편집 하고  Commit 하였으나  Update 하지 않고 편집하고 Commit 하는 경우</strong></p>
+	      <p>&nbsp;</p>
+	      <p style="color:#F00">=&gt; 예방 : 같은 시나리오 파일은 서로 다른 개발자가 편집 금지, 편집 전에는 항상 Update 하기</p></td>
+	    </tr>
+	  </table>
+    </div>
+	<p style="margin: 0px 0px 0px 37px; font-weight: normal; color:#06F">[충돌 해결]</p>
+<p style="margin: 0px 0px 0px 37px; font-weight: normal; color:#06F"> 충돌이 발생한 시나리오 파일을 백업 후 삭제 한 다음 SVN Update 하면 저장소에 있는 최신 파일이 다운로드 된다.</p>
+<p style="margin: 0px 0px 0px 37px; font-weight: normal; color:#06F">SCE로 충돌이 발생한 시나리오를 열고 다시 추가 하고 자 하는 부분을 편집 한다.(이때 백업한 시나리오는 SCE를 하나 더 실행하여 열고 추가한 부분의 내용을 확인 할 수 있고 또는 아이템을 복사하여 붙여넣을 수 있다.)</p>
+<p style="margin: 0px 0px 0px 37px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 38px; font-weight: normal;">&bull; 기타 원인</p>
+	<p style="margin: 0px 0px 0px 47px; font-weight: normal;">- <strong>형상관리 중인 디렉토리를 SVN Delete 하고 같은 이름으로 디렉토리를 만들어 Commit 한 상태에서 다른 사람이 Update 받을 때 tree conflict 발생</strong></p>
+	<p style="margin: 0px 0px 0px 47px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 47px; font-weight: normal;">해결 : 해당 디렉토리를 삭제하고 SVN Update 합니다.</p>
+	<p style="margin: 0px 0px 0px 38px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 38px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 38px; font-weight: normal;">&bull; 충돌 예제</p>
+	<p style="margin: 0px 0px 0px 47px; font-weight: normal;">- <strong>같은 시나리오 파일을 다른  개발자가 편집 하고  Commit 하였으나  Update 하지 않고 편집하고 Commit 하는 경우</strong></p>
+	<p style="margin: 0px 0px 0px 47px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 55px; font-weight: normal;"><img src="images/CM(SVN)_Conflict_Commit1.png" width="343" height="198"></p>
+	<p style="margin: 0px 0px 0px 55px; font-weight: normal;">&nbsp;</p>
+  	<p style="margin: 0px 0px 0px 55px; font-weight: normal;"><img src="images/CM(SVN)_Conflict_Commit2.png" width="468" height="215"> </p>
+  	<p style="margin: 0px 0px 0px 55px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 55px; font-weight: normal;"><img src="images/CM(SVN)_Conflict_Commit3.png" width="712" height="121"></p>
+	<p style="margin: 0px 0px 0px 55px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 47px; font-weight: normal;">해결 : 위와 같은 에러 발생 시 윈도우 탐색기에서 수정한 파일들을 모두  백업 후 Conflicted 된 파일을 삭제하고 SVN Update를 실행하면 저장소에 있는 파일이 다운로드 되는데 이 파일을 편집 후 커밋합니다.</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p></td></table>
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="ForCusStudio_Variables.htm">다음</a>&nbsp;
+      <a href="CM(SVN)_Function_Checkout.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>Data Import/Export</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">Data Import/Export</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="Autosave.htm">다음</a>&nbsp;
+      <a href="AutoComplete.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table width="117%" border="0" cellpadding="5" cellspacing="0" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>데이터의 추가 삭제 등의 관리를 편리 하게 하기 위해 데이터의 Import, Export 를 지원합니다.</p>
+<p>현재는 DefineMent 와 DefinePacket, DefineMenu 아이템에서 지원합니다.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">지원 파일</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>&quot;.xls&quot;, &quot;.csv&quot;, &quot;.txt&quot; 를 지원 하며, xls 은 셀별로 항목이 구분되며, csv 는 코마(&quot;,&quot;)로 구분되며, txt 는 탭(Tab) 으로 구분 됩니다.</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>Import 하는 경우는 xls 파일만 쓸것을 권고 합니다. xls 는 구분이 셀 단위라 데이터 구분자인 코마(&quot;,&quot;), 탭(Tab) 이 포함되어 있어도 처리가 가능하기 때문입니다.</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">DefineMent</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;"><a name="DefineMentImport"></a>&#183; </span>Import</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 엑셀 파일을 포멧에 맞게 작성 해야 합니다. </p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 쉽게 작성을 하려면 빈 리스트를 Export하여 만들어진 파일을 편집하면 쉽습니다. </p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- DefineMent 아이템의 리스트와 같은 헤더 타이틀인 &quot;ID File Description&quot; 이 1열에 있어야 하고  쉬트의 이름은 &quot;DefineMent&quot; 여야 합니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px;><span font-weight: normal;"><img src="images/DataImportExport_DefineMent_Format.PNG" width="725" height="288"></p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- DefineMent Item 에서  <img src="images/DataImportExport_DefineMent_Import_Button.PNG" width="23" height="21"> 버튼을 눌러서 작성한 파일을 선택 할 수 있습니다.    </p>
+    <p style="margin: 0px 0px 0px 90px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px;><span font-weight: normal;"><img src="images/DataImportExport_DefineMent_Import_Dlg.PNG" width="680" height="410"></p>
+    <p style="margin: 0px 0px 0px 90px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- Import 하려는 Excel 파일을 열고 있는 경우 에러가 발생 합니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px;><span font-weight: normal;"><img src="images/DataImportExport_DefineMent_Import_Error2.PNG" width="483" height="208"></p>
+    <p style="margin: 0px 0px 0px 90px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;"><a name="DefineMentExport"></a>&#183; </span>Export</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- DefineMent Item 에서 <img src="images/DataImportExport_DefineMent_Export_Button.PNG" width="56" height="19"> 버튼을 누르면 저장할 파일명을 입력하는 창이 팝업되며, 파일 경로, 파일 이름을 지정하고  파일 타입을 선택 한 후   저장 버튼을 누르면 Export 파일이 생성 됩니다.</p>
+<p style="margin: 0px 0px 0px 90px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px;><span font-weight: normal;"><img src="images/DataImportExport_DefineMent_Export_Dlg.PNG" width="680" height="410"></p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- Export 파일 생성에 성공하면 생성 경로가 있는 다이얼로그가 팝업 됩니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px;><span font-weight: normal;"><img src="images/DataImportExport_DefineMent_Export_Success.PNG" width="461" height="178"></p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;">&#183; </span>기타 Import/Export 기능이 있는 아이템</p>
+    <p style="margin: 0px 0px 0px 60px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px;><span font-weight: normal;">DefineTrack, DefineChatText</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">DefinePacket</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">Import/Export 공통으로 아래의  Format 선택을 해야 합니다.</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><img src="images/DataImportExport_SelectPacketFormat.PNG" width="262" height="217"></p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">- New  Format : Excel파일에 정해진 포멧의 데이터로 입력을 합니다. Send, Receive가 각 다른 시트에 있으며 Repeat부분도 각 Send,Receive에 포함되어 있습니다.</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">- Old  Format : Excel 및 Text로 입력을 받으며, DefinePacket Item의 내용처럼 Send, Receive, Repeat의 필드가 하나의 레코드에 모두 있는 포멧입니다.</p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;"><a name="DefinePacketImport"></a>&#183; </span>Import</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: bold;">[Old  Format]</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 엑셀 파일을 포멧에 맞게 작성 해야 합니다. </p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 쉽게 작성을 하려면 빈 리스트를 Export하여 만들어진 파일을 편집하면 쉽습니다. </p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- DefinePacket 아이템의 각 파트 리스트의 헤더 타이틀과 같은 이름이 1열 모두 있어야  하고( &quot;SendType 부터 RepeatDescription 까지&quot; ) 쉬트의 이름은 Import 할 DefinePacket 아이템의 ID 가 비어 있는 곳은 &quot;DefinePacket&quot;, ID 가 있다면 해당 ID 이름을 지정 하면 됩니다.(Name이 있으면 구분자 &quot;.&quot;를 포함하여 Name을 같이 입력해 주면 Name항목에 전문이름이 설정됩니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px;><span font-weight: normal;"><img src="images/DataImportExport_DefinePacket_Format.PNG" width="426" height="232"></p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 하나의 엑셀 파일에 여러개의 Packet 을 지정하여 Import 할 수 있는데 각 Packet 은 쉬트이름으로 구분 하여 처리 합니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- Sheet이름은 <strong>Packet ID.Packet Name</strong> 으로 처리 합니다.</p>
+    <p style="margin: 0px 0px 0px 90px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px;><span font-weight: normal;"><img src="images/DataImportExport_DefinePacket_ID.PNG" width="378" height="47"></p>
+    <p style="margin: 0px 0px 0px 90px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 90px;><span font-weight: normal;"><img src="images/DataImportExport_DefinePacket_Multi_Format.PNG" width="486" height="34"></p>
+    <p style="margin: 0px 0px 0px 90px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- DefinePacket Item 에서 <img src="images/DataImportExport_DefinePacket_Import_Button.PNG" width="58" height="21"> 버튼을 누르면 작성한 파일을 선택할 수 있습니다.( 파일은 하나지만 각 DefinePacket 마다 Import 를 해주어야 합니다. )</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: bold;">[New  Format]</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 정해진 Excel의 전문 포멧대로 작성해야 합니다.<span style="color:#C00;">(Excel 포멧의 각 셀에 맞게 정확히 작성해야 합니다.)</span></p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 시트 이름이 Packet ID/Name 으로 사용되지 않으며 중복되지 않게만 입력하면 됩니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- Packet ID에 Import할 ID가 있어야 Import가 됩니다.(작성한 Excel 전문 포멧에 같은 Packet ID가 있어야 한다. 하나의 Excel파일에 여러 전문이 작성될수 있으므로 Packet ID 입력이 없으면 안된다.)</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">-  리본 메뉴 Project &gt; Import &gt; DefinePacket 메뉴를 이용하면 작성한 전문 전체에 대해서 Import 됩니다.    </p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 전문 엑셀 시트 작성 시 각 셀 항목에 대한 설명</p>
+<p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&bull;&nbsp;<span style="color:#00F; font-weight: bold;">{A7}</span> 전문ID : 이 항목이 없으면 전문으로 판단하지 않고 Import하지 않는다.</p>
+<p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&bull;&nbsp;<span style="color:#00F;">{C7}</span> 전문ID Value : 값이 &quot;COMMON&quot; 이면 공통전문으로 판단하여 처리하고, 다른 값은(없거나) 사용하지 않는다.</p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&bull;&nbsp;<span style="color:#00F; font-weight: bold;">{G7}</span> 전문명 : DefinePacket 에서 전문이름(&quot;Name&quot;)에 해당합니다. 이 항목이 없으면 전문으로 판단하지 않고 Import하지 않는다.</p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&bull;&nbsp;<span style="color:#00F;">{I7}</span> 전문명 Value : DefinePacket 에서 전문이름에 값이 설정된다. 전문 이름은 없어도 Import되나 Tracking에서 사용하므로 필요 시 입력한다.</p>
+    <p style="margin: 0px 0px 0px 208px;><span font-weight: normal;">전문 이름("Name")으로 사용되므로 "요청", "응답" 등의 문자는 제거된다.</p>
+    <p style="margin: 0px 0px 0px 208px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&bull;&nbsp;<span style="color:#00F; font-weight: bold;">{G8}</span> Direction : Send, Receive 전문을 구분하는 항목입니다. 이 항목이 없으면 전문으로 판단하지 않고 Import하지 않는다.</p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&bull;&nbsp;<span style="color:#00F;">{I8}</span> 전문ID Value : 대소문자 구분없으며, "요청", "SEND", "SND", "S"("응답", "RECEIVE", "RECV", "RCV", "R")의 값들을 모두 처리한다.</p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&bull;&nbsp;{A9} ARS_Service Code : 이 항목의 값도 Import 시에 저장되므로, Import된 데이터에 이 값이 있으면 Export 시에 이 값이 출력된다.</p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&bull;&nbsp;<span style="color:#00F; font-weight: bold;">{G9}</span> Define ID : DefinePacket에서 전문ID(&quot;ID&quot;)에 해당 합니다. 이 항목이 없으면 전문으로 판단하지 않고 Import하지 않는다.</p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&bull;&nbsp;<span style="color:#00F;">{I9}</span> 전문ID Value : Send/Receive 전문이 각 다른 엑셀 시트에 있지만 이 값이 같으면 같은 DefinePacket 아이템의 데이터가 됩니다.</p>
+    <p style="margin: 0px 0px 0px 191px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&bull;&nbsp;<span style="color:#00F; font-weight: bold;">{A11}</span> 일련번호 : 공통전문이 있는지 여부를 파싱할 때 사용하며, 전문 리스트에서  &quot;COMM&quot;이 있으면 공통전문이 포함된 것이다.</p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&bull;&nbsp;<span style="color:#00F; font-weight: bold;">{B11}</span> 필드 명(한글) : DefinePacket 전문 필드 속성에서 &quot;Description&quot;에 해당하며, 공통전문인 경우 전문이름 입니다.</p>
+    <p style="margin: 0px 0px 0px 223px;><span font-weight: normal;">항목의 값이 &quot;반복부시작&quot; 이면 반복부가 시작되는 전문 필드이며, &quot;반복부종료&quot; 사이의 값이 Repeat Part의 전문이 됩니다.</p>
+    <p style="margin: 0px 0px 0px 223px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&bull;&nbsp;<span style="color:#00F; font-weight: bold;">{C11}</span> 필드 명(영문) : DefinePacket 전문 필드 속성에서 &quot;Name&quot;에 해당하며, 공통전문인 경우 전문ID 입니다.(Name최대 길이는 100byte 입니다)</p>
+    <p style="margin: 0px 0px 0px 223px;><span font-weight: normal;">필드 명(한글) 항목의 값이 &quot;반복부시작&quot; 일 때, 이 값이 있으면 반복부 카운트가 있는 전문 필드이다.(&quot;CountName&quot;에 해당)</p>
+    <p style="margin: 0px 0px 0px 223px;><span font-weight: normal;">필드 명(한글) 항목의 값이 &quot;반복부시작&quot; 일 때, 이 값이 없으면 바로 상위의 값이 반복부 카운트가 된다.</p>
+    <p style="margin: 0px 0px 0px 223px;><span font-weight: normal;">&nbsp;</p>
+    <p><span style="margin: 0px 0px 0px 88px;&gt;&lt;span font-weight: normal;">&bull;&nbsp;<span style="color:#00F; font-weight: bold;">{D11}</span> 데이터 Type</span> : 전문 필드 타입의 숫자/문자 설정하는 부분이며, 이 항목의 값에 따라서 전문 필드 속성의 &quot;Fill&quot;, &quot;Align&quot;의 값이 결정된다.</p>
+    <p style="margin: 0px 0px 0px 217px;><span font-weight: normal;">'C' : Fill(' '), Align(left) / 'N' : Fill('0'), Align(right)</span></p>
+    <p style="margin: 0px 0px 0px 217px;><span font-weight: normal;">&nbsp;</p>
+    <p><span style="margin: 0px 0px 0px 88px;&gt;&lt;span font-weight: normal;">&bull;&nbsp;<span style="color:#00F; font-weight: bold;">{F11}</span> 길이</span> : DefinePacket 전문 필드 속성에서 &quot;Len&quot;에 해당하며, 전문 필드 길이를 입력합니다.</p>
+    <p>&nbsp;</p>
+    <p><span style="margin: 0px 0px 0px 88px;&gt;&lt;span font-weight: normal;">&bull;&nbsp;<span style="color:#00F; font-weight: bold;">{I11}</span> Default</span> : DefinePacket 전문 필드 속성의 &quot;Default&quot; 에 해당합니다.(옵션항목)</p>
+    <p>&nbsp;</p>
+    <p><span style="margin: 0px 0px 0px 88px;&gt;&lt;span font-weight: normal;">&bull;&nbsp;<span style="color:#00F; font-weight: bold;">{J11}</span> Encrypt</span> : DefinePacket 전문 필드 속성에서 "Encryption"에 해당하며, 운영관리로(Swat) 전문 CDR전송 시  필드를 암호화 하여 전송합니다.</p>
+    <p style="margin: 0px 0px 0px 189px;><span font-weight: normal;">1(필드 암호화 O), 0(필드 암호화 X)</span>, (옵션항목)</p>
+    <p style="margin: 0px 0px 0px 189px;><span font-weight: normal;">&nbsp;</p>
+    <p><span style="margin: 0px 0px 0px 88px;&gt;&lt;span font-weight: normal;">&bull;&nbsp;<span style="color:#00F; font-weight: bold;">{K11}</span> <a name="Pattern"></a>Pattern</span> : DefinePacket 전문 필드 속성에서 &quot;Pattern&quot; 에 해당합니다. (옵션항목)</p>
+    <p style="margin: 0px 0px 0px 188px;><span font-weight: normal;">Display Pattern, 운영관리에서(Swat) 전문 필드의 값을 화면에 출력시 사용하는 패턴 입니다.<a href="Item_DefinePacket.htm#Pattern">(DefinePacket/Pattern)</a></span></p>
+    <p style="margin: 0px 0px 0px 201px;><span font-weight: normal;">&nbsp;</p>
+    <p><span style="margin: 0px 0px 0px 88px;&gt;&lt;span font-weight: normal;">&bull;&nbsp;<span style="color:#00F; font-weight: bold;">{L11}</span> Trim</span> : DefinePacket 전문 필드 속성에서 &quot;Trim&quot;에 해당합니다. 기본은 No Trim이며, 설정 시 전문 필드의 값의 공백을  Trim 합니다.</p>
+    <p style="margin: 0px 0px 0px 170px;><span font-weight: normal;">left(Trim Left), right(Trim Right), all(Trim Both), (옵션항목)</p>
+    <p style="margin: 0px 0px 0px 170px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">※ 옵션항목 : 엑셀 전문 작성 시 항목이 없어도 되는 항목이다.</p>
+    <p>&nbsp;</p>
+    <p><span style="margin: 0px 0px 0px 88px;&gt;&lt;span font-weight: normal;">&bull;&nbsp;<span style="color:#00F; font-weight: bold;">{A12}</span> &quot;COMM</span>&quot; : 공통전문인 경우 표시입니다.</p>
+    <p><span style="margin: 0px 0px 0px 88px;&gt;&lt;span font-weight: normal;">&bull;&nbsp;<span style="color:#00F; font-weight: bold;">{B12}</span> &quot;전체공통전문&quot;</span> : 공통전문인 경우 공통전문의 전문이름(DefinePacket의 &quot;Name&quot;) 입니다.</p>
+    <p><span style="margin: 0px 0px 0px 88px;&gt;&lt;span font-weight: normal;">&bull;&nbsp;<span style="color:#00F; font-weight: bold;">{C12}</span> &quot;PKT_COMMON&quot;</span> : 공통전문인 경우 공통전문의 전문ID(DefinePacket의 &quot;ID&quot;) 입니다.</p>
+    <p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- Send 전문</p>
+	<p style="margin: 0px 0px 0px 88px;><span font-weight: normal;"><img src="images/DataImportExport_NewPacketFormat_Send.PNG" width="878" height="662"></p>
+	<p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- Receive 전문</p>
+	<p style="margin: 0px 0px 0px 88px;><span font-weight: normal;"><img src="images/DataImportExport_NewPacketFormat_Receive.PNG" width="1294" height="843"></p>
+	<p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 공통 전문</p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;"><img src="images/DataImportExport_NewPacketFormat_Common.PNG" width="973" height="457"></p>
+    <p style="margin: 0px 0px 0px 88px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;"><a name="DefinePacketExport"></a>&#183; </span>Export</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 80px; font-weight: bold;">[Old  Format]</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 하나의 파일에 여러개의 DefinePacket 아이템을 기록 할 수 있습니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- DefinePacket 의 구분은 Packet ID 로 구분이 되며 ID 가 비어있는 경우는 &quot;DefinePackt&quot; 으로 지정 됩니다.( 비어 있는 아이템을 여러개를 하나의 파일에  Export 하는 경우 이전 내용은 덮어 써 지게 됩니다) Name이 있으면 PacketID.PacketName으로 Sheet이름이 설정됩니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- DefinePacket Item 에서 <img src="images/DataImportExport_DefinePacket_Export_Button.PNG" width="58" height="21"> 버튼을 눌러 파일을 저장 할 수 있습니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px; font-weight: bold;">[New  Format]</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- Send, Receive각 다른 Sheet에 출력 됩니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 시트이름은 &quot;순차번호&quot; + &quot;_&quot; + &quot;Packet ID&quot; + &quot;요청&quot;(&quot;응답&quot;) 으로 만들어 지며, 더 이상 Old Packet Format처럼 Import시에 Packet ID/Name속성의 값으로 사용되지 않고 단지 시트 이름으로만 사용됩니다.(ex: 01_PKT-TEST요청)</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- Send/Receive에는 반복부가 포함되어 있으며, 정해진 포멧의 형태로 출력됩니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">-  리본 메뉴 Project &gt; Export &gt; DefinePacket 메뉴를 이용하면 정의된 전문 전체에 대해서 Export 됩니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 20px; font-weight: bold;">시나리오 함수(.ssfx) 리스트</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 50px;><span font-weight: normal;"><span style="font-size: 10pt; font-family: 'Symbol'; font-style: normal; color: #000; text-decoration: none;"><a name="DefineMentImport"></a>&#183; </span>Export</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 함수(시나리오 파일) 리스트를 엑셀로 출력합니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">- 리본 메뉴 Tools &gt; Report &gt; Function List 메뉴로 가능합니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">* 함수는 시나리오 파일(.msfx, .ssfx) 입니다.</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;"><img src="images/DataImportExport_ScenarioFunctionDialog.PNG" width="476" height="302"></p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal; color: #0080FF">Export Options</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;"><img src="images/RadioButton.PNG" width="13" height="13"> All scenario function(.msfx, .ssfx) : 모든 시나리오 함수 리스트 출력</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;"><img src="images/RadioButton.PNG" alt="" width="13" height="13"> All menu scenario function(.msfx) : 모든 메뉴 시나리오 함수 리스트 출력</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;"><img src="images/RadioButton.PNG" alt="" width="13" height="13"> All service scenario function(.ssfx) : 모든 서비스 시나리오 함수 리스트 출력</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;"><img src="images/RadioButton.PNG" alt="" width="13" height="13"> All scenario function called(.msfx, .ssfx) : 모든 호출된 시나리오 함수 리스트 출력</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;"><img src="images/RadioButton.PNG" alt="" width="13" height="13"> Menu scenario function called(.msfx) : 호출된 메뉴 시나리오 함수 리스트 출력</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;"><img src="images/RadioButton.PNG" alt="" width="13" height="13"> Service scenario function called(.ssfx) : 호출된 서비스 시나리오 함수 리스트 출력</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;"><img src="images/CheckBox.PNG" width="13" height="13"> Function parameter : 함수 파라미터 출력</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;"><img src="images/CheckBox.PNG" alt="" width="13" height="13"> Remove function extension : 함수 이름의  확장자 제거</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;"><img src="images/CheckBox.PNG" alt="" width="13" height="13"> Function name upper case : 함수 이름 대문자</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;"><img src="images/CheckBox.PNG" alt="" width="13" height="13"> Function name of Calling : 시나리오 함수를 호출한 아이템이 속한 함수 이름 출력</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;"><img src="images/CheckBox.PNG" alt="" width="13" height="13"> Name of the calling item : 함수를 호출한 아이템 이름 출력</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;"><img src="images/CheckBox.PNG" alt="" width="13" height="13"> Variable of the calling item SubCall : 함수를 호출한 아이템(SubCall)의 변수(Name 속성 변수, 메뉴 아이디) 출력</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;"><img src="images/CheckBox.PNG" alt="" width="13" height="13"> Parameter of the calling item SubCall : 함수를 호출한 아이템(SubCall)의 파라미터 출력</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;"><img src="images/CheckBox.PNG" alt="" width="13" height="13"> Remove call function extension : 호출한 함수 이름의 확장자 제거</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal; color: #0080FF">Export Sample</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;"> - 모든 호출된 시나리오 함수 리스트 출력(.msfx, .ssfx)에 호출한 함수 이름, 호출한 아이템 이름, 호출한 아이템 변수, 호출한 함수 파라미터</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;"><img src="images/DataImportExport_ScenarioFunctionDialogSampleOption.PNG" width="476" height="302"></p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 80px;><span font-weight: normal;"><img src="images/DataImportExport_ScenarioFunctionExcelSample.PNG" width="1152" height="630"></p>
+    </p>   
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    
+</td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="Autosave.htm">다음</a>&nbsp;
+     <a href="AutoComplete.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+<script src="SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
+
+<title>Operator</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style>
+<link href="SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css">
+</head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">연산자</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="InnerFunction.htm">다음</a>&nbsp;
+      <a href="SystemConstant.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>ForCusStudio 에서 사용되는 연산자는 산술, 문자, 비교, 논리, 지정 연산자등이 있습니다.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">◆ 연산식 규칙</p>
+    <form style="margin: 0px 0px 0px 20px; name="form1" method="post" action="">
+        <span id="sprytextarea1">
+        <label>
+            <textarea name="ER" id="ER" cols="92" rows="33"> 
+ 1. 연산식의 연산자와 피연산자 사이의 스페이스와 탭은 무시된다.
+ 
+ 2. 사칙 연산자( +, -, *, / )의 양쪽 피연산자는 모두 숫자로 인지한다. 
+    만약 문자를 포함한다면, 문자를 숫자로 바꿔서 처리하기 때문에 문자(열)은 숫자 '0'이 된다.
+    예외적으로 부호 연산자( +, - )는 부호를 바꾸고, '$'로 시작하는 숫자는 문자로서 취급된다.
+    
+ 3. 마침표가 피연산식의 첫번째 문자로 존재하면, 다음을 숫자로 인식하고, 문자열 중간에 존재하면 
+    문자열의 일부로서 인식한다.
+ 
+ 4. ' 와 &quot;로 시작하면, 같은 문자 ' 나 &quot; 로 끝나는 문자를 찾아서 사이의 내용을 문자열로 간주한다.
+    연산식 끝까지 같은 문자가 존재하지 않으면, 연산식 오류이다.
+    
+ 5. 문자열 피연산자를 위해서 사용 가능한 문자는 A~Z, a~z, 문자열 중간의 숫자, ASCII 문자에서 0x80 
+    이상인 값, _, @ 이다.
+ 
+ 6. 문자열 연산자는 '&amp;' 뿐이며, 피연산자 문자열을 합친다. 
+    양쪽의 피연산자는 모두 문자열로 변환되어 처리되며, 결과는 문자열이다. ( 숫자도 문자열로 처리된다. )
+    
+ 7. 피연산자의 중간 부분에 '[' 있으면 ']'을 찾아서 배열로 인식하고, ']'가 없으면 연산식 오류이다.
+    또. 피연산자의 중간 부분에 있는 '('의 수와 ')'의 수는 동수를 이루어야 하며, 함수로써 취급된다.
+    
+ 8. 연산식에 있는 함수는 모두 내장함수이며, 내장함수 목록에 존재하지 않으면, 연산식 오류이며, 수행되지
+    않고 다음 스텝으로 진행한다.
+ 
+ 9. 다음의 비교연산자를 제공한다.
+    ==(같다), !=(같지 않다), &lt;=(적거나 같다 ), &gt;=(크거나 같다), &lt;(작다), &gt;(크다)
+    이 외의 비교연산자를 사용시는 연산식 오류이다.
+    
+ 10. 다음의 논리연산자를 제공한다.
+    &amp;&amp;(AND), ||(OR)
+    이 외의 논리연산자를 사용시는 연산식 오류이다.
+            </textarea>
+        </label>
+    </form>
+    <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 20px; font-weight: bold;">최고 연산자</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">최고 우선순위 연산자 입니다.</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">[..] : 배열 연산</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">(..) : 괄호 연산</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">. : 포인트 연산</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">예 : sName[6..10] - sName 배열로 6 에서 10까지 5개 선언</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">산술 연산자</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">A + B : 덧셈 연산</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">A – B : 뺄셈 연산</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">A * B : 곱셈 연산</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">A / B : 나눗셈 연산</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">예 : A * (B + C)</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">※ 주의 : 변수에 문자가 들어 있으면 숫자로 변환하여 연산 합니다.(문자를 숫자로 변환하면 0 입니다)</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">문자열 연산자</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">문자열을 결합하기 위한 연산자 입니다.</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">A  &amp; B : 문자열 결합 연산</p>
+<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">예 : 'I am' &amp; B</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">※ 주의 :	변수에 숫자가 들어 있으면 문자로 변환후 결합 됩니다.</p>
+	<p>&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">비교(관계) 연산자</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">A &gt; B : 크다</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">A &lt; B : 작다</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">A  &gt;= B : 크거나 같다</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">A  &lt;= B : 작거나 같다</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">A == B  : 같다</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">A != B  : 다르다</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">논리 연산자</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">A  &amp;&amp; B : AND 연산자</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">A || B  : OR 연산자</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">지정 연산자</p>
+	<p style="margin: 0px 0px 0px 20px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">!A : 논리 NOT 연산자</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">$A : 문자열값으로 변환</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 50px; font-weight: normal;">예 :  ‘I  am’ &amp; $A</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td></table>
+
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="InnerFunction.htm">다음</a>&nbsp;
+     <a href="SystemConstant.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+<script type="text/javascript">
+<!--
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+//-->
+</script>
+</body>
+</html>

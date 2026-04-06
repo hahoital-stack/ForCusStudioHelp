@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <title>Auto Save</title>
+   <meta name="generator" content="ADOBE Dreamweaver CS4" />
+   <meta name='author' content='bkjhr' />
+   <meta name="Copyright" content="2011 Bridgetec">
+   <meta name="keywords" content="검색어입력" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+body,td,th {
+	color: #FFF;
+	font-weight: bold;
+}
+a:link {
+	color: #0080FF;
+}
+a:visited {
+	color: #0080FF;
+}
+a:hover {
+	color: #0080FF;
+}
+a:active {
+	color: #0080FF;
+}
+-->
+</style></head>
+<body style="margin:0px 0px 0px 0px; background:#FFFFFF;">
+
+<!-- 머리글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="50%" bgcolor="#2E3094" style="text-align:left; font-size: 14pt; font-weight: bold;">시나리오 형상관리 - Repository Browser</td>
+    <td width="50%" bgcolor="#2E3094" style="text-align:right">
+     <span style="font-size:9pt; color: #FFF;">
+     <a href="systemrequirements.htm">시작</a>&nbsp;
+     <a href="CM(SVN)_Function_Export.htm">다음</a>&nbsp;
+      <a href="CM(SVN)_Function_Resolve.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%"><tr style="vertical-align:top">
+<td style="text-align:left; color: #000; font-family: Arial, Helvetica, sans-serif; font-weight: normal;"><p>&nbsp;</p>
+<p style="margin: 0px 0px 0px 30px; font-weight: bold;"><a name="Repository browser">Repository browser 기능</a></p>
+    <p style="margin: 0px 0px 0px 70px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 70px; font-weight: normal;"><img src="images/CM(SVN)_Repo_Browser.png" width="786" height="593"></p>
+    <p style="margin: 0px 0px 0px 70px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 70px; font-weight: bold;"><img src="images/CM(SVN)_Repo_Browser_Refresh.png" width="24" height="24"> : <span style="font-weight: normal;">화면 갱신 버튼 입니다.(F5 키, Popup Menu &gt; Refresh)</span></p>
+    <p style="margin: 0px 0px 0px 70px; font-weight: bold;">URL : <span style="font-weight: normal;">현재 선택되어 있는 저장소 주소 경로 입니다.</span></p>
+    <p style="margin: 0px 0px 0px 70px; font-weight: bold;"><img src="images/CM(SVN)_Repo_Browser_MoveBack.png" width="20" height="18"> : <span style="font-weight: normal;">현재 경로에서 상위로 이동 버튼  입니다.</span></p>
+    <p style="margin: 0px 0px 0px 70px; font-weight: bold;">Details : <span style="font-weight: normal;">항목 들을 리스팅 할 레이아웃을 선택 합니다.</span></p>
+    <p style="margin: 0px 0px 0px 70px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 70px; font-weight: bold;">Tree : <span style="font-weight: normal;">저장소에 업로드 된 형상관리 시나리오 트리 입니다.</span></p>
+    <p style="margin: 0px 0px 0px 110px; font-weight: normal;">- 위 그림에서 Genesys, SolutionTestSWP, Solution_Test 는 Working copy의  솔루션 디렉토리와 이름이 같습니다.</p>
+    <p style="margin: 0px 0px 0px 110px; font-weight: normal;">- 각 솔루션 디렉토리 하위에 branches, tags, trunk 기본 디렉토리가 있습니다.</p>
+    <p style="margin: 0px 0px 0px 110px; font-weight: normal;">- trunk 디렉토리는 메인 개발 디렉토리 이며 시나리오 Import시에 Repository 주소 끝에 /trunk 로 Import 하며 이 디렉토리 하위에는  로컬의 형상관리 디렉토리 Root 하위에 있는 디렉토리와 파일들이 있습니다.</p>
+    <p style="margin: 0px 0px 0px 110px; font-weight: normal;">-  Solution_Test > trunk 디렉토리 하위의 CopyProject, IRTEST, IRTEST_DUP, 블록 시험 시나리오-IR_MAIN_NMS 디렉토리는 프로젝트 이며, 나머지 디렉토리는 공통 디렉토리 입니다.</p>
+    <p style="margin: 0px 0px 0px 110px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 70px; font-weight: bold;">List : <span style="font-weight: normal;">선택한 저장소 경로 하위의 디렉토리 및 파일을 리스팅 합니다.</span></p>
+	<p style="margin: 0px 0px 0px 108px; font-weight: normal;">- File : 디렉토리와 파일 이름 입니다.</p>
+	<p style="margin: 0px 0px 0px 108px; font-weight: normal;">- Extension : 파일인 경우 파일 확장자 입니다.</p>
+	<p style="margin: 0px 0px 0px 108px; font-weight: normal;">- Revision : 디렉토리 또는 파일이 Commit 시에 부여된  관리 번호 입니다.</p>
+	<p style="margin: 0px 0px 0px 108px; font-weight: normal;">- Author : Commit 한 SVN 계정 입니다.</p>
+	<p style="margin: 0px 0px 0px 108px; font-weight: normal;">- Size : 파일인 경우 파일 사이즈 입니다.</p>
+	<p style="margin: 0px 0px 0px 108px; font-weight: normal;">- Date : Commit 된 날자/시간 입니다.</p>
+	<p style="margin: 0px 0px 0px 108px; font-weight: normal;">- Lock : 파일인 경우 파일에 락이 걸려 있는지 표시 합니다.</p>
+	<p style="margin: 0px 0px 0px 108px; font-weight: normal;">- Lock comment : 파일에 락을 걸 때 입력한 메시지 입니다.</p>
+	<p style="margin: 0px 0px 0px 108px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 70px; font-weight: bold;">Popup Menu : <span style="font-weight: normal;">디렉토리와 파일항목에서 마우스 오른 버튼을 누르면 팝업됩니다.</span></p>
+    <p style="margin: 0px 0px 0px 70px; font-weight: bold;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 70px; font-weight: bold;"><img src="images/CM(SVN)_Repo_Browser_DirPopup.png" width="141" height="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/CM(SVN)_Repo_Browser_FilePopup.png" width="141" height="100"></p>
+	<p><span style="margin: 0px 0px 0px 80px; font-weight: normal;">[디렉토리 팝업 메뉴]</span> <span style="margin: 0px 0px 0px 60px; font-weight: normal;">[파일 팝업 메뉴]</span></p>
+	<p style="margin: 0px 0px 0px 108px; font-weight: normal;">&nbsp;</p>
+    <p style="margin: 0px 0px 0px 60px; font-weight: bold;">&bull; <a href="CM(SVN)_Function_LogMessage.htm">Show Log</a></p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&bull; <a href="CM(SVN)_Function_Blame.htm">Blame</a></p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&bull; <a href="CM(SVN)_Function_Export.htm">Export</a></p>
+    <p style="margin: 0px 0px 0px 90px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 60px; font-weight: bold;">&bull; <a href="CM(SVN)_Function_Checkout.htm">Checkout</a>    </p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p>
+	<p style="margin: 0px 0px 0px 30px; font-weight: normal;">&nbsp;</p></td></table>
+
+<!-- 바닥글 -->
+<table border="0" cellspacing="0" cellpadding="5" style="width:100%; background:#000080;">
+  <tr style="vertical-align:middle">
+    <td width="17%" bgcolor="#F8F8F8" style="text-align:left; font-size: 8pt; font-weight: normal; color: #000"><img src="images/Bridgetec_CI.PNG" width="127" height="27"></td>
+    <td width="52%" bgcolor="#F8F8F8" style="text-align:right; font-size: 8pt; font-weight: normal; color: #000">Copyrights(C) <b>Bridgetec.co.kr.</b> All Rights Reserved</td>
+    <td width="31%" bgcolor="#F8F8F8" style="text-align:right">
+     <span style="font-size:9pt">
+     <a href="systemrequirements.htm">시작</a>&nbsp;   
+     <a href="CM(SVN)_Function_Export.htm">다음</a>&nbsp;
+      <a href="CM(SVN)_Function_Resolve.htm">이전</a>
+     </span></td>
+  </tr>
+</table>
+
+</body>
+</html>
